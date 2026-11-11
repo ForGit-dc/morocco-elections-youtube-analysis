@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=null;try{l=new URLSearchParams(location.search).get("lang")}catch(e){}if(!l){try{l=localStorage.getItem("rv2-lang")}catch(e){}}if(!l)l=(navigator.language||"").slice(0,2)==="ar"?"ar":"fr";if(l==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl"}})();</script>
+<title>Ce que YouTube a vu venir</title>
+<meta name="description" content="Législatives marocaines du 23 septembre 2026 : 15 451 vidéos YouTube et 338 893 commentaires de la campagne, confrontés aux résultats officiels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Kufi+Arabic:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#f3ecdf; --card:#fcf8f0; --ink:#1a1612; --ink2:#4a4136; --muted:#776c5c; --rule:#e3d8c5; --rule2:#d4c6ad;
+  --wall:#8e1b24; --wline:#f6dcc0; --wop:.30; --frame:#e9cfa6; --rib:.38;
+  --accent:#a51f2b; --accent-soft:#f3dfdc; --hl:#fde9a8;
+  --rni:#2a78d6; --pam:#eb6834; --pjd:#1baf7a; --ist:#eda100; --neutral:#8d877b; --line:#16130f;
+  --good:#1d7a4f; --bad:#b3261e;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#15120f; --card:#1e1a15; --ink:#f2ece2; --ink2:#cbc2b3; --muted:#968c7c; --rule:#302a22; --rule2:#3d362c;
+    --wall:#4f1117; --wline:#f0b9a6; --wop:.22; --frame:#8a5a48; --rib:.45;
+    --accent:#e8727b; --accent-soft:#3b2224; --hl:#5a4a12;
+    --rni:#3987e5; --pam:#d95926; --pjd:#199e70; --ist:#c98500; --neutral:#8a8478; --line:#f1ede4;
+    --good:#4cc38a; --bad:#ef6b62;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#15120f; --card:#1e1a15; --ink:#f2ece2; --ink2:#cbc2b3; --muted:#968c7c; --rule:#302a22; --rule2:#3d362c;
+  --wall:#4f1117; --wline:#f0b9a6; --wop:.22; --frame:#8a5a48; --rib:.45;
+  --accent:#e8727b; --accent-soft:#3b2224; --hl:#5a4a12;
+  --rni:#3987e5; --pam:#d95926; --pjd:#199e70; --ist:#c98500; --neutral:#8a8478; --line:#f1ede4;
+  --good:#4cc38a; --bad:#ef6b62;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-feature-settings:"tnum" 1}
+.ar{font-family:"Noto Naskh Arabic","Segoe UI",Tahoma,serif;direction:rtl}
+a{color:inherit;text-decoration-color:var(--rule2);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.narrow{max-width:720px}
+/* barre */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:16px;height:48px}
+.brand{font:600 12px/1 Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.toc{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;flex:1;font-size:13px}
+.toc::-webkit-scrollbar{display:none}
+.toc a{text-decoration:none;color:var(--ink2);white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}
+.toc a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.theme{border:1px solid var(--rule2);background:var(--card);color:var(--ink);border-radius:999px;font:500 12px Inter;padding:6px 10px;cursor:pointer;white-space:nowrap}
+/* en-tête */
+header.hero{padding:56px 0 32px;border-bottom:1px solid var(--rule)}
+.kicker{font:600 12px/1.4 Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1{font:800 clamp(34px,6vw,64px)/1.02 Fraunces,Georgia,serif;letter-spacing:-.02em;margin:0 0 22px;max-width:900px}
+.dek{font:400 clamp(18px,2.2vw,22px)/1.45 Fraunces,Georgia,serif;color:var(--ink2);max-width:760px;margin:0 0 26px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+/* chiffres clés */
+.keys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:36px 0 8px}
+.key{background:var(--card);padding:20px 20px 18px}
+.key .n{font:800 40px/1 Fraunces,Georgia,serif;letter-spacing:-.02em;margin-bottom:10px}
+.key .n small{font-size:20px;font-weight:600}
+.key p{margin:0;font-size:14px;line-height:1.45;color:var(--ink2)}
+.key p b{color:var(--ink)}
+.key a{font-size:12px;color:var(--muted)}
+/* sections */
+section.chap{padding:64px 0 24px;border-bottom:1px solid var(--rule)}
+.num{font:600 13px Inter;color:var(--accent);letter-spacing:.08em;margin-bottom:10px}
+h2{font:700 clamp(26px,3.6vw,38px)/1.12 Fraunces,Georgia,serif;letter-spacing:-.015em;margin:0 0 14px;max-width:860px}
+.lede{font:400 19px/1.5 Fraunces,Georgia,serif;color:var(--ink2);max-width:760px;margin:0 0 26px}
+h3{font:600 13px Inter;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:30px 0 10px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:32px;align-items:start}
+ul.facts{list-style:none;padding:0;margin:0}
+ul.facts li{position:relative;padding-block:10px;padding-inline:20px 0;border-top:1px solid var(--rule);font-size:15px;line-height:1.5}
+ul.facts li:first-child{border-top:0}
+ul.facts li::before{content:"";position:absolute;inset-inline-start:2px;top:19px;width:7px;height:7px;background:var(--accent);border-radius:1px}
+ul.facts b{font-weight:600}
+.caveat{margin:18px 0 0;padding:12px 14px;border-inline-start:3px solid var(--rule2);background:var(--card);font-size:13.5px;color:var(--ink2);line-height:1.5}
+.caveat b{color:var(--ink)}
+.callout{background:var(--accent-soft);border-radius:4px;padding:16px 18px;margin:20px 0;font-size:15px}
+.callout b{font-weight:700}
+/* figures */
+figure{min-width:0;margin:0 0 8px;background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:18px 18px 12px}
+figcaption{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.45}
+.ftitle{font:600 15px/1.35 Inter;margin:0 0 4px}
+.fsub{font-size:13px;color:var(--muted);margin:0 0 12px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;overflow:visible}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2);margin:0 0 8px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.legend i.dot{width:9px;height:9px;border-radius:50%}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:999px;overflow:hidden;margin:0 0 12px}
+.seg button{background:none;border:0;color:var(--ink2);font:500 12.5px Inter;padding:6px 12px;cursor:pointer}
+.seg button.on{background:var(--ink);color:var(--paper)}
+.tip{position:fixed;pointer-events:none;z-index:50;background:var(--ink);color:var(--paper);font-size:12.5px;line-height:1.45;padding:8px 10px;border-radius:4px;max-width:280px;opacity:0;transition:opacity .08s}
+.tip b{font-weight:600}
+.axis text{fill:var(--muted);font-size:11px;font-family:Inter}
+.axis line,.axis path{stroke:var(--rule)}
+.grid line{stroke:var(--rule)}
+.ann text{fill:var(--ink2);font-size:10.5px;font-family:Inter}
+.ann line{stroke:var(--ink2);stroke-width:1}
+/* tableaux */
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tblwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--card)}
+.tbl th{font:600 11.5px Inter;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);text-align:end;padding:10px 12px;border-bottom:1px solid var(--rule2);white-space:nowrap;cursor:pointer;user-select:none}
+.tbl th:first-child,.tbl td:first-child{text-align:start}
+.tbl th.sorted::after{content:" ▾";color:var(--accent)}
+.tbl th.sorted.asc::after{content:" ▴"}
+.tbl td{padding:9px 12px;border-bottom:1px solid var(--rule);text-align:end;white-space:nowrap}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td.l{text-align:start;white-space:normal}
+.tbl td.l .nw{white-space:nowrap}
+.pos{color:var(--good);font-weight:600}.neg{color:var(--bad);font-weight:600}
+.bar{display:inline-block;height:8px;border-radius:2px;vertical-align:middle;margin-inline-end:6px;background:var(--neutral)}
+.sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-inline-end:8px;vertical-align:middle}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:999px;background:var(--rule);color:var(--ink2)}
+/* encadré */
+.box{border:1px solid var(--rule2);border-radius:6px;padding:18px;background:var(--card);margin-top:22px}
+.box h4{font:700 18px Fraunces,Georgia,serif;margin:0 0 8px}
+/* méthode */
+.method td,.method th{white-space:normal}
+.src{columns:2;column-gap:32px;font-size:13px;color:var(--ink2);padding-inline-start:18px}
+.src li{margin:0 0 6px;break-inside:avoid}
+footer{padding:40px 0 60px;font-size:12.5px;color:var(--muted)}
+@media (max-width:860px){
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  .keys{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .src{columns:1}
+}
+@media (max-width:520px){
+  .keys{grid-template-columns:minmax(0,1fr)}
+  .key .n{font-size:34px}
+  header.hero{padding-top:36px}
+  figure{padding:14px 12px 10px}
+}
+.nf{color:var(--muted);font-style:italic;font-size:12.5px;font-weight:400}
+/* bilingue : français et arabe */
+.tbl th{white-space:normal;vertical-align:bottom}
+.tbl td .nf{white-space:normal}
+#ceuta .grid2{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
+@media (max-width:860px){#ceuta .grid2{grid-template-columns:minmax(0,1fr)}}
+html[lang="ar"] bdi{white-space:nowrap}
+html:not([lang="ar"]) .l-ar,html[lang="ar"] .l-fr{display:none!important}
+.top .theme+.theme{margin-inline-start:-8px}
+html[lang="ar"] body{font-family:Inter,"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;line-height:1.85}
+html[lang="ar"] :is(.brand,.kicker,.num,h3,.ftitle,.tbl th,.theme,.seg button){font-family:Inter,"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;text-transform:none}
+html[lang="ar"] :is(h1,h2,.dek,.lede,.key .n,.box h4){font-family:Fraunces,"Noto Naskh Arabic",Georgia,serif;letter-spacing:0}
+html[lang="ar"] h1{line-height:1.35;font-weight:700}
+html[lang="ar"] h2{line-height:1.5}
+html[lang="ar"] :is(.dek,.lede){line-height:1.8}
+html[lang="ar"] :is(.kicker,.num,.brand){font-size:14px}
+html[lang="ar"] h3{font-size:15px}
+html[lang="ar"] .tbl th{font-size:13px}
+html[lang="ar"] :is(.theme,.seg button){font-size:13px}
+html[lang="ar"] .key .n{direction:ltr;text-align:right}
+html[lang="ar"] .chart{direction:ltr}
+html[lang="ar"] ul.facts li{font-size:15.5px;line-height:1.85}
+html[lang="ar"] ul.facts li::before{top:22px}
+html[lang="ar"] ul.facts li:nth-child(2){border-top:0}
+html:not([lang="ar"]) .method tbody tr:nth-last-child(2) td{border-bottom:0}
+html[lang="ar"] :is(figcaption,.fsub){font-size:13px;line-height:1.75}
+html[lang="ar"] .caveat{font-size:14px;line-height:1.8}
+#langBtn{font-family:"IBM Plex Sans Arabic",Inter,sans-serif}
+@media print{.top,.seg,.theme{display:none}section.chap{break-inside:avoid-page}}
+/* design marocain validé le 2026-11-11 : mur de zellige, porte en arc, carte et urne, signature */
+/* haut de page : mur de zellige rouge, le titre dans une porte en arc */
+header.hero{position:relative;background:var(--wall);padding:56px 16px 0;border-bottom:0;overflow:hidden}
+header.hero::before{content:"";position:absolute;inset:0;background:var(--wline);opacity:var(--wop);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M24.0%209.2%20L28.3%2013.5%20L34.5%2013.5%20L34.5%2019.7%20L38.8%2024.0%20L34.5%2028.3%20L34.5%2034.5%20L28.3%2034.5%20L24.0%2038.8%20L19.7%2034.5%20L13.5%2034.5%20L13.5%2028.3%20L9.2%2024.0%20L13.5%2019.7%20L13.5%2013.5%20L19.7%2013.5Z%22/%3E%3Cpath%20d%3D%22M26.1%2018.9%20L29.1%2021.9%20L29.1%2026.1%20L26.1%2029.1%20L21.9%2029.1%20L18.9%2026.1%20L18.9%2021.9%20L21.9%2018.9Z%22/%3E%3Cpath%20d%3D%22M24.0%209.2L24%200M24.0%2038.8L24%2048M9.2%2024.0L0%2024M38.8%2024.0L48%2024M34.5%2013.5L48%200M13.5%2013.5L0%200M34.5%2034.5L48%2048M13.5%2034.5L0%2048%22/%3E%3C/svg%3E") center top/64px 64px repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M24.0%209.2%20L28.3%2013.5%20L34.5%2013.5%20L34.5%2019.7%20L38.8%2024.0%20L34.5%2028.3%20L34.5%2034.5%20L28.3%2034.5%20L24.0%2038.8%20L19.7%2034.5%20L13.5%2034.5%20L13.5%2028.3%20L9.2%2024.0%20L13.5%2019.7%20L13.5%2013.5%20L19.7%2013.5Z%22/%3E%3Cpath%20d%3D%22M26.1%2018.9%20L29.1%2021.9%20L29.1%2026.1%20L26.1%2029.1%20L21.9%2029.1%20L18.9%2026.1%20L18.9%2021.9%20L21.9%2018.9Z%22/%3E%3Cpath%20d%3D%22M24.0%209.2L24%200M24.0%2038.8L24%2048M9.2%2024.0L0%2024M38.8%2024.0L48%2024M34.5%2013.5L48%200M13.5%2013.5L0%200M34.5%2034.5L48%2048M13.5%2034.5L0%2048%22/%3E%3C/svg%3E") center top/64px 64px repeat}
+header.hero>.wrap{position:relative;z-index:1;max-width:1040px;background:var(--paper);padding:26px 56px 40px;
+  border-radius:50% 50% 0 0/170px 170px 0 0;box-shadow:0 0 0 10px var(--wall),0 0 0 13px var(--frame)}
+.byline{text-align:center;margin:0 auto 18px}.byline p{margin:0}.byline b{display:block;font:700 20px/1.3 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}.byline span{display:block;margin-top:4px;font:500 15.5px/1.45 Inter,sans-serif;letter-spacing:.04em;color:var(--muted)}html[lang="ar"] .byline b{font:700 23px/1.4 "Noto Kufi Arabic",sans-serif;letter-spacing:0}html[lang="ar"] .byline span{font:500 17px/1.6 "IBM Plex Sans Arabic",sans-serif;letter-spacing:0}
+.emblem{width:176px;margin:0 auto 26px}.emblem svg{display:block;width:100%;height:auto}
+header.hero .kicker,header.hero h1{text-align:center;margin-inline:auto}
+header.hero .dek{margin-inline:auto}
+header.hero .meta{justify-content:center}
+@media (max-width:700px){header.hero{padding:36px 10px 0}header.hero>.wrap{padding:22px 18px 24px;}.emblem{width:130px;}header.hero>.wrap{border-radius:50% 50% 0 0/110px 110px 0 0;box-shadow:0 0 0 6px var(--wall),0 0 0 8px var(--frame)}}
+/* numéro de chapitre : texte rouge simple ; chapitre 05 seulement : petite urne */
+#urnes .num::before{content:"";display:inline-block;width:14px;height:14px;margin-inline-end:8px;vertical-align:-2px;background:var(--accent);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8%202h8v8.5h-2V4h-4v6.5H8z%22/%3E%3Cpath%20d%3D%22M2%2010h7v2h6v-2h7v12H2z%22/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8%202h8v8.5h-2V4h-4v6.5H8z%22/%3E%3Cpath%20d%3D%22M2%2010h7v2h6v-2h7v12H2z%22/%3E%3C/svg%3E") center/contain no-repeat}
+/* entre deux chapitres : frise de zellige */
+section.chap{position:relative;border-bottom:0;padding-bottom:64px}
+section.chap::after{content:"";position:absolute;left:0;right:0;bottom:0;height:32px;background:var(--accent);opacity:var(--rib);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M24.0%209.2%20L28.3%2013.5%20L34.5%2013.5%20L34.5%2019.7%20L38.8%2024.0%20L34.5%2028.3%20L34.5%2034.5%20L28.3%2034.5%20L24.0%2038.8%20L19.7%2034.5%20L13.5%2034.5%20L13.5%2028.3%20L9.2%2024.0%20L13.5%2019.7%20L13.5%2013.5%20L19.7%2013.5Z%22/%3E%3Cpath%20d%3D%22M26.1%2018.9%20L29.1%2021.9%20L29.1%2026.1%20L26.1%2029.1%20L21.9%2029.1%20L18.9%2026.1%20L18.9%2021.9%20L21.9%2018.9Z%22/%3E%3Cpath%20d%3D%22M24.0%209.2L24%200M24.0%2038.8L24%2048M9.2%2024.0L0%2024M38.8%2024.0L48%2024M34.5%2013.5L48%200M13.5%2013.5L0%200M34.5%2034.5L48%2048M13.5%2034.5L0%2048%22/%3E%3C/svg%3E") center/32px 32px repeat-x;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M24.0%209.2%20L28.3%2013.5%20L34.5%2013.5%20L34.5%2019.7%20L38.8%2024.0%20L34.5%2028.3%20L34.5%2034.5%20L28.3%2034.5%20L24.0%2038.8%20L19.7%2034.5%20L13.5%2034.5%20L13.5%2028.3%20L9.2%2024.0%20L13.5%2019.7%20L13.5%2013.5%20L19.7%2013.5Z%22/%3E%3Cpath%20d%3D%22M26.1%2018.9%20L29.1%2021.9%20L29.1%2026.1%20L26.1%2029.1%20L21.9%2029.1%20L18.9%2026.1%20L18.9%2021.9%20L21.9%2018.9Z%22/%3E%3Cpath%20d%3D%22M24.0%209.2L24%200M24.0%2038.8L24%2048M9.2%2024.0L0%2024M38.8%2024.0L48%2024M34.5%2013.5L48%200M13.5%2013.5L0%200M34.5%2034.5L48%2048M13.5%2034.5L0%2048%22/%3E%3C/svg%3E") center/32px 32px repeat-x}
+/* pied de page : le mur revient */
+footer{position:relative;padding-top:96px!important}
+footer::before,footer::after{content:"";position:absolute;left:0;right:0;top:0;height:64px}
+footer::before{background:var(--wall)}
+footer::after{background:var(--wline);opacity:var(--wop);-webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M24.0%209.2%20L28.3%2013.5%20L34.5%2013.5%20L34.5%2019.7%20L38.8%2024.0%20L34.5%2028.3%20L34.5%2034.5%20L28.3%2034.5%20L24.0%2038.8%20L19.7%2034.5%20L13.5%2034.5%20L13.5%2028.3%20L9.2%2024.0%20L13.5%2019.7%20L13.5%2013.5%20L19.7%2013.5Z%22/%3E%3Cpath%20d%3D%22M26.1%2018.9%20L29.1%2021.9%20L29.1%2026.1%20L26.1%2029.1%20L21.9%2029.1%20L18.9%2026.1%20L18.9%2021.9%20L21.9%2018.9Z%22/%3E%3Cpath%20d%3D%22M24.0%209.2L24%200M24.0%2038.8L24%2048M9.2%2024.0L0%2024M38.8%2024.0L48%2024M34.5%2013.5L48%200M13.5%2013.5L0%200M34.5%2034.5L48%2048M13.5%2034.5L0%2048%22/%3E%3C/svg%3E") center/64px 64px repeat-x;mask:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M24.0%209.2%20L28.3%2013.5%20L34.5%2013.5%20L34.5%2019.7%20L38.8%2024.0%20L34.5%2028.3%20L34.5%2034.5%20L28.3%2034.5%20L24.0%2038.8%20L19.7%2034.5%20L13.5%2034.5%20L13.5%2028.3%20L9.2%2024.0%20L13.5%2019.7%20L13.5%2013.5%20L19.7%2013.5Z%22/%3E%3Cpath%20d%3D%22M26.1%2018.9%20L29.1%2021.9%20L29.1%2026.1%20L26.1%2029.1%20L21.9%2029.1%20L18.9%2026.1%20L18.9%2021.9%20L21.9%2018.9Z%22/%3E%3Cpath%20d%3D%22M24.0%209.2L24%200M24.0%2038.8L24%2048M9.2%2024.0L0%2024M38.8%2024.0L48%2024M34.5%2013.5L48%200M13.5%2013.5L0%200M34.5%2034.5L48%2048M13.5%2034.5L0%2048%22/%3E%3C/svg%3E") center/64px 64px repeat-x}
+/* titres arabes en coufique lisible */
+html[lang="ar"] :is(h1,h2,.box h4){font-family:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif;font-weight:700}
+html[lang="ar"] h1{line-height:1.45}
+html[lang="ar"] h2{line-height:1.6;font-size:clamp(24px,3.2vw,34px)}
+</style>
+</head>
+<body>
+<div class="tip" id="tip"></div>
+
+<nav class="top"><div class="wrap">
+  <span class="brand"><span class="l-fr">Législatives 2026</span><span class="l-ar">تشريعيات 2026</span></span>
+  <div class="toc" id="toc">
+    <a href="#pub"><span class="l-fr">Publicité</span><span class="l-ar">الإشهار</span></a><a href="#themes"><span class="l-fr">Thèmes</span><span class="l-ar">المواضيع</span></a><a href="#ceuta"><span class="l-fr">Sebta, Israël</span><span class="l-ar">سبتة وإسرائيل</span></a><a href="#majorite"><span class="l-fr">RNI contre PAM</span><span class="l-ar">صراع الأغلبية</span></a><a href="#urnes"><span class="l-fr">Face aux urnes</span><span class="l-ar">أمام الصناديق</span></a><a href="#militants"><span class="l-fr">Militants</span><span class="l-ar">الأنصار</span></a><a href="#rejet"><span class="l-fr">Rejet</span><span class="l-ar">الرفض</span></a><a href="#toxicite"><span class="l-fr">Toxicité</span><span class="l-ar">حدة الخطاب</span></a><a href="#methode"><span class="l-fr">Méthode</span><span class="l-ar">المنهجية</span></a>
+  </div>
+  <button class="theme" id="langBtn" type="button" lang="ar">العربية</button>
+  <button class="theme" id="themeBtn" type="button">Mode sombre</button>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="byline"><p class="l-fr"><b>Anass El Basraoui</b><span>Intelligence narrative &amp; géopolitique stratégique</span><span>AI &amp; Data consulting</span></p><p class="l-ar"><b>أنس البصراوي</b><span>الذكاء السردي والجيوسياسة الاستراتيجية</span><span>استشارات الذكاء الاصطناعي والبيانات</span></p></div>
+  <div class="emblem" aria-hidden="true"><svg viewBox="-2 -2 104 110.8"><path d="M92.8 5.8L93.3 6.8L95.4 8.3L95.1 9.3L95.8 10.3L95.5 11.0L96.0 12.4L95.9 15.2L96.5 16.7L96.2 18.5L97.6 22.2L100.0 24.5L98.9 25.4L99.0 27.0L91.4 26.8L88.8 27.2L88.3 27.5L87.8 28.9L85.2 29.8L82.8 30.2L83.0 32.3L82.7 33.4L84.0 34.4L83.8 35.1L81.8 35.4L79.7 37.0L75.6 38.6L74.3 40.7L72.7 42.2L69.2 43.1L66.2 43.2L66.0 44.3L65.2 44.9L62.0 44.6L59.9 46.2L58.7 46.5L52.6 50.9L52.5 58.4L51.6 58.4L52.0 61.7L51.8 62.2L47.9 62.4L45.4 64.1L44.1 63.7L42.7 64.1L39.5 62.9L35.6 63.9L36.1 64.9L35.9 65.7L34.1 68.1L33.5 69.4L31.6 69.9L31.3 70.7L29.1 78.4L25.2 81.4L23.6 84.4L20.0 86.4L19.1 88.9L17.9 96.2L15.4 99.4L15.5 100.2L14.6 101.9L13.3 102.4L6.6 101.9L0.6 102.5L1.1 99.1L1.9 97.3L2.6 96.5L3.6 96.0L4.6 94.2L5.0 92.5L5.8 91.1L5.5 90.6L8.2 85.7L8.1 85.4L7.0 86.6L7.5 85.4L9.4 83.8L11.9 80.9L12.8 80.4L13.7 79.2L14.4 74.4L16.1 70.7L16.4 69.0L18.3 67.2L19.6 66.7L22.0 65.0L24.4 58.5L25.9 56.6L31.9 55.1L34.6 53.8L37.5 51.0L41.2 48.5L43.0 46.3L46.3 41.1L46.4 38.7L45.0 36.8L45.5 31.8L46.3 29.8L48.3 27.1L49.0 23.7L53.5 18.9L63.6 13.9L67.0 8.2L69.7 1.0L71.6 0.7L73.0 0.0L73.7 0.2L73.3 1.3L73.9 2.2L76.5 4.6L77.8 5.1L79.6 5.4L83.6 4.6L85.5 5.1L86.6 4.9L88.1 3.7L88.9 5.7L92.8 5.8ZM52.5 58.4L52.5 70.2L31.7 70.2L31.7 88.0L27.9 89.4L25.4 91.3L24.6 92.6L25.5 103.1L0.8 103.1L0.3 106.8L0.0 106.5L0.6 102.5L6.6 101.9L14.1 102.3L15.1 101.2L15.7 99.0L17.9 96.2L19.1 88.9L20.0 86.4L23.6 84.4L25.2 81.4L29.1 78.4L31.4 70.2L33.5 69.4L34.1 68.1L35.9 65.7L36.1 64.9L35.6 63.9L39.5 62.9L42.7 64.1L44.1 63.7L45.4 64.1L47.9 62.4L51.8 62.2L52.0 61.7L51.6 58.4L52.5 58.4Z" fill="#c1272d" stroke="#c1272d" stroke-width=".6" stroke-linejoin="round"/><g transform="translate(56.5 15) scale(.85)"><rect x="6.5" y="0" width="9" height="12" rx=".8" fill="#006233" stroke="#f7ecd6" stroke-width="1.2"/><path d="M7.5 3.5h7M7.5 6h7M7.5 8.5h5" stroke="#f7ecd6" stroke-width=".9"/><rect x="0" y="10" width="22" height="18" rx="1.5" fill="#f7ecd6"/><rect x="5" y="12.2" width="12" height="1.8" rx=".9" fill="#7a141c"/><rect x="0" y="23" width="22" height="5" rx="1.5" fill="#e9d6b4"/></g></svg></div>
+  <p class="l-fr kicker">Enquête de données · Législatives marocaines du 23 septembre 2026</p>
+  <p class="l-ar kicker">تحقيق بالبيانات · الانتخابات التشريعية المغربية، 23 شتنبر 2026</p>
+  <h1 class="l-fr">Ce que YouTube a vu venir, et ce qu'il a raté</h1>
+  <h1 class="l-ar">ما التقطه يوتيوب، وما فاته</h1>
+  <p class="l-fr dek">Nous avons classé, à l'aide d'un modèle de langage, 338 893 commentaires publiés sous 15 451 vidéos : presque toutes les vidéos sur les élections et l'actualité politique publiées au Maroc pendant le mois qui a précédé le vote. Puis nous les avons confrontés aux résultats officiels. YouTube a vu le retour du PJD, en le grossissant. Il n'a pas vu le poids de l'Istiqlal. Et le parti le plus regardé est celui qui a payé pour l'être.</p>
+  <p class="l-ar dek">صنّفنا، بالاستعانة بنموذج لغوي، 338,893 تعليقا نُشرت تحت 15,451 فيديو، تمثل جلّ ما نُشر في المغرب عن الانتخابات والشأن السياسي خلال الشهر الذي سبق الاقتراع، ثم قارنّا ما تقوله بالنتائج الرسمية. وتُظهر المقارنة أن يوتيوب رصد عودة العدالة والتنمية لكنه ضخّمها، وأغفل ثقل حزب الاستقلال، في حين أن الحزب الأكثر مشاهدة هو الذي دفع المال ليكون كذلك.</p>
+  <div class="meta">
+    <span class="l-fr">Période : <b>23 août au 22 septembre 2026</b></span>
+    <span class="l-ar">الفترة: <b>من 23 غشت إلى 22 شتنبر 2026</b></span>
+    <span class="l-fr">Vidéos pertinentes : <b data-k="videos_rel"></b></span>
+    <span class="l-ar">الفيديوهات ذات الصلة: <b data-k="videos_rel"></b></span>
+    <span class="l-fr">Commentaires classés : <b data-k="comments_cls"></b></span>
+    <span class="l-ar">التعليقات المصنَّفة: <b data-k="comments_cls"></b></span>
+    <span class="l-fr">Auteurs distincts : <b data-k="authors"></b></span>
+    <span class="l-ar">المعلِّقون: <b data-k="authors"></b></span>
+    <span class="l-fr">Chaînes : <b data-k="channels"></b></span>
+    <span class="l-ar">القنوات: <b data-k="channels"></b></span>
+  </div>
+
+  <div class="keys">
+    <div class="l-fr key"><div class="n">19,3 <small>%</small></div><p><b>des vues de toute la campagne</b> viennent d'une seule chaîne, celle du RNI : 489 vidéos, 0 commentaire public. 13 vidéos à plus d'un million de vues avant le 9 septembre, date de la dernière annonce payée ; aucune après.</p></div>
+    <div class="l-ar key"><div class="n">19.3<small>%</small></div><p><b>من مجموع مشاهدات الحملة</b> مصدرها قناة واحدة، هي قناة حزب التجمع الوطني للأحرار، التي نشرت 489 فيديو دون أي تعليق علني. وتجاوز 13 من فيديوهاتها عتبة المليون مشاهدة قبل 9 شتنبر، تاريخ آخر إعلان مدفوع، ولم يبلغها أي فيديو بعده.</p></div>
+    <div class="l-fr key"><div class="n">× 2,7</div><p><b>Le PJD sur-représenté</b> : 44 % des comptes qui soutiennent un parti, 16 % des voix des neuf partis comparés. Il gagne 41 sièges : la direction était juste, pas l'ampleur.</p></div>
+    <div class="l-ar key"><div class="n">× 2.7</div><p><b>حضور العدالة والتنمية على يوتيوب يفوق وزنه الانتخابي</b>: إذ يمثل 44% من الحسابات المؤيدة لحزب ما، مقابل 16% من أصوات الأحزاب التسعة المقارَنة. وقد كسب الحزب 41 مقعدا، أي أن يوتيوب أصاب في الاتجاه وأخطأ في الحجم.</p></div>
+    <div class="l-fr key"><div class="n">17 <small>%</small></div><p><b>des commentaires rejettent toute la classe politique</b>, deux fois plus que ceux qui soutiennent un parti (8 %). La participation tombe à 38,08 %.</p></div>
+    <div class="l-ar key"><div class="n">17<small>%</small></div><p><b>من التعليقات ترفض الطبقة السياسية برمّتها</b>، أي ضعف التعليقات المؤيدة لحزب ما (8%)، في حين تراجعت نسبة المشاركة إلى 38.08%.</p></div>
+  </div>
+</div></header>
+
+<!-- 01 PUBLICITÉ -->
+<section class="chap" id="pub"><div class="wrap">
+  <div class="l-fr num">01 · L'AUDIENCE ACHETÉE</div>
+  <div class="l-ar num">01 · جمهور مدفوع الثمن</div>
+  <h2 class="l-fr">Le RNI a payé l'audience, pas la conversation</h2>
+  <h2 class="l-ar">الأحرار اشتروا الجمهور، لكنهم لم يكسبوا النقاش</h2>
+  <p class="l-fr lede">Une chaîne sur 2 675 fait près d'un cinquième des vues de la campagne. Ses vidéos ne déclenchent ni j'aime ni commentaires, et leur audience s'effondre le jour où la publicité s'arrête.</p>
+  <p class="l-ar lede">تحصد قناة واحدة، من أصل 2675 قناة، قرابة خُمس مشاهدات الحملة، غير أن فيديوهاتها لا تكاد تثير إعجابا أو تعليقا، وينهار جمهورها في اليوم الذي يتوقف فيه الإشهار.</p>
+  <div class="grid2">
+    <figure>
+      <p class="l-fr ftitle">Vues des vidéos de @partirni, selon leur jour de mise en ligne</p>
+      <p class="l-ar ftitle">مشاهدات فيديوهات <bdi>@partirni</bdi> حسب تاريخ نشرها</p>
+      <p class="l-fr fsub">Somme des vues au moment de la collecte (octobre 2026), 489 vidéos</p>
+      <p class="l-ar fsub">مجموع المشاهدات عند جمع البيانات (أكتوبر 2026)، 489 فيديو</p>
+      <div class="chart" id="chRni"></div>
+      <figcaption class="l-fr">Lecture : les 6 vidéos mises en ligne le 26 août totalisent 16,7 M de vues. Après le 9 septembre, 9 vidéos sur 10 restent sous 3 200 vues ; la plus vue atteint 389 000. Source : collecte YouTube Data API v3 ; Centre de transparence publicitaire de Google (annonceur ABWEB SARL AU).</figcaption>
+      <figcaption class="l-ar">حصدت الفيديوهات الستة المنشورة في 26 غشت 16.7 مليون مشاهدة، في حين بقيت 9 من كل 10 فيديوهات نُشرت بعد 9 شتنبر دون 3200 مشاهدة، ولم يتجاوز أعلاها 389 ألف مشاهدة. المصدر: بيانات جُمعت عبر <bdi>YouTube Data API v3</bdi>، ومركز الشفافية الإعلانية لغوغل (المعلِن <bdi>ABWEB SARL AU</bdi>).</figcaption>
+    </figure>
+    <div>
+      <div class="tblwrap"><table class="tbl" id="tRniPhase"></table></div>
+      <ul class="facts" style="margin-top:14px">
+        <li class="l-fr"><b>Même chaîne, même parti, deux régimes.</b> Vidéos mises en ligne jusqu'au 9 septembre : 13 au-dessus d'un million de vues. Vidéos suivantes : aucune, alors qu'elles ont eu au moins trois semaines pour être vues avant la collecte.</li>
+        <li class="l-ar"><b>القناة نفسها والحزب نفسه، لكن بمسارين مختلفين تماما.</b> فمن الفيديوهات المنشورة حتى 9 شتنبر، تجاوز 13 فيديو عتبة المليون مشاهدة، في حين لم يبلغها أي فيديو نُشر بعد ذلك، رغم بقائها متاحة للمشاهدة ثلاثة أسابيع على الأقل قبل جمع البيانات.</li>
+        <li class="l-fr"><b>Le 9 septembre est la date de la dernière annonce</b> de l'agence ABWEB SARL AU, qui a diffusé 200 annonces vidéo au Maroc, toutes pour le RNI (Centre de transparence des publicités de Google, relevé le 8 octobre 2026). La campagne officielle s'ouvre le lendemain.</li>
+        <li class="l-ar"><b>9 شتنبر هو تاريخ آخر إعلان</b> لوكالة <bdi>ABWEB SARL AU</bdi>، التي بثّت 200 إعلان فيديو في المغرب، جميعها لفائدة الأحرار، بحسب مركز الشفافية الإعلانية لغوغل (اطّلعنا عليه في 8 أكتوبر 2026). وفي اليوم التالي، انطلقت الحملة الرسمية.</li>
+        <li class="l-fr"><b>0,34 j'aime pour 1 000 vues</b>, contre 8,7 pour la chaîne médiane (225 chaînes de plus de 100 000 vues). Les vues achetées produisent peu de j'aime.</li>
+        <li class="l-ar"><b>0.34 إعجاب لكل 1000 مشاهدة</b>، مقابل 8.7 لدى القناة الوسيطة بين 225 قناة تجاوزت 100 ألف مشاهدة، وهو ما يعني أن المشاهدات المدفوعة لا تجلب إلا القليل من الإعجابات.</li>
+        <li class="l-fr"><b>Facebook et Instagram, même tendance</b> : sur 90 jours (7 juillet au 4 octobre), la Bibliothèque publicitaire de Meta attribue 168 023 $ à la page du RNI (701 publicités), 31 726 $ au PAM, 20 735 $ à l'Istiqlal, 0 $ au PJD.</li>
+        <li class="l-ar"><b>الاتجاه نفسه على فيسبوك وإنستغرام</b>: فعلى مدى 90 يوما (من 7 يوليوز إلى 4 أكتوبر)، تنسب مكتبة إعلانات ميتا إلى صفحة الأحرار 168,023 دولارا (701 إعلان)، مقابل 31,726 دولارا للأصالة والمعاصرة، و20,735 دولارا للاستقلال، ولا شيء للعدالة والتنمية.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="l-fr">Les chaînes qui font les vues : engagement pour 1 000 vues</h3>
+  <h3 class="l-ar">القنوات التي تصنع المشاهدات: التفاعل لكل 1000 مشاهدة</h3>
+  <figure>
+    <p class="l-fr ftitle">Les 40 chaînes les plus vues de la campagne</p>
+    <p class="l-ar ftitle">القنوات الأربعون الأكثر مشاهدة في الحملة</p>
+    <p class="l-fr fsub">Horizontal : vues totales (échelle log). Vertical : j'aime pour 1 000 vues (échelle log). Survolez un point.</p>
+    <p class="l-ar fsub">المحور الأفقي: مجموع المشاهدات (سُلّم لوغاريتمي). المحور العمودي: الإعجابات لكل 1000 مشاهدة (سُلّم لوغاريتمي). مرّر المؤشر على أي نقطة لمعرفة التفاصيل.</p>
+    <div class="chart" id="chChannels"></div>
+    <figcaption class="l-fr">Deux chaînes se détachent par le bas : @partirni (RNI) et @electionsaumaroc, chaîne de sensibilisation au vote créée le 11 mai 2026 (162 000 abonnés, commentaires désactivés, aucun parti cité). Son propriétaire n'apparaît pas dans nos données.</figcaption>
+    <figcaption class="l-ar">تنفصل قناتان عن البقية في أسفل الرسم: <bdi>@partirni</bdi> التابعة للأحرار، و<bdi>@electionsaumaroc</bdi>، وهي قناة للتحسيس بالتصويت أُنشئت في 11 ماي 2026، تضم 162 ألف مشترك، وتعطّل التعليقات ولا تذكر أي حزب. ولا تكشف بياناتنا هوية مالكها.</figcaption>
+  </figure>
+  <p class="l-fr caveat"><b>Ce que nous ne savons pas.</b> La part exacte des vues payées : Google ne publie aucun montant pour le Maroc, qui ne fait pas partie des pays où il vérifie les publicités électorales. « 0 commentaire » ne veut pas dire « commentaires fermés » : l'API renvoie un compteur à zéro, pas l'erreur des commentaires désactivés. Conséquence pour la suite : nous mesurons l'intérêt par les commentaires, pas par les vues.</p>
+  <p class="l-ar caveat"><b>ما لا نعرفه.</b> الحصة الدقيقة للمشاهدات المدفوعة، إذ لا تنشر غوغل أي مبالغ تخص المغرب، لأنه ليس من البلدان التي تتحقق فيها من الإعلانات الانتخابية. كما أن عبارة «0 تعليق» لا تعني أن التعليقات مغلقة، فالواجهة البرمجية تُرجع عدّادا صفريا، لا رسالة الخطأ الخاصة بالتعليقات المعطّلة. ولهذا نقيس الاهتمام في بقية التحقيق بالتعليقات، لا بالمشاهدات.</p>
+</div></section>
+
+<!-- 02 THÈMES -->
+<section class="chap" id="themes"><div class="wrap">
+  <div class="l-fr num">02 · L'OFFRE ET LA DEMANDE</div>
+  <div class="l-ar num">02 · العرض والطلب</div>
+  <h2 class="l-fr">On a montré des aides sociales, on a commenté la corruption</h2>
+  <h2 class="l-ar">عُرض الدعم الاجتماعي، ودار النقاش حول الفساد</h2>
+  <p class="l-fr lede">Les thèmes du bilan gouvernemental remplissent les compteurs de vues. Les commentaires parlent d'autre chose : la corruption, la souveraineté, la monarchie.</p>
+  <p class="l-ar lede">تملأ مواضيع الحصيلة الحكومية عدّادات المشاهدة، أما التعليقات فتتحدث عن شيء آخر: الفساد والسيادة والملكية.</p>
+  <figure>
+    <div class="seg" id="segThemes"><button class="on" data-v="views"><span class="l-fr">Toutes les vues</span><span class="l-ar">كل المشاهدات</span></button><button data-v="views_norni"><span class="l-fr">Sans @partirni</span><span class="l-ar">دون <bdi>@partirni</bdi></span></button></div>
+    <p class="l-fr ftitle">Part des vues des vidéos et part des commentaires, par thème</p>
+    <p class="l-ar ftitle">حصة المشاهدات وحصة التعليقات، حسب الموضوع</p>
+    <div class="l-fr legend"><span><i class="dot" style="background:var(--neutral)"></i>Part des vues</span><span><i class="dot" style="background:var(--accent)"></i>Part des commentaires</span><span>× : commentaires rapportés aux vues</span></div>
+    <div class="l-ar legend"><span><i class="dot" style="background:var(--neutral)"></i>حصة المشاهدات</span><span><i class="dot" style="background:var(--accent)"></i>حصة التعليقات</span><span>×: حصة التعليقات مقسومة على حصة المشاهدات</span></div>
+    <div class="chart" id="chThemes"></div>
+    <figcaption class="l-fr">Thème d'une vidéo : jusqu'à 3 par vidéo (GPT-6 Luna). Thème d'un commentaire : jusqu'à 3 (Gemma 4 12B). « Aucun enjeu » (52 % des vidéos, 42 % des commentaires) est retiré du graphique.</figcaption>
+    <figcaption class="l-ar">موضوع الفيديو: ثلاثة مواضيع كحد أقصى لكل فيديو (<bdi>GPT-6 Luna</bdi>). موضوع التعليق: ثلاثة كحد أقصى (<bdi>Gemma 4 12B</bdi>). وحُذفت من الرسم فئة «دون موضوع» (52% من الفيديوهات و42% من التعليقات).</figcaption>
+  </figure>
+  <ul class="facts" style="margin-top:16px">
+    <li class="l-fr"><b>Aides sociales : 8,1 % des vues, 0,5 % des commentaires.</b> Sans la chaîne du RNI, ce thème retombe à 2,1 % des vues : c'est un thème de publicité, pas de débat.</li>
+    <li class="l-ar"><b>الدعم الاجتماعي: 8.1% من المشاهدات، و0.5% من التعليقات.</b> وباستثناء قناة الأحرار، تنخفض حصته إلى 2.1% من المشاهدات، وهو ما يجعله موضوعا إعلانيا أكثر منه موضوعا للنقاش.</li>
+    <li class="l-fr"><b>Corruption : 6,4 % des vues, 20,8 % des commentaires.</b> C'est le premier sujet de discussion de la campagne, loin devant les thèmes qui font les vues.</li>
+    <li class="l-ar"><b>الفساد: 6.4% من المشاهدات، و20.8% من التعليقات.</b> وهو بذلك أول مواضيع النقاش في الحملة، متقدّما بفارق كبير على المواضيع التي تصنع المشاهدات.</li>
+    <li class="l-fr"><b>Souveraineté : 4,9 % des vues, 10,6 % des commentaires.</b> Sebta et Israël font réagir deux fois plus qu'ils ne font regarder (chapitre suivant).</li>
+    <li class="l-ar"><b>السيادة: 4.9% من المشاهدات، و10.6% من التعليقات.</b> إذ تثير سبتة وإسرائيل من التفاعل ضعف ما تجلبانه من مشاهدات (انظر الفصل التالي).</li>
+    <li class="l-fr"><b>Emploi et santé suivent le même chemin que les aides sociales</b> : 7,8 % et 5,6 % des vues, à peine 1 % des commentaires chacun. Sans la chaîne du RNI, ils retombent à 1,5 % et 1,4 % des vues : ce sont les vitrines de la communication du RNI.</li>
+    <li class="l-ar"><b>التشغيل والصحة على المنوال نفسه</b>: 7.8% و5.6% من المشاهدات، مقابل 1% بالكاد من التعليقات لكل منهما. وباستثناء قناة الأحرار، تنخفض حصتاهما إلى 1.5% و1.4% من المشاهدات، ما يعني أنهما كانا واجهة لتواصل الحزب.</li>
+  </ul>
+</div></section>
+
+<!-- 03 CEUTA ISRAËL -->
+<section class="chap" id="ceuta"><div class="wrap">
+  <div class="l-fr num">03 · L'IRRUPTION DE L'EXTÉRIEUR</div>
+  <div class="l-ar num">03 · الخارج يقتحم الحملة</div>
+  <h2 class="l-fr">Sebta et Israël ont fait les trois pics de la campagne</h2>
+  <h2 class="l-ar">سبتة وإسرائيل وراء ذروات الحملة الثلاث</h2>
+  <p class="l-fr lede">La crise de Sebta, ouverte le 30 juillet, et le rapprochement avec Israël ont interrompu trois fois le débat électoral. Le deuxième jour le plus commenté de la campagne a été un jour de diplomatie, pas de meeting.</p>
+  <p class="l-ar lede">قطعت أزمة سبتة، التي اندلعت في 30 يوليوز، والتقاربُ مع إسرائيل النقاشَ الانتخابي ثلاث مرات، حتى إن ثاني أكثر أيام الحملة تعليقا كان يوما دبلوماسيا، لا يوم تجمعات خطابية.</p>
+  <figure>
+    <p class="l-fr ftitle">Part des commentaires qui parlent de souveraineté ou de diplomatie, jour par jour</p>
+    <p class="l-ar ftitle">حصة التعليقات التي تتحدث عن السيادة أو الدبلوماسية، يوما بيوم</p>
+    <p class="l-fr fsub">En % des commentaires du jour. Survolez pour le nombre de commentaires de chaque jour.</p>
+    <p class="l-ar fsub">بالنسبة المئوية من تعليقات اليوم. مرّر المؤشر لمعرفة عدد التعليقات في كل يوم.</p>
+    <div class="chart" id="chSov"></div>
+    <figcaption class="l-fr">Événements datés d'après Telquel (20 août), Le Devoir / AFP (31 août), France 24 (3 septembre), Le Desk (16 septembre), Maroc Mail (17 septembre). Jour = heure du Maroc.</figcaption>
+    <figcaption class="l-ar">أُرّخت الأحداث استنادا إلى <bdi>Telquel</bdi> (20 غشت)، و<bdi>Le Devoir</bdi> / وكالة الأنباء الفرنسية (31 غشت)، و<bdi>France 24</bdi> (3 شتنبر)، و<bdi>Le Desk</bdi> (16 شتنبر)، و<bdi>Maroc Mail</bdi> (17 شتنبر). والأيام بتوقيت المغرب.</figcaption>
+  </figure>
+  <div class="grid2" style="margin-top:22px">
+    <ul class="facts">
+      <li class="l-fr"><b>25 août : 20,7 %.</b> Vidéos sur la visite privée de la ministre israélienne Miri Regev à Marrakech (19 août) et sur « le Maroc qui rompt avec l'Espagne ».</li>
+      <li class="l-ar"><b>25 غشت: 20.7%.</b> فيديوهات عن الزيارة الخاصة لوزيرة النقل الإسرائيلية ميري ريغيف إلى مراكش (19 غشت)، وأخرى عن «المغرب الذي يقطع مع إسبانيا».</li>
+      <li class="l-fr"><b>3 au 5 septembre : 16 à 20 %.</b> Pedro Sánchez devant le Congrès espagnol : « Sebta et Melilia sont des villes espagnoles pour toujours ».</li>
+      <li class="l-ar"><b>من 3 إلى 5 شتنبر: بين 16% و20%.</b> رئيس الحكومة الإسبانية بيدرو سانشيز يقول أمام مجلس النواب: «سبتة ومليلية مدينتان إسبانيتان إلى الأبد».</li>
+      <li class="l-fr"><b>17 et 18 septembre : 27 % puis 34 %.</b> Le 16, Nasser Bourita et Gideon Sa'ar annoncent à New York des ambassades. Le 17, Ursula von der Leyen parle de Sebta devant le Parlement européen.</li>
+      <li class="l-ar"><b>17 و18 شتنبر: 27% ثم 34%.</b> ففي 16 شتنبر، أعلن ناصر بوريطة وجدعون ساعر من نيويورك الارتقاء بمكتبي الاتصال إلى سفارتين، وفي اليوم التالي تحدثت أورسولا فون دير لاين عن سبتة أمام البرلمان الأوروبي.</li>
+      <li class="l-fr"><b>Le 18 septembre est le deuxième jour le plus commenté de la campagne</b>, derrière la veille du vote : 19 106 commentaires. La vidéo la plus commentée ce jour-là vient d'une chaîne déclarée en Égypte, qui attaque le roi (2 064 commentaires en un jour).</li>
+      <li class="l-ar"><b>18 شتنبر ثاني أكثر أيام الحملة تعليقا</b> بعد عشية الاقتراع، بـ19,106 تعليقات. وكان الفيديو الأكثر تعليقا في ذلك اليوم لقناة مسجّلة في مصر تهاجم الملك (2064 تعليقا في يوم واحد).</li>
+    </ul>
+    <div>
+      <div class="tblwrap"><table class="tbl" id="tLang"></table></div>
+      <p class="l-fr caveat" style="margin-top:12px"><b>Lecture.</b> 62 % des commentaires en espagnol parlent de Sebta : la crise a amené des commentateurs espagnols sous des vidéos marocaines. Les francophones parlent quatre fois plus de souveraineté que les commentateurs en darija (31 % contre 8 %), et citent plus de deux fois moins les partis (12 % contre 30 %).</p>
+      <p class="l-ar caveat" style="margin-top:12px"><b>كيف تُقرأ.</b> 62% من التعليقات المكتوبة بالإسبانية تتحدث عن سبتة، إذ جلبت الأزمة معلّقين إسبانا إلى فيديوهات مغربية. ويتحدث المعلّقون بالفرنسية عن السيادة أكثر بأربع مرات من المعلّقين بالدارجة (31% مقابل 8%)، في حين يذكرون الأحزاب أقل منهم بأكثر من النصف (12% مقابل 30%).</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 04 MAJORITÉ -->
+<section class="chap" id="majorite"><div class="wrap">
+  <div class="l-fr num">04 · LA MAJORITÉ CONTRE ELLE-MÊME</div>
+  <div class="l-ar num">04 · الأغلبية في مواجهة نفسها</div>
+  <h2 class="l-fr">La campagne s'est jouée entre partenaires de gouvernement</h2>
+  <h2 class="l-ar">الحملة دارت بين شركاء الحكومة أنفسهم</h2>
+  <p class="l-fr lede">Deux semaines avant l'ouverture officielle de la campagne, l'audio attribué à Rachid Talbi Alami contre Fouzi Lekjaa installe le vrai duel : RNI contre PAM, deux partis de la même majorité.</p>
+  <p class="l-ar lede">قبل أسبوعين من الانطلاق الرسمي للحملة، كشف التسجيل الصوتي المنسوب إلى رشيد الطالبي العلمي ضد فوزي لقجع المواجهةَ الحقيقية: حزب التجمع الوطني للأحرار في مواجهة حزب الأصالة والمعاصرة، وهما شريكان في الأغلبية نفسها.</p>
+  <figure>
+    <div class="seg" id="segCrit"><button class="on" data-v="crit"><span class="l-fr">Partis critiqués</span><span class="l-ar">الأحزاب المنتقَدة</span></button><button data-v="sup"><span class="l-fr">Partis soutenus</span><span class="l-ar">الأحزاب المؤيَّدة</span></button></div>
+    <p class="ftitle" id="critTitle">Part des commentaires qui critiquent chaque parti, jour par jour</p>
+    <div class="legend" id="critLegend"></div>
+    <div class="chart" id="chCrit"></div>
+    <figcaption class="l-fr">Sources des événements : Le Desk et Médias24 (26 août), Hespress (28 août et 7 septembre), France 24 (10 septembre), Le Desk (12 septembre). Un compte compte une fois par jour et par parti. Contrôle sur 499 commentaires : critiques du PAM retrouvées avec une précision de 0,84 et un rappel de 0,69, celles du RNI avec 0,71 et 0,69 (chapitre 09).</figcaption>
+    <figcaption class="l-ar">مصادر الأحداث: <bdi>Le Desk</bdi> و<bdi>Médias24</bdi> (26 غشت)، وهسبريس (28 غشت و7 شتنبر)، و<bdi>France 24</bdi> (10 شتنبر)، و<bdi>Le Desk</bdi> (12 شتنبر). يُحتسب كل حساب مرة واحدة في اليوم لكل حزب. وعند التحقق على 499 تعليقا، رُصدت انتقادات الأصالة والمعاصرة بدقة 0.84 واستدعاء 0.69، وانتقادات الأحرار بدقة 0.71 واستدعاء 0.69 (الفصل 09).</figcaption>
+  </figure>
+  <figure>
+    <p class="l-fr ftitle">Soutenu et critiqué : part des commentateurs de la campagne, par parti</p>
+    <p class="l-ar ftitle">التأييد والانتقاد: حصة معلّقي الحملة حسب الحزب</p>
+    <p class="l-fr fsub">Un compte compte une fois par parti et par position, quel que soit son nombre de commentaires.</p>
+    <p class="l-ar fsub">يُحتسب كل حساب مرة واحدة لكل حزب ولكل موقف، مهما بلغ عدد تعليقاته.</p>
+    <div class="l-fr legend"><span><i class="dot" style="background:var(--accent)"></i>Le soutiennent</span><span><i class="dot" style="background:var(--ink2)"></i>Le critiquent</span></div>
+    <div class="l-ar legend"><span><i class="dot" style="background:var(--accent)"></i>يؤيدونه</span><span><i class="dot" style="background:var(--ink2)"></i>ينتقدونه</span></div>
+    <div class="chart" id="chSupCrit"></div>
+    <figcaption class="l-fr" id="supCritCap">Le PJD est à la fois le parti le plus soutenu (5,8 % des commentateurs) et l'un des plus critiqués (11,0 %) : il divise. Le RNI est le plus critiqué (12,9 %) et presque pas soutenu (1,2 %) : environ dix comptes le critiquent pour un qui le soutient. Le PAM est entre les deux (4,0 % et 8,8 %).</figcaption>
+    <figcaption class="l-ar" id="supCritCapAr">يجمع العدالة والتنمية بين الصدارتين، فهو الحزب الأكثر تأييدا (5.8% من المعلّقين)، ومن أكثر الأحزاب تعرضا للانتقاد (11.0%)، ما يجعله الحزب الأكثر استقطابا. أما الأحرار فيتصدر الأحزاب المنتقَدة (12.9%) ويكاد يغيب عن التأييد (1.2%)، أي نحو عشرة حسابات منتقِدة مقابل حساب مؤيد واحد. ويقع الأصالة والمعاصرة بين الحزبين (4.0% و8.8%).</figcaption>
+  </figure>
+  <div class="grid2" style="margin-top:22px">
+    <div>
+      <h3 class="l-fr" style="margin-top:0">Les personnalités dans les commentaires</h3>
+      <h3 class="l-ar" style="margin-top:0">الشخصيات في التعليقات</h3>
+      <div class="tblwrap"><table class="tbl" id="tPers"></table></div>
+      <p class="l-fr caveat" style="margin-top:12px">Le modèle désigne la personne visée, même quand le commentaire ne la nomme pas : la vidéo et le commentaire auquel il répond servent de contexte (« il faut qu'il dégage » sous une vidéo d'Akhannouch). Soutien et critique : part des commentaires qui la visent. « Sans la nommer » : notre recherche par nom (arabe, français, texte d'origine et traduction) ne la trouve pas ; surnoms compris.</p>
+      <p class="l-ar caveat" style="margin-top:12px">يحدد النموذج الشخصية المستهدفة حتى حين لا يذكرها التعليق بالاسم، مستعينا بسياق الفيديو والتعليق الذي يرد عليه (مثل «خاصو يمشي» تحت فيديو لأخنوش). ويُقصد بالتأييد والانتقاد حصةُ كل منهما من التعليقات التي تستهدف الشخصية، وبعبارة «دون ذكر اسمها» التعليقاتُ التي لا يعثر فيها بحثنا بالاسم (بالعربية والفرنسية، في النص الأصلي والترجمة، بما في ذلك الألقاب) على أي إشارة إليها.</p>
+    </div>
+    <ul class="facts">
+      <li class="l-fr"><b>29 août, pic de la critique du RNI (16,9 % des commentateurs du jour).</b> Akhannouch commente la fuite sur Hespress (842 commentaires) ; Lekjaa répond en meeting.</li>
+      <li class="l-ar"><b>29 غشت، ذروة انتقاد الأحرار (16.9% من معلّقي اليوم).</b> علّق أخنوش على التسريب في هسبريس (842 تعليقا)، وردّ لقجع في تجمع خطابي.</li>
+      <li class="l-fr"><b>Lekjaa, la vraie tête d'affiche du PAM.</b> 17 571 commentaires le visent, dont 43 % sans écrire son nom ; 39 % le soutiennent, le meilleur score après Nabila Mounib (50 %). Akhannouch : 93 % de critiques.</li>
+      <li class="l-ar"><b>لقجع، الوجه الفعلي للأصالة والمعاصرة.</b> تستهدفه 17,571 تعليقا، 43% منها لا تذكر اسمه، و39% منها تؤيده، وهي أعلى نسبة بعد نبيلة منيب (50%). في المقابل، 93% من التعليقات التي تستهدف أخنوش انتقادات.</li>
+      <li class="l-fr"><b>La future cheffe du gouvernement presque invisible.</b> Fatima Zahra El Mansouri, secrétaire générale du PAM, n'est visée que par 2 202 commentaires, huit fois moins que Lekjaa. Elle est nommée le 29 septembre.</li>
+      <li class="l-ar"><b>رئيسة الحكومة المقبلة شبه غائبة.</b> لا تستهدف فاطمة الزهراء المنصوري، الأمينة العامة للأصالة والمعاصرة، إلا 2202 تعليق، أي أقل بثماني مرات مما يستهدف لقجع. وقد عُيّنت رئيسة للحكومة في 29 شتنبر.</li>
+      <li class="l-fr"><b>Benkirane, le plus visé.</b> 28 642 commentaires : 22 % le soutiennent, 78 % le critiquent. Quatre vidéos sur ses larmes en meeting (Driouch, Fquih Ben Salah) totalisent plus de 4 500 commentaires.</li>
+      <li class="l-ar"><b>بنكيران، الشخصية الأكثر استهدافا.</b> 28,642 تعليقا، 22% منها تؤيده و78% تنتقده. وتجمع أربعة فيديوهات عن بكائه في تجمعات خطابية (الدريوش والفقيه بن صالح) أكثر من 4500 تعليق.</li>
+      <li class="l-fr"><b>20 septembre, une équipe de Chouf TV agressée</b> à Oued Ifrane, fief de Mohamed Ouzzine (MP). Deux jours plus tard, la vidéo sur l'état de santé de la journaliste est la plus commentée du 22 septembre (1 726).</li>
+      <li class="l-ar"><b>20 شتنبر، الاعتداء على فريق «شوف تيفي»</b> في واد إفران، معقل محمد أوزين (الحركة الشعبية). وبعد يومين، كان الفيديو المخصص للحالة الصحية للصحافية الأكثر تعليقا يوم 22 شتنبر (1726 تعليقا).</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- 05 URNES -->
+<section class="chap" id="urnes"><div class="wrap">
+  <div class="l-fr num">05 · LE TEST</div>
+  <div class="l-ar num">05 · محكّ الصناديق</div>
+  <h2 class="l-fr">Le retour du PJD se voyait sur YouTube, grossi près de trois fois</h2>
+  <h2 class="l-ar">يوتيوب رصد عودة العدالة والتنمية، لكنه ضخّمها نحو ثلاث مرات</h2>
+  <p class="l-fr lede">Nous comparons, parti par parti, la part des comptes qui le soutiennent dans les commentaires à sa part des voix. YouTube grossit le PJD et la gauche, voit le PAM à peu près à sa taille, et sous-estime le RNI, l'Istiqlal et les partis de notables. Ce qui suit le mieux le vote reste l'offre des médias.</p>
+  <p class="l-ar lede">نقارن، حزبا حزبا، حصة الحسابات المؤيدة له في التعليقات بحصته من الأصوات. ويتبين أن يوتيوب يضخّم العدالة والتنمية واليسار، ويُظهر الأصالة والمعاصرة بحجم قريب من حجمه الحقيقي، في حين يقلّل من وزن الأحرار والاستقلال وأحزاب الأعيان. أما المؤشر الأقرب إلى نتائج التصويت، فيبقى حضور الحزب في وسائل الإعلام.</p>
+  <figure>
+    <p class="l-fr ftitle">Part des soutiens en ligne et part des voix, par parti</p>
+    <p class="l-ar ftitle">حصة المؤيدين على الإنترنت وحصة الأصوات، حسب الحزب</p>
+    <p class="l-fr fsub">Soutiens : comptes distincts qui soutiennent le parti (un compte compte une fois par parti). Voix : listes régionales, ramenées aux neuf partis comparés.</p>
+    <p class="l-ar fsub">المؤيدون: حسابات مختلفة تؤيد الحزب (يُحتسب كل حساب مرة واحدة لكل حزب). الأصوات: أصوات اللوائح الجهوية، محسوبة على الأحزاب التسعة المقارَنة.</p>
+    <div class="l-fr legend"><span><i class="dot" style="background:var(--accent)"></i>Soutiens sur YouTube</span><span><i class="dot" style="background:var(--neutral)"></i>Voix le 23 septembre</span></div>
+    <div class="l-ar legend"><span><i class="dot" style="background:var(--accent)"></i>المؤيدون على يوتيوب</span><span><i class="dot" style="background:var(--neutral)"></i>الأصوات يوم 23 شتنبر</span></div>
+    <div class="chart" id="chUrnes"></div>
+    <figcaption class="l-fr">Voix : part parmi les neuf partis comparés (PJD : 15,1 % des voix exprimées, 16,4 % des voix de ces neuf partis). Sources : ministère de l'Intérieur, d'après FNH (sièges) et Wikipédia FR et EN (voix des listes régionales). « Gauche » : PSU, FGD et Alliance de gauche. MP : les soutiens de Mustapha Lakhsem ne comptent pas pour le MP (voir ci-dessous).</figcaption>
+    <figcaption class="l-ar">الأصوات: الحصة من أصوات الأحزاب التسعة المقارَنة (العدالة والتنمية: 15.1% من الأصوات المعبَّر عنها، و16.4% من أصوات هذه الأحزاب). المصادر: وزارة الداخلية نقلا عن <bdi>FNH</bdi> (المقاعد)، وويكيبيديا بالفرنسية والإنجليزية (أصوات اللوائح الجهوية). «اليسار»: الحزب الاشتراكي الموحد، وفيدرالية اليسار الديمقراطي، وتحالف اليسار. الحركة الشعبية: لا يُحتسب لها مؤيدو مصطفى لخصم (انظر أدناه).</figcaption>
+  </figure>
+  <h3 class="l-fr">Le tableau complet</h3>
+  <h3 class="l-ar">الجدول الكامل</h3>
+  <div class="tblwrap"><table class="tbl" id="tParties"></table></div>
+  <div class="grid2" style="margin-top:26px">
+    <figure>
+
+      <p class="l-fr ftitle">Part des commentateurs de la semaine qui soutiennent chaque parti</p>
+      <p class="l-ar ftitle">حصة معلّقي الأسبوع المؤيدين لكل حزب</p>
+      <div class="l-fr legend"><span><i style="background:var(--pjd)"></i>PJD</span><span><i style="background:var(--pam)"></i>PAM</span><span><i style="background:var(--rni)"></i>RNI</span><span><i style="background:var(--ist)"></i>Istiqlal</span></div>
+      <div class="l-ar legend"><span><i style="background:var(--pjd)"></i>العدالة والتنمية</span><span><i style="background:var(--pam)"></i>الأصالة والمعاصرة</span><span><i style="background:var(--rni)"></i>الأحرار</span><span><i style="background:var(--ist)"></i>الاستقلال</span></div>
+      <div class="chart" id="chWeek"></div>
+      <figcaption class="l-fr">Un compte compte une fois par semaine et par parti. Dernière semaine : 3 jours (20 au 22 septembre).</figcaption>
+      <figcaption class="l-ar">يُحتسب كل حساب مرة واحدة في الأسبوع لكل حزب. ويقتصر الأسبوع الأخير على 3 أيام (من 20 إلى 22 شتنبر).</figcaption>
+    </figure>
+    <ul class="facts">
+      <li class="l-fr"><b>PJD : bonne direction, ampleur exagérée.</b> Ses soutiens passent de 2,7 % à 7,7 % des commentateurs en un mois. Il passe de 13 à 54 sièges, mais avec 16,4 % des voix des neuf partis, pas 44 %. La gauche est dans le même cas, à plus petite échelle : 9,1 % des soutiens, 3,1 % des voix.</li>
+      <li class="l-ar"><b>العدالة والتنمية: اتجاه صحيح وحجم مبالغ فيه.</b> ارتفعت حصة مؤيديه من 2.7% إلى 7.7% من المعلّقين في شهر واحد، وانتقل الحزب من 13 إلى 54 مقعدا، لكن بـ16.4% من أصوات الأحزاب التسعة، لا بـ44%. ويسري الأمر نفسه على اليسار بدرجة أقل: 9.1% من المؤيدين، مقابل 3.1% من الأصوات.</li>
+      <li class="l-fr"><b>PAM, à peu près à sa taille ; RNI, sous-estimé.</b> Le PAM a 30,3 % des soutiens en ligne pour 23,9 % des voix, et arrive premier (97 sièges). Le RNI n'a que 9,3 % des soutiens pour 14,3 % des voix, et perd 36 sièges. Ses soutiens restent stables autour de 1 % des commentateurs toute la campagne.</li>
+      <li class="l-ar"><b>الأصالة والمعاصرة بحجم قريب من حجمه، والأحرار دون وزنه.</b> حصد الأصالة والمعاصرة 30.3% من المؤيدين على الإنترنت، مقابل 23.9% من الأصوات، وتصدّر النتائج بـ97 مقعدا. أما الأحرار فلم تتجاوز حصته 9.3% من المؤيدين، مقابل 14.3% من الأصوات، وخسر 36 مقعدا، فيما بقي مؤيدوه في حدود 1% من المعلّقين طوال الحملة.</li>
+      <li class="l-fr"><b>Istiqlal, UC, USFP : invisibles.</b> Ensemble, 29,2 % des voix des neuf partis, 4,0 % des soutiens en ligne. Le MP aussi (1,4 % des soutiens, 7,8 % des voix) : Mustapha Lakhsem a quitté le MP pour le MDS (symbole du palmier) : ses soutiens ne comptent pas pour le MP. Leur vote passe par des réseaux locaux de notables, pas par YouTube.</li>
+      <li class="l-ar"><b>الاستقلال والاتحاد الدستوري والاتحاد الاشتراكي: غياب شبه تام.</b> فالأحزاب الثلاثة مجتمعة تحصد 29.2% من أصوات الأحزاب التسعة، مقابل 4.0% فقط من المؤيدين على الإنترنت. والأمر نفسه بالنسبة للحركة الشعبية (1.4% من المؤيدين، و7.8% من الأصوات)، إذ غادرها مصطفى لخصم والتحق بالحركة الديمقراطية الاجتماعية (رمز النخلة)، فلا يُحتسب مؤيدوه لها. وتمر أصوات هذه الأحزاب عبر شبكات الأعيان المحلية، لا عبر يوتيوب.</li>
+      <li class="l-fr"><b>Ce qui suit le mieux le vote, c'est l'offre des médias.</b> Corrélation de rang avec la part des voix : 0,82 pour la part des vidéos qui parlent du parti (9 partis : un indice, pas une preuve). La même mesure sur les soutiens en ligne donne 0,58.</li>
+      <li class="l-ar"><b>المؤشر الأقرب إلى التصويت هو الحضور في وسائل الإعلام.</b> إذ يبلغ معامل ارتباط الرتب مع حصة الأصوات 0.82 بالنسبة لحصة الفيديوهات التي تتحدث عن الحزب (9 أحزاب فقط، ما يجعله مؤشرا لا دليلا)، مقابل 0.58 بالنسبة للمؤيدين على الإنترنت.</li>
+    </ul>
+  </div>
+  <p class="l-fr caveat"><b>Pourquoi seulement les soutiens.</b> Un électeur vote pour un parti, jamais contre : celui qui critique un parti vote pour un autre, ou ne vote pas. Les critiques ne se retranchent donc pas des soutiens. Dans cette élection, le RNI est le parti le plus critiqué (environ dix comptes pour un qui le soutient) et obtient pourtant 14,3 % des voix des neuf partis, plus que sa part des soutiens en ligne (9,3 %).</p>
+  <p class="l-ar caveat"><b>لماذا نكتفي بالمؤيدين؟</b> الناخب يصوّت لحزب، لا ضد حزب، ومن ينتقد حزبا إما يصوّت لغيره أو يمتنع، ولذلك لا تُطرح الانتقادات من التأييد. ففي هذه الانتخابات، كان الأحرار الحزب الأكثر تعرضا للانتقاد (نحو عشرة حسابات منتقِدة مقابل حساب مؤيد واحد)، ومع ذلك حصل على 14.3% من أصوات الأحزاب التسعة، أي أكثر من حصته من المؤيدين على الإنترنت (9.3%).</p>
+  <p class="l-fr caveat"><b>Limite de fond.</b> Une seule élection et neuf partis : aucune comparaison de ce type ne peut établir que YouTube « prédit » le vote. Nous avons contrôlé le modèle parti par parti, sur 499 commentaires. PJD, face à GPT-6 Luna : précision et rappel 0,83, et le PJD pèse 43 % des soutiens selon les deux modèles ; le × 2,7 ne vient donc pas du modèle. PAM et RNI, face à une relecture faite avec les appartenances de 2026 (Luna rangeait Fouzi Lekjaa au RNI) : soutiens au PAM, précision 0,70 et rappel 0,64. Le soutien au RNI n'a qu'un cas dans l'échantillon : son niveau n'est pas vérifié.</p>
+  <p class="l-ar caveat"><b>حدّ جوهري.</b> انتخابات واحدة وتسعة أحزاب لا تكفي لإثبات أن يوتيوب «يتنبأ» بالتصويت. وقد تحققنا من النموذج حزبا حزبا على 499 تعليقا. بالنسبة للعدالة والتنمية، ومقارنة بـ<bdi>GPT-6 Luna</bdi>، بلغت الدقة والاستدعاء 0.83، ويمثل الحزب 43% من المؤيدين بحسب النموذجين معا، ما يعني أن النسبة <bdi dir="ltr">× 2.7</bdi> ليست من صنع النموذج. أما الأصالة والمعاصرة والأحرار، فقورنا بقراءة ثانية تعتمد انتماءات 2026 (إذ كان <bdi>Luna</bdi> يضع فوزي لقجع في صفوف الأحرار)، فبلغت دقة رصد تأييد الأصالة والمعاصرة 0.70 والاستدعاء 0.64. ولا تضم العينة سوى حالة واحدة لتأييد الأحرار، ما يجعل مستواه غير متحقَّق منه.</p>
+</div></section>
+
+<!-- 06 MILITANTS -->
+<section class="chap" id="militants"><div class="wrap">
+  <div class="l-fr num">06 · QUI PARLE</div>
+  <div class="l-ar num">06 · من يتكلم</div>
+  <h2 class="l-fr">Le PJD a les soutiens les plus nombreux, et les plus actifs</h2>
+  <h2 class="l-ar">للعدالة والتنمية أكبر عدد من المؤيدين، وأكثرهم نشاطا</h2>
+  <p class="l-fr lede">Aucun signe de campagne coordonnée : pas de vague de comptes récents, et les seuls textes repris mot pour mot par plusieurs comptes sont des slogans courts. Le PJD a en revanche des militants très actifs, qui écrivent beaucoup et reprennent leur propre message sur plusieurs vidéos.</p>
+  <p class="l-ar lede">لا مؤشر على حملة منسَّقة، فلا موجة من الحسابات الحديثة، والنصوص الوحيدة التي تكررها عدة حسابات حرفيا شعارات قصيرة. في المقابل، يملك العدالة والتنمية أنصارا نشيطين جدا، يكتبون كثيرا ويعيدون نشر رسائلهم تحت عدة فيديوهات.</p>
+  <div class="tblwrap"><table class="tbl" id="tConc"></table></div>
+  <p class="l-fr caveat" style="margin-top:10px"><b>Lecture.</b> « Comptes qui le soutiennent » : comptes YouTube qui ont écrit au moins un commentaire de soutien au parti pendant la campagne. Ce ne sont pas des membres du parti. Un compte qui écrit dix commentaires de soutien compte une fois.</p>
+  <p class="l-ar caveat" style="margin-top:10px"><b>كيف تُقرأ.</b> «الحسابات المؤيدة» حسابات على يوتيوب كتبت تعليقا واحدا على الأقل يؤيد الحزب خلال الحملة، وليست حسابات أعضاء فيه. ويُحتسب الحساب الذي كتب عشرة تعليقات مؤيدة مرة واحدة.</p>
+  <div class="grid2" style="margin-top:22px">
+    <ul class="facts">
+      <li class="l-fr"><b>Aucune campagne coordonnée repérée.</b> Parmi les commentaires de soutien au PJD, 885 sur 17 434 (5,1 %) ont un texte repris mot pour mot par au moins trois comptes : ce sont des slogans courts (« <bdi class="ar">العدالة والتنمية</bdi> », « <bdi class="ar">كلنا العدالة والتنمية</bdi> »). Aucun message long n'est repris à l'identique par plusieurs comptes.</li>
+      <li class="l-ar"><b>لم نرصد أي حملة منسَّقة.</b> من بين 17,434 تعليقا مؤيدا للعدالة والتنمية، تكرر نص 885 تعليقا (5.1%) حرفيا لدى ثلاثة حسابات على الأقل، وهي شعارات قصيرة مثل «العدالة والتنمية» و«كلنا العدالة والتنمية». ولا توجد أي رسالة طويلة كررتها عدة حسابات بالنص نفسه.</li>
+      <li class="l-fr"><b>Pas de vague de comptes récents.</b> Les comptes créés après le 1er juin 2026 font 5 à 7 % des soutiens de chaque parti du tableau : aucun ne se détache.</li>
+      <li class="l-ar"><b>لا موجة من الحسابات الحديثة.</b> تمثل الحسابات المُنشأة بعد فاتح يونيو 2026 ما بين 5% و7% من مؤيدي كل حزب في الجدول، ولا يتميز أي حزب عن غيره.</li>
+      <li class="l-fr"><b>Des militants très actifs.</b> 2,7 commentaires par compte qui soutient le PJD, contre 1,1 à 1,6 pour les autres partis du tableau. 47 comptes reprennent leur propre message pro-PJD sur 5 vidéos ou plus : 12,8 % des commentaires pro-PJD.</li>
+      <li class="l-ar"><b>أنصار نشيطون جدا.</b> يكتب كل حساب مؤيد للعدالة والتنمية 2.7 تعليق في المتوسط، مقابل 1.1 إلى 1.6 لدى بقية أحزاب الجدول. ويعيد 47 حسابا نشر رسائلها المؤيدة للحزب تحت 5 فيديوهات أو أكثر، وهو ما يمثل 12.8% من التعليقات المؤيدة للعدالة والتنمية.</li>
+      <li class="l-fr"><b>384 comptes écrivent 50 commentaires ou plus</b> : 10,1 % de toute la conversation. Parmi eux, 14,3 % des commentaires soutiennent le PJD, contre 5,1 % pour l'ensemble.</li>
+      <li class="l-ar"><b>384 حسابا كتبت 50 تعليقا أو أكثر</b>، أي 10.1% من النقاش كله. و14.3% من تعليقات هذه الحسابات تؤيد العدالة والتنمية، مقابل 5.1% في المجموع.</li>
+    </ul>
+    <div class="box">
+      <h4 class="l-fr">Un engagement hors norme</h4>
+      <h4 class="l-ar">تفاعل خارج المألوف</h4>
+      <p class="l-fr" style="margin:0 0 10px;font-size:14.5px">Une petite chaîne, 11 vidéos pertinentes, hostile au PJD dans ses titres. Nous ne la nommons pas : rien dans nos données ne met en cause son auteur.</p>
+      <p class="l-ar" style="margin:0 0 10px;font-size:14.5px">قناة صغيرة نشرت 11 فيديو ذا صلة، تعادي العدالة والتنمية في عناوينها. لا نذكر اسمها، إذ لا شيء في بياناتنا يدين صاحبها.</p>
+      <div class="tblwrap"><table class="tbl" id="tAnas"></table></div>
+      <p class="l-fr" style="margin:10px 0 0;font-size:13.5px;color:var(--ink2)">C'est aussi la chaîne où se concentrent le plus de menaces (353, soit 4,5 % de ses commentaires, trois fois la moyenne). Ses commentateurs ne sont pas des comptes récents (6 %). Un engagement aussi élevé peut venir d'un public très mobilisé comme d'une animation organisée : <b>nos données ne permettent pas de trancher</b>.</p>
+      <p class="l-ar" style="margin:10px 0 0;font-size:13.5px;color:var(--ink2)">وهي أيضا القناة التي تسجل أعلى نسبة من التهديدات (353 تهديدا، أي 4.5% من تعليقاتها، وهو ثلاثة أضعاف المتوسط)، علما أن معلّقيها ليسوا حسابات حديثة (6%). وقد يصدر تفاعل بهذا الارتفاع عن جمهور شديد التعبئة، كما قد يصدر عن تنشيط منظَّم، و<b>بياناتنا لا تسمح بالحسم</b>.</p>
+    </div>
+  </div>
+  <p class="l-fr caveat"><b>Ce que ces tests ne voient pas.</b> Les comptes anciens achetés ou réactivés, les textes reformulés, les commentaires supprimés avant notre collecte et la synchronisation fine dans le temps. Ils n'excluent pas une campagne coordonnée ; ils n'en montrent pas.</p>
+  <p class="l-ar caveat"><b>ما لا تكشفه هذه الاختبارات.</b> الحسابات القديمة المشتراة أو المعاد تفعيلها، والنصوص المعاد صياغتها، والتعليقات المحذوفة قبل جمع البيانات، والتزامن الدقيق في توقيت النشر. فهذه الاختبارات لا تستبعد وجود حملة منسَّقة، لكنها لا تُظهره.</p>
+</div></section>
+
+<!-- 07 REJET -->
+<section class="chap" id="rejet"><div class="wrap">
+  <div class="l-fr num">07 · LE PREMIER PARTI DE YOUTUBE</div>
+  <div class="l-ar num">07 · الحزب الأول على يوتيوب</div>
+  <h2 class="l-fr">Le premier parti des commentaires : contre tous</h2>
+  <h2 class="l-ar">الحزب الأول في التعليقات: «ضد الجميع»</h2>
+  <p class="l-fr lede">Un commentaire sur six rejette toute la classe politique. Ceux qui disent qu'ils ne voteront pas ne soutiennent personne. Mais à la fin de la campagne, ce sont les annonces de vote qui montent, pas l'abstention.</p>
+  <p class="l-ar lede">يرفض تعليق من كل ستة الطبقة السياسية برمّتها، ولا يؤيد من يعلنون عزوفهم عن التصويت أي حزب. غير أن ما يرتفع في نهاية الحملة هو إعلانات التصويت، لا العزوف.</p>
+  <div class="grid2">
+    <figure>
+      <p class="l-fr ftitle">Annonces de vote et de boycott, par semaine</p>
+      <p class="l-ar ftitle">إعلانات التصويت والمقاطعة، حسب الأسبوع</p>
+      <p class="l-fr fsub">Part des commentaires de la semaine</p>
+      <p class="l-ar fsub">حصة تعليقات الأسبوع</p>
+      <div class="l-fr legend"><span><i style="background:var(--accent)"></i>« Je vais voter »</span><span><i style="background:var(--neutral)"></i>Boycott ou abstention</span></div>
+      <div class="l-ar legend"><span><i style="background:var(--accent)"></i>«سأصوّت»</span><span><i style="background:var(--neutral)"></i>مقاطعة أو عزوف</span></div>
+      <div class="chart" id="chVote"></div>
+      <figcaption class="l-fr">Classement Gemma 4 12B, axe « vote » : accord κ = 0,73 avec GPT-6 Luna sur 499 commentaires.</figcaption>
+      <figcaption class="l-ar">تصنيف <bdi>Gemma 4 12B</bdi>، محور «التصويت»: اتفاق بمعامل <bdi dir="ltr">κ = 0.73</bdi> مع <bdi>GPT-6 Luna</bdi> على 499 تعليقا.</figcaption>
+    </figure>
+    <ul class="facts">
+      <li class="l-fr"><b>16,7 % critiquent la « classe politique » en bloc</b>, sans nommer de parti : plus du double des critiques visant n'importe quel parti nommé (RNI : 7,5 %).</li>
+      <li class="l-ar"><b>16.7% ينتقدون «الطبقة السياسية» جملة</b> دون تسمية أي حزب، أي أكثر من ضعف الانتقادات الموجهة إلى أي حزب بعينه (الأحرار: 7.5%).</li>
+      <li class="l-fr"><b>Les annonces de boycott ne désignent personne</b> : 97 % ne soutiennent aucun parti, 45 % visent toute la classe politique ; colère (42 %) et méfiance (29 %).</li>
+      <li class="l-ar"><b>إعلانات المقاطعة لا تسمّي أحدا</b>: 97% منها لا تؤيد أي حزب، و45% تستهدف الطبقة السياسية كلها، ويغلب عليها الغضب (42%) والارتياب (29%).</li>
+      <li class="l-fr"><b>Les annonces de vote triplent en un mois</b> (1,4 % à 4,2 %), et 38 % d'entre elles soutiennent le PJD. Le boycott reste stable (2,3 % à 3,1 %).</li>
+      <li class="l-ar"><b>إعلانات التصويت تضاعفت ثلاث مرات في شهر</b> (من 1.4% إلى 4.2%)، و38% منها تؤيد العدالة والتنمية، في حين بقيت إعلانات المقاطعة شبه مستقرة (من 2.3% إلى 3.1%).</li>
+      <li class="l-fr"><b>Le réel va dans l'autre sens</b> : participation de 38,08 %, contre 50,86 % en 2021 (les législatives étaient alors couplées aux communales). Les abstentionnistes ne commentent pas : YouTube les sous-estime.</li>
+      <li class="l-ar"><b>غير أن الواقع سار في الاتجاه المعاكس</b>، إذ بلغت نسبة المشاركة 38.08%، مقابل 50.86% عام 2021 (حين تزامنت الانتخابات التشريعية مع الانتخابات الجماعية). فالممتنعون لا يعلّقون، ولذلك يُظهرهم يوتيوب أقل مما هم عليه.</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- 08 TOXICITÉ -->
+<section class="chap" id="toxicite"><div class="wrap">
+  <div class="l-fr num">08 · LE TON</div>
+  <div class="l-ar num">08 · النبرة</div>
+  <h2 class="l-fr">Plus le sujet s'éloigne des partis, plus le ton se durcit</h2>
+  <h2 class="l-ar">كلما ابتعد الموضوع عن الأحزاب، اشتدت حدة الخطاب</h2>
+  <p class="l-fr lede">28,7 % des commentaires sont signalés par la modération automatique, presque tous pour harcèlement. La haine et les menaces se concentrent sur la souveraineté, pas sur les partis.</p>
+  <p class="l-ar lede">رصد نظام الإشراف الآلي 28.7% من التعليقات، جلّها بسبب المضايقة. وتتركز الكراهية والتهديدات حول السيادة، لا حول الأحزاب.</p>
+  <div class="grid2">
+    <figure>
+      <div class="seg" id="segTox"><button class="on" data-v="target"><span class="l-fr">Par cible critiquée</span><span class="l-ar">حسب الجهة المنتقَدة</span></button><button data-v="theme"><span class="l-fr">Par thème</span><span class="l-ar">حسب الموضوع</span></button></div>
+      <p class="ftitle" id="toxTitle">Part des commentaires signalés</p>
+      <div class="l-fr legend"><span><i class="dot" style="background:var(--rule2)"></i>Signalés (au moins une catégorie)</span><span><i class="dot" style="background:var(--accent)"></i>Haine</span></div>
+      <div class="l-ar legend"><span><i class="dot" style="background:var(--rule2)"></i>مرصودة (فئة واحدة على الأقل)</span><span><i class="dot" style="background:var(--accent)"></i>كراهية</span></div>
+      <div class="chart" id="chTox"></div>
+      <figcaption class="l-fr">Modération OpenAI (omni-moderation-latest), 13 catégories regroupées en 7 axes, sur la traduction française. Par cible : « gouvernement » retiré, le modèle le donne encore trop souvent (chapitre 09).</figcaption>
+      <figcaption class="l-ar">أداة الرصد: <bdi>omni-moderation-latest</bdi> من <bdi>OpenAI</bdi>، بـ13 فئة جُمعت في 7 محاور، مطبّقة على الترجمة الفرنسية. في الرسم حسب الجهة، حُذفت «الحكومة» لأن النموذج لا يزال يُسندها أكثر من اللازم (الفصل 09).</figcaption>
+    </figure>
+    <ul class="facts">
+      <li class="l-fr"><b>Souveraineté : 48 % signalés, 22 % de haine, 4,4 % de menaces</b>, trois fois le taux moyen. Sur les 5 034 menaces de la campagne, 48 % ne visent ni parti ni personne et 28 % visent toute la classe politique.</li>
+      <li class="l-ar"><b>السيادة: 48% من التعليقات مرصودة، و22% كراهية، و4.4% تهديدات</b>، أي ثلاثة أضعاف المعدل. ومن أصل 5034 تهديدا خلال الحملة، لا يستهدف 48% منها أي حزب أو جهة، في حين يستهدف 28% الطبقة السياسية كلها.</li>
+      <li class="l-fr"><b>Critiquer un parti, c'est souvent l'insulter</b> : 49 % des critiques du PJD sont signalées, 45 % pour le MP, 41 % pour le RNI, 39 % pour le PAM, contre 20 % pour les commentaires qui ne visent personne.</li>
+      <li class="l-ar"><b>انتقاد حزب كثيرا ما يعني شتمه</b>: 49% من انتقادات العدالة والتنمية مرصودة، مقابل 45% للحركة الشعبية، و41% للأحرار، و39% للأصالة والمعاصرة، و20% فقط للتعليقات التي لا تستهدف أحدا.</li>
+      <li class="l-fr"><b>Un entretien de Nabila Mounib concentre la haine contre la gauche.</b> Les 1 435 critiques de la gauche comptent 20 % de haine. Plus d'un quart tombe le 22 septembre (404), dont 283 sous l'entretien où elle appelle à une monarchie parlementaire.</li>
+      <li class="l-ar"><b>حوار لنبيلة منيب يركّز الكراهية ضد اليسار.</b> 20% من الانتقادات الموجهة إلى اليسار، وعددها 1435، تحمل كراهية. ويقع أكثر من ربعها يوم 22 شتنبر (404)، منها 283 تحت الحوار الذي دعت فيه إلى ملكية برلمانية.</li>
+      <li class="l-fr"><b>La toxicité ne rapporte pas de j'aime.</b> 1,16 j'aime en moyenne pour un commentaire signalé, 1,76 pour les autres. Parmi le 1 % le plus aimé, l'approbation domine (33 %), puis la colère (20 %).</li>
+      <li class="l-ar"><b>الحدّة لا تجلب الإعجابات.</b> ينال التعليق المرصود 1.16 إعجاب في المتوسط، مقابل 1.76 لبقية التعليقات. وضمن الـ1% الأكثر إعجابا، يغلب الاستحسان (33%)، يليه الغضب (20%).</li>
+    </ul>
+  </div>
+  <p class="l-fr caveat"><b>Limite.</b> La modération lit la traduction française : sur un essai, « <bdi class="ar">اخنوش ارحل، الشفارة كلهم</bdi> » (« Akhannouch dégage, tous des voleurs ») n'est pas signalé en arabe, mais il l'est en français (harcèlement, 0,65). Le harcèlement inclut l'insulte envers un élu, pas seulement les attaques contre un particulier. Aucune analyse du groupe visé par la haine n'a été faite.</p>
+  <p class="l-ar caveat"><b>حدود.</b> يقرأ نظام الرصد الترجمة الفرنسية: ففي تجربة، لم يُرصد تعليق «اخنوش ارحل، الشفارة كلهم» بنصه العربي، بينما رُصد في ترجمته الفرنسية (مضايقة، 0.65). وتشمل المضايقة شتم المنتخَبين، لا الهجوم على الأفراد العاديين فقط. ولم نُجرِ أي تحليل للفئات التي تستهدفها الكراهية.</p>
+</div></section>
+
+<!-- 09 MÉTHODE -->
+<section class="chap" id="methode"><div class="wrap">
+  <div class="l-fr num">09 · MÉTHODE ET LIMITES</div>
+  <div class="l-ar num">09 · المنهجية والحدود</div>
+  <h2 class="l-fr">Comment ces chiffres ont été produits</h2>
+  <h2 class="l-ar">كيف أُنتجت هذه الأرقام</h2>
+  <div class="tblwrap"><table class="tbl method">
+    <thead class="l-fr"><tr><th>Étape</th><th style="text-align:left">Ce qui a été fait</th><th style="text-align:left">Contrôle</th></tr></thead>
+    <thead class="l-ar"><tr><th>المرحلة</th><th style="text-align:start">ما أُنجز</th><th style="text-align:start">التحقق</th></tr></thead>
+    <tbody>
+      <tr class="l-fr"><td class="l"><b>Collecte</b></td><td class="l">59 mots-clés (français, arabe, darija) × 31 jours = 1 829 recherches YouTube, <code>regionCode = MA</code>, 50 vidéos au plus par recherche ; puis toutes les vidéos, tous les commentaires, toutes les réponses et toutes les chaînes. 17 261 vidéos, 564 358 commentaires.</td><td class="l">1 829 recherches sur 1 829, 0 échec</td></tr>
+      <tr class="l-ar"><td class="l"><b>جمع البيانات</b></td><td class="l">59 كلمة مفتاحية (بالفرنسية والعربية والدارجة) × 31 يوما = 1829 عملية بحث على يوتيوب، <code>regionCode = MA</code>، بحد أقصى 50 فيديو لكل بحث؛ ثم جُمعت كل الفيديوهات والتعليقات والردود والقنوات: 17,261 فيديو و564,358 تعليقا.</td><td class="l">1829 عملية بحث من أصل 1829، دون أي إخفاق</td></tr>
+      <tr class="l-fr"><td class="l"><b>Traduction</b></td><td class="l">Chaque texte traduit en français (Gemini, contexte « Maroc ») ; la langue d'origine est détectée en même temps.</td><td class="l">581 419 textes sur 581 619</td></tr>
+      <tr class="l-ar"><td class="l"><b>الترجمة</b></td><td class="l">ترجمة كل نص إلى الفرنسية (<bdi>Gemini</bdi>، مع سياق «المغرب»)، ورصد لغته الأصلية في الوقت نفسه.</td><td class="l">581,419 نصا من أصل 581,619</td></tr>
+      <tr class="l-fr"><td class="l"><b>Pertinence</b></td><td class="l">Chaque vidéo classée pertinente (élections, partis, actualité publique marocaine : prix, Sahara, diplomatie, monarchie) ou hors sujet (GPT-6 Luna). 15 451 retenues ; seuls leurs commentaires sont analysés.</td><td class="l">98,7 % d'accord avec un réglage plus coûteux, sur 1 000 vidéos</td></tr>
+      <tr class="l-ar"><td class="l"><b>الصلة بالموضوع</b></td><td class="l">صُنّف كل فيديو إما ذا صلة (الانتخابات، والأحزاب، والشأن العام المغربي: الأسعار، والصحراء، والدبلوماسية، والملكية) أو خارج الموضوع (<bdi>GPT-6 Luna</bdi>). واحتُفظ بـ15,451 فيديو، ولا تُحلَّل إلا تعليقاتها.</td><td class="l">اتفاق بنسبة 98.7% مع إعداد أعلى كلفة، على 1000 فيديو</td></tr>
+      <tr class="l-fr"><td class="l"><b>Commentaires</b></td><td class="l">Les 32 808 commentaires sans aucune lettre (emojis seuls, chiffres), soit 5,8 % des 564 358, ne sont pas envoyés au modèle : seuls, ils ne disent ni le parti ni la position, et ajouteraient du bruit. Partis soutenus, partis critiqués, intention de vote, thèmes, sentiment (Gemma 4 12B, 5 commentaires par requête). 340 000 commentaires classés ; 338 893 retenus, du 23 août au 22 septembre (heure du Maroc) : les 1 107 postés le 23 septembre entre 0 h et 1 h sont écartés. Partis et personnalités visés : seconde passe (Gemma 4 12B, 10 commentaires par requête, consigne précisant les appartenances de 2026) sur les 191 305 commentaires que la première lie à un parti, au gouvernement ou à la classe politique. Les 360 où le modèle liste 5 partis ou plus sont écartés des axes partis.</td><td class="l">Face à GPT-6 Luna, 499 commentaires : κ 0,73 (vote), F1 0,69 (thèmes), 51 sentiments justes sur 60 ; PJD soutenu, précision et rappel 0,83. PAM et RNI, face à une relecture avec les appartenances de 2026 : critiques 0,84 / 0,69 et 0,71 / 0,69, soutiens au PAM 0,70 / 0,64 ; « gouvernement » encore trop donné (précision 0,39).</td></tr>
+      <tr class="l-ar"><td class="l"><b>التعليقات</b></td><td class="l">لا تُرسَل إلى النموذج التعليقات الخالية من أي حرف (رموز تعبيرية أو أرقام فقط)، وعددها 32,808، أي 5.8% من 564,358 تعليقا، لأنها لا تدل وحدها على حزب أو موقف، ولن تضيف إلا التشويش. ويرصد النموذج (<bdi>Gemma 4 12B</bdi>، 5 تعليقات لكل طلب) الأحزاب المؤيَّدة والمنتقَدة، ونية التصويت، والمواضيع، والمشاعر. صُنّف 340,000 تعليق، احتُفظ منها بـ338,893 نُشرت من 23 غشت إلى 22 شتنبر (بتوقيت المغرب)، واستُبعدت 1107 تعليقات نُشرت يوم 23 شتنبر بين منتصف الليل والساعة الواحدة. أما الأحزاب والشخصيات المستهدفة، فخضعت لتمرير ثانٍ (<bdi>Gemma 4 12B</bdi>، 10 تعليقات لكل طلب، بتعليمات توضح انتماءات 2026) شمل 191,305 تعليقات ربطها التمرير الأول بحزب أو بالحكومة أو بالطبقة السياسية. واستُبعدت من محاور الأحزاب 360 تعليقا ذكر فيها النموذج 5 أحزاب أو أكثر.</td><td class="l">مقارنة بـ<bdi>GPT-6 Luna</bdi> على 499 تعليقا: κ بقيمة 0.73 (التصويت)، وF1 بقيمة 0.69 (المواضيع)، و51 تصنيفا صحيحا للمشاعر من أصل 60؛ تأييد العدالة والتنمية: دقة واستدعاء 0.83. الأصالة والمعاصرة والأحرار، مقارنة بقراءة ثانية تعتمد انتماءات 2026: الانتقادات 0.84 / 0.69 و0.71 / 0.69، وتأييد الأصالة والمعاصرة 0.70 / 0.64؛ أما «الحكومة» فلا تزال تُسند أكثر من اللازم (دقة 0.39).</td></tr>
+      <tr class="l-fr"><td class="l"><b>Modération</b></td><td class="l">API de modération d'OpenAI sur la traduction française ; 13 catégories en 7 axes.</td><td class="l">340 000 commentaires, 0 échec</td></tr>
+      <tr class="l-ar"><td class="l"><b>رصد الإساءة</b></td><td class="l">واجهة الرصد من <bdi>OpenAI</bdi> مطبّقة على الترجمة الفرنسية؛ 13 فئة في 7 محاور.</td><td class="l">340,000 تعليق، دون أي إخفاق</td></tr>
+      <tr class="l-fr"><td class="l"><b>Incertitude</b></td><td class="l">Intervalles à 95 % par rééchantillonnage des vidéos (1 000 tirages), car les commentaires d'une même vidéo se ressemblent.</td><td class="l">Soutien au PJD : <span data-ci="sPJD"></span> ; critique du PJD : <span data-ci="cPJD"></span></td></tr>
+      <tr class="l-ar"><td class="l"><b>هامش عدم اليقين</b></td><td class="l">مجالات ثقة بنسبة 95% بإعادة سحب عيّنات من الفيديوهات (1000 سحب)، لأن تعليقات الفيديو الواحد تتشابه.</td><td class="l">تأييد العدالة والتنمية: <bdi dir="ltr" data-ci="sPJD"></bdi>؛ انتقاد العدالة والتنمية: <bdi dir="ltr" data-ci="cPJD"></bdi></td></tr>
+    </tbody>
+  </table></div>
+  <div style="margin-top:22px">
+    <div>
+      <h3 class="l-fr" style="margin-top:0">Ce que cette étude ne dit pas</h3>
+      <h3 class="l-ar" style="margin-top:0">ما لا تقوله هذه الدراسة</h3>
+      <ul class="facts">
+        <li class="l-fr"><b>Ce que pensent les Marocains.</b> Le corpus décrit le débat YouTube, pas l'opinion : 111 388 comptes, dont 57 % n'écrivent qu'une fois.</li>
+        <li class="l-ar"><b>ما يفكر فيه المغاربة.</b> تصف هذه المادة النقاش على يوتيوب، لا الرأي العام: 111,388 حسابا، 57% منها لم تكتب إلا مرة واحدة.</li>
+        <li class="l-fr"><b>Ce que la recherche de YouTube n'a pas montré.</b> Les vidéos viennent d'une recherche par mots-clés classée par l'algorithme, pas d'un tirage au hasard. Les contenus supprimés avant la collecte manquent.</li>
+        <li class="l-ar"><b>ما لم يُظهره بحث يوتيوب.</b> مصدر الفيديوهات بحث بالكلمات المفتاحية ترتّب نتائجه الخوارزمية، لا سحب عشوائي، كما تغيب المحتويات المحذوفة قبل جمع البيانات.</li>
+        <li class="l-fr"><b>Qui est marocain.</b> « Visible au Maroc » ne veut pas dire « marocain » : voir les commentaires en espagnol sur Sebta.</li>
+        <li class="l-ar"><b>من هو مغربي.</b> «مرئي في المغرب» لا يعني «مغربيا»، كما تُظهر التعليقات المكتوبة بالإسبانية عن سبتة.</li>
+        <li class="l-fr"><b>Combien a coûté la publicité sur YouTube.</b> Seul l'annonceur est connu, pas le montant.</li>
+        <li class="l-ar"><b>كلفة الإشهار على يوتيوب.</b> المعلِن وحده معروف، لا المبلغ.</li>
+        <li class="l-fr"><b>Le soutien en ligne au RNI.</b> Un seul cas dans l'échantillon de contrôle : son niveau (9 % des soutiens) n'est pas vérifié.</li>
+        <li class="l-ar"><b>تأييد الأحرار على الإنترنت.</b> لا تضم عينة التحقق سوى حالة واحدة، ولذلك يبقى مستواه (9% من المؤيدين) غير متحقَّق منه.</li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="l-fr">Sources</h3>
+  <h3 class="l-ar">المصادر</h3>
+  <ol class="src">
+    <li class="l-fr">Résultats : <a href="https://fnh.ma/articles/legislatives-2026-pam-majorite-abstention-maroc">FNH, « Législatives 2026 : le PAM en tête »</a> ; <a href="https://medias24.com/2026/09/26/legislatives-2026-voici-le-classement-des-partis-en-nombre-de-voix-1765831/">Médias24, classement en voix (26 sept.)</a> ; <a href="https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_marocaines_de_2026">Wikipédia FR</a> ; <a href="https://en.wikipedia.org/wiki/2026_Moroccan_general_election">Wikipédia EN</a>.</li>
+    <li class="l-ar">النتائج: <a href="https://fnh.ma/articles/legislatives-2026-pam-majorite-abstention-maroc">FNH، «تشريعيات 2026: الأصالة والمعاصرة في الصدارة»</a>؛ <a href="https://medias24.com/2026/09/26/legislatives-2026-voici-le-classement-des-partis-en-nombre-de-voix-1765831/">Médias24، ترتيب الأحزاب حسب الأصوات (26 شتنبر)</a>؛ <a href="https://fr.wikipedia.org/wiki/%C3%89lections_l%C3%A9gislatives_marocaines_de_2026">ويكيبيديا بالفرنسية</a>؛ <a href="https://en.wikipedia.org/wiki/2026_Moroccan_general_election">ويكيبيديا بالإنجليزية</a>.</li>
+    <li class="l-fr">Nomination : <a href="https://boursenews.ma/article/marches/Le-Roi-Mohammed-VI-nomme-Fatima-Zahra-Mansouri-Cheffe-du-gouvernement">Boursenews (29 sept.)</a>.</li>
+    <li class="l-ar">التعيين: <a href="https://boursenews.ma/article/marches/Le-Roi-Mohammed-VI-nomme-Fatima-Zahra-Mansouri-Cheffe-du-gouvernement">Boursenews (29 شتنبر)</a>.</li>
+    <li class="l-fr">Campagne : <a href="https://www.france24.com/fr/info-en-continu/20260909-au-maroc-la-campagne-pour-les-l%C3%A9gislatives-s-ouvre-sous-le-signe-des-fractures-sociales">France 24 (ouverture, 10 sept.)</a> ; <a href="https://beninwebtv.bj/en/morocco-benkirane-targets-akhannouchs-record-at-the-launch-of-the-pjd-campaign/">lancement du PJD (12 sept.)</a>.</li>
+    <li class="l-ar">الحملة: <a href="https://www.france24.com/fr/info-en-continu/20260909-au-maroc-la-campagne-pour-les-l%C3%A9gislatives-s-ouvre-sous-le-signe-des-fractures-sociales">France 24 (الانطلاق، 10 شتنبر)</a>؛ <a href="https://beninwebtv.bj/en/morocco-benkirane-targets-akhannouchs-record-at-the-launch-of-the-pjd-campaign/">إطلاق حملة العدالة والتنمية (12 شتنبر)</a>.</li>
+    <li class="l-fr">Audio Talbi Alami : <a href="https://ledesk.ma/2026/08/26/rni-pam-un-audio-fuite-de-talbi-alami-expose-la-bataille-autour-de-lekjaa/">Le Desk (26 août)</a> ; <a href="https://medias24.com/2026/08/26/talbi-alami-attaque-ouvertement-lekjaa-sur-fond-de-bataille-entre-le-rni-et-le-pam-1743589/">Médias24 (26 août)</a> ; <a href="https://telquel.ma/instant-t/2026/08/28/fouzi-lekjaa-les-vrais-terroristes-sont-ceux-qui-ont-transforme-laid-al-adha-en-une-source-dangoisse-pour-les-marocains_2004576">Telquel (28 août)</a>.</li>
+    <li class="l-ar">تسجيل الطالبي العلمي: <a href="https://ledesk.ma/2026/08/26/rni-pam-un-audio-fuite-de-talbi-alami-expose-la-bataille-autour-de-lekjaa/">Le Desk (26 غشت)</a>؛ <a href="https://medias24.com/2026/08/26/talbi-alami-attaque-ouvertement-lekjaa-sur-fond-de-bataille-entre-le-rni-et-le-pam-1743589/">Médias24 (26 غشت)</a>؛ <a href="https://telquel.ma/instant-t/2026/08/28/fouzi-lekjaa-les-vrais-terroristes-sont-ceux-qui-ont-transforme-laid-al-adha-en-une-source-dangoisse-pour-les-marocains_2004576">Telquel (28 غشت)</a>.</li>
+    <li class="l-fr">SMIG à 5 000 DH : <a href="https://fr.hespress.com/487493-smig-a-5-000-dh-chaouki-rejette-les-surencheres.html">Hespress (7 sept.)</a>.</li>
+    <li class="l-ar">الحد الأدنى للأجور بـ5000 درهم: <a href="https://fr.hespress.com/487493-smig-a-5-000-dh-chaouki-rejette-les-surencheres.html">هسبريس (7 شتنبر)</a>.</li>
+    <li class="l-fr">Sebta : <a href="https://fr.wikipedia.org/wiki/Incident_%C3%A0_la_fronti%C3%A8re_entre_l'Espagne_et_le_Maroc_en_2026">Wikipédia FR</a> ; <a href="https://www.ledevoir.com/monde/europe/1005221/sanchez-assure-espagne-enquete-toujours-crise-ceuta-mais-exonere-maroc">Le Devoir / AFP (31 août)</a> ; <a href="https://www.moroccomail.fr/2026/09/17/von-der-leyen-maroc-espagne-ceuta-instrumentalisation-de-flux-migratoires/">Maroc Mail (17 sept.)</a>.</li>
+    <li class="l-ar">سبتة: <a href="https://fr.wikipedia.org/wiki/Incident_%C3%A0_la_fronti%C3%A8re_entre_l'Espagne_et_le_Maroc_en_2026">ويكيبيديا بالفرنسية</a>؛ <a href="https://www.ledevoir.com/monde/europe/1005221/sanchez-assure-espagne-enquete-toujours-crise-ceuta-mais-exonere-maroc">Le Devoir / AFP (31 غشت)</a>؛ <a href="https://www.moroccomail.fr/2026/09/17/von-der-leyen-maroc-espagne-ceuta-instrumentalisation-de-flux-migratoires/">Maroc Mail (17 شتنبر)</a>.</li>
+    <li class="l-fr">Israël : <a href="https://telquel.ma/instant-t/2026/08/20/la-ministre-israelienne-des-transports-en-voyage-prive-au-maroc-avec-dautres-hauts-responsables-israeliens_2003939/">Telquel, visite de Miri Regev (20 août)</a> ; <a href="https://ledesk.ma/2026/09/16/le-maroc-et-israel-saccordent-pour-elever-leurs-representations-diplomatiques-au-rang-dambassades/">Le Desk, ambassades (16 sept.)</a>.</li>
+    <li class="l-ar">إسرائيل: <a href="https://telquel.ma/instant-t/2026/08/20/la-ministre-israelienne-des-transports-en-voyage-prive-au-maroc-avec-dautres-hauts-responsables-israeliens_2003939/">Telquel، زيارة ميري ريغيف (20 غشت)</a>؛ <a href="https://ledesk.ma/2026/09/16/le-maroc-et-israel-saccordent-pour-elever-leurs-representations-diplomatiques-au-rang-dambassades/">Le Desk، السفارتان (16 شتنبر)</a>.</li>
+    <li class="l-fr">Chouf TV : <a href="https://fr.le7tv.ma/2026/09/20/oued-ifrane-une-equipe-de-chouf-tv-prise-a-partie-la-profession-journalistique-solidaire/">Le7TV (20 sept.)</a> ; <a href="https://fr.le360.ma/medias/oued-ifrane-une-equipe-de-chouf-tv-prise-a-partie-dans-le-fief-electoral-de-mohamed-ouzzine_HR4YHNPZH5E45HSNWFL3WIP4AM/">Le360</a>.</li>
+    <li class="l-ar">شوف تيفي: <a href="https://fr.le7tv.ma/2026/09/20/oued-ifrane-une-equipe-de-chouf-tv-prise-a-partie-la-profession-journalistique-solidaire/">Le7TV (20 شتنبر)</a>؛ <a href="https://fr.le360.ma/medias/oued-ifrane-une-equipe-de-chouf-tv-prise-a-partie-dans-le-fief-electoral-de-mohamed-ouzzine_HR4YHNPZH5E45HSNWFL3WIP4AM/">Le360</a>.</li>
+    <li class="l-fr">Publicité : <a href="https://adstransparency.google.com/advertiser/AR09116286235738898433?region=MA">Centre de transparence de Google, ABWEB SARL AU</a> ; <a href="https://www.facebook.com/ads/library/">Bibliothèque publicitaire de Meta</a> (relevé du 4 octobre 2026).</li>
+    <li class="l-ar">الإشهار: <a href="https://adstransparency.google.com/advertiser/AR09116286235738898433?region=MA">مركز الشفافية الإعلانية لغوغل، ABWEB SARL AU</a>؛ <a href="https://www.facebook.com/ads/library/">مكتبة إعلانات ميتا</a> (معاينة 4 أكتوبر 2026).</li>
+  </ol>
+</div></section>
+
+<footer><div class="wrap">
+  <span class="l-fr">Données : base PostgreSQL de l'étude, collection n° 1, analyse n° 1, tâches 3 à 8 ; calculs du <span data-gen></span>. Commentaires du 23 août au 22 septembre 2026 inclus, heure du Maroc. Les auteurs de commentaires ne sont pas nommés.</span><span class="l-ar">البيانات: قاعدة PostgreSQL الخاصة بالدراسة، المجموعة رقم 1، التحليل رقم 1، المهام من 3 إلى 8؛ حسابات بتاريخ <span data-gen></span>. التعليقات من 23 غشت إلى 22 شتنبر 2026، بتوقيت المغرب. لا تُذكر أسماء أصحاب التعليقات.</span>
+</div></footer>
+
+<script>
+const D = {"kpi":{"videos":17261,"videos_rel":15451,"comments_all":564358,"comments_cls":338893,"authors":111388,"channels":2675,"views_rel":306169542,"rni_views":58963472,"rni_videos":489,"rni_share":19.3,"rni_likes_1k":0.34,"multi_excluded":360,"flag":28.7,"harc":27.3,"haine":8.8,"menace":1.5,"menace_n":5034,"classe":16.7,"gouv":4.1,"boycott":2.6,"vote":2.4,"no_letter":32808,"median_likes_1k":8.7,"median_com_1k":1.08,"n_channels_ref":225},"rni_phase":{"apres":{"n":290,"views":1365897,"median":536,"mean":4709,"over1m":0},"avant":{"n":199,"views":57597575,"median":1383,"mean":289435,"over1m":13}},"rni_daily":[{"day":"2026-08-23","n":2,"views":779},{"day":"2026-08-24","n":8,"views":13102},{"day":"2026-08-26","n":6,"views":16719092},{"day":"2026-08-27","n":7,"views":8389},{"day":"2026-08-28","n":4,"views":2135},{"day":"2026-08-29","n":14,"views":65679},{"day":"2026-08-30","n":17,"views":36300},{"day":"2026-08-31","n":7,"views":45404},{"day":"2026-09-01","n":9,"views":3436139},{"day":"2026-09-02","n":22,"views":24106409},{"day":"2026-09-03","n":7,"views":13450},{"day":"2026-09-04","n":9,"views":76794},{"day":"2026-09-05","n":12,"views":1408536},{"day":"2026-09-06","n":9,"views":1918389},{"day":"2026-09-07","n":19,"views":6224067},{"day":"2026-09-08","n":15,"views":3482983},{"day":"2026-09-09","n":32,"views":39928},{"day":"2026-09-10","n":19,"views":24296},{"day":"2026-09-11","n":25,"views":26599},{"day":"2026-09-12","n":29,"views":16832},{"day":"2026-09-13","n":25,"views":35404},{"day":"2026-09-14","n":27,"views":85107},{"day":"2026-09-15","n":23,"views":117614},{"day":"2026-09-16","n":28,"views":29401},{"day":"2026-09-17","n":23,"views":37565},{"day":"2026-09-18","n":26,"views":143532},{"day":"2026-09-19","n":13,"views":172401},{"day":"2026-09-20","n":15,"views":64241},{"day":"2026-09-21","n":19,"views":588829},{"day":"2026-09-22","n":18,"views":24076}],"channels":[{"handle":"@partirni","name":"Parti RNI - حزب التجمع الوطني للأحرار","n":489,"views":58963472,"likes_1k":0.34,"com_1k":0.0,"created":"2011-09-28"},{"handle":"@hespress","name":"Hespress","n":341,"views":8710681,"likes_1k":11.86,"com_1k":1.95,"created":"2013-12-08"},{"handle":"@taoufik_bouachrine","name":"Taoufik Bouachrine - توفيق بوعشرين","n":27,"views":7539443,"likes_1k":22.51,"com_1k":2.12,"created":"2022-06-18"},{"handle":"@hakimkhatori","name":"Hakim Khatori حكيم خطوري","n":40,"views":7054603,"likes_1k":3.49,"com_1k":0.2,"created":"2012-12-22"},{"handle":"@aarabnews","name":"aarab news","n":111,"views":5581446,"likes_1k":12.0,"com_1k":3.44,"created":"2017-06-26"},{"handle":"@elhoucinetub","name":"EL HOUCINE_TUB","n":291,"views":5116661,"likes_1k":6.22,"com_1k":0.49,"created":"2025-08-14"},{"handle":"@chouftv-maroc","name":"Chouftv - شوف تيفي","n":230,"views":4858420,"likes_1k":9.72,"com_1k":1.64,"created":"2012-12-01"},{"handle":"@اخر-الاخبار","name":"آخر الأخبار","n":46,"views":3976179,"likes_1k":6.29,"com_1k":1.25,"created":"2014-04-06"},{"handle":"@2010moireda","name":"Mohamed Reda Taoujni","n":18,"views":3881707,"likes_1k":17.66,"com_1k":2.14,"created":"2010-11-20"},{"handle":"@prof_saloua_oukach","name":"الباكالوريا وشعبة القانون اون لاين ","n":14,"views":3464572,"likes_1k":13.49,"com_1k":0.97,"created":"2020-03-16"},{"handle":"@electionsaumaroc","name":"Élections Maroc - الانتخابات في المغرب","n":53,"views":3371521,"likes_1k":0.55,"com_1k":0.0,"created":"2026-05-11"},{"handle":"@2mtv","name":"2MTV","n":84,"views":3195443,"likes_1k":5.62,"com_1k":0.51,"created":"2007-10-11"},{"handle":"@kifaa7","name":"كفاح - kifaa7","n":8,"views":3178181,"likes_1k":15.65,"com_1k":2.38,"created":"2015-07-09"},{"handle":"@elmahdaouyhamid","name":"المهدوي مدير نشر بديل","n":10,"views":2933673,"likes_1k":24.16,"com_1k":4.76,"created":"2011-07-23"},{"handle":"@العالم-بين-يديك-س6ب","name":"العالم بين يديك","n":67,"views":2691436,"likes_1k":1.38,"com_1k":0.22,"created":"2026-08-05"},{"handle":"@morocco_moroccans","name":"مغرب المغاربة","n":25,"views":2669250,"likes_1k":15.47,"com_1k":1.51,"created":"2016-03-15"},{"handle":"@akhbarsa3a-tv","name":"Prof Alkhabar","n":40,"views":2609854,"likes_1k":9.28,"com_1k":0.85,"created":"2024-02-06"},{"handle":"@jannat_jawhara","name":"Jannat jawhara","n":14,"views":2502141,"likes_1k":13.7,"com_1k":0.78,"created":"2021-08-06"},{"handle":"@bookofknow","name":" كتاب المعرفة","n":1,"views":2422979,"likes_1k":0.05,"com_1k":0.0,"created":"2016-11-20"},{"handle":"@blackmoussiba","name":"Black Moussiba","n":4,"views":2358261,"likes_1k":14.34,"com_1k":2.11,"created":"2012-05-02"},{"handle":"@lolfactory-k5x","name":"LOLFactory-k5x","n":3,"views":2293794,"likes_1k":23.2,"com_1k":0.46,"created":"2025-06-18"},{"handle":"@morocco-i6y","name":"morocco","n":6,"views":2096272,"likes_1k":12.67,"com_1k":0.7,"created":"2025-03-21"},{"handle":"@pjdtv","name":"Pjd Tv","n":83,"views":2084948,"likes_1k":14.37,"com_1k":1.88,"created":"2016-02-29"},{"handle":"@khbirat24","name":"خبيرات 24 Khbirat","n":25,"views":2074757,"likes_1k":6.28,"com_1k":0.5,"created":"2024-07-06"},{"handle":"@thebestforyou","name":"the best- tv","n":55,"views":2074736,"likes_1k":10.5,"com_1k":2.92,"created":"2013-01-16"},{"handle":"@medi1tv","name":"MEDI1 TV","n":236,"views":2071010,"likes_1k":4.93,"com_1k":0.94,"created":"2008-09-06"},{"handle":"@khalidmallouki-q9y","name":"برنامج صوت الصانع","n":64,"views":2048538,"likes_1k":10.34,"com_1k":1.58,"created":"2024-06-28"},{"handle":"@alyaoum24","name":"alyaoum24","n":102,"views":2033272,"likes_1k":8.7,"com_1k":1.74,"created":"2013-09-02"},{"handle":"@marwanglitch","name":"مروان جليتش","n":13,"views":2032890,"likes_1k":20.15,"com_1k":0.62,"created":"2018-06-11"},{"handle":"@akhbar_almaghrib24","name":"RADAR ALMAGHRIB","n":2,"views":2015452,"likes_1k":0.05,"com_1k":0.01,"created":"2025-01-21"},{"handle":"@thevoicenewmedia","name":"The Voice صوت المغرب","n":52,"views":2005159,"likes_1k":12.29,"com_1k":2.1,"created":"2023-10-27"},{"handle":"@mohammedassila-o3t","name":"bnassila","n":14,"views":1995357,"likes_1k":9.65,"com_1k":0.38,"created":"2025-09-01"},{"handle":"@dwarabic","name":"DW عربية","n":6,"views":1932888,"likes_1k":6.48,"com_1k":2.5,"created":"2011-08-19"},{"handle":"@le7tv","name":"Le7tv ","n":72,"views":1768151,"likes_1k":5.22,"com_1k":0.86,"created":"2017-05-15"},{"handle":"@mayssa.salama","name":"Mayssa Salama مايسة سلامة ","n":9,"views":1691005,"likes_1k":20.48,"com_1k":4.4,"created":"2011-08-05"},{"handle":"@al3omkofficiel","name":"العمق المغربي","n":148,"views":1570062,"likes_1k":3.79,"com_1k":2.03,"created":"2015-06-24"},{"handle":"@achewa9e3tv","name":"آش واقع تيفي - Achewa9e3TV","n":8,"views":1560682,"likes_1k":18.18,"com_1k":0.0,"created":"2015-04-01"},{"handle":"@lwa9i3_lmor","name":"الواقع المُر-Lwa9i3 LmoR","n":28,"views":1538272,"likes_1k":7.01,"com_1k":0.11,"created":"2016-11-02"},{"handle":"@miscellaneousworldnews","name":"اخبار العالم المتنوعة - Miscellaneous world news","n":24,"views":1527698,"likes_1k":3.6,"com_1k":0.45,"created":"2013-03-10"},{"handle":"@abdoublegarani","name":"Abdou Blegarani","n":52,"views":1526183,"likes_1k":5.58,"com_1k":0.63,"created":"2026-07-03"}],"themes":[{"theme":"Autre","videos":52.2,"views":37.7,"views_norni":52.7,"comments":42.5},{"theme":"corruption_integrite","videos":7.7,"views":6.4,"views_norni":9.0,"comments":20.8},{"theme":"prix_cherte","videos":4.7,"views":6.0,"views_norni":4.8,"comments":3.7},{"theme":"diplomatie_souverainete","videos":4.4,"views":4.9,"views_norni":6.9,"comments":10.6},{"theme":"economie","videos":4.3,"views":5.6,"views_norni":2.8,"comments":4.8},{"theme":"emploi","videos":3.5,"views":7.8,"views_norni":1.5,"comments":1.2},{"theme":"jeunesse","videos":3.5,"views":1.2,"views_norni":1.7,"comments":0.8},{"theme":"libertes_justice","videos":3.2,"views":2.5,"views_norni":3.5,"comments":3.5},{"theme":"sante","videos":2.6,"views":5.6,"views_norni":1.4,"comments":1.1},{"theme":"education","videos":2.5,"views":4.1,"views_norni":2.1,"comments":1.7},{"theme":"salaires_retraites","videos":2.5,"views":3.7,"views_norni":3.0,"comments":2.4},{"theme":"aides_sociales","videos":2.3,"views":8.1,"views_norni":2.1,"comments":0.5},{"theme":"monarchie","videos":2.3,"views":3.9,"views_norni":5.5,"comments":4.2},{"theme":"eau_agriculture","videos":1.4,"views":0.8,"views_norni":0.7,"comments":0.5},{"theme":"femmes","videos":1.3,"views":0.4,"views_norni":0.6,"comments":0.4},{"theme":"logement","videos":0.6,"views":0.2,"views_norni":0.3,"comments":0.4},{"theme":"mondial_2030","videos":0.6,"views":0.8,"views_norni":1.1,"comments":0.3},{"theme":"mre","videos":0.4,"views":0.3,"views_norni":0.4,"comments":0.4}],"daily":[{"day":"2026-08-23","n":3954,"vids":122,"sov":9.2,"cor":21.2,"crRNI":4.5,"crPJD":11.6,"crPAM":3.6,"crGouv":5.6,"crClasse":13.3,"suPJD":3.9,"suPAM":0.6,"boy":1.5,"vot":0.8,"haine":8.6,"colere":31.1,"new_videos":257,"a_suPJD":4.3,"a_suPAM":0.9,"a_suRNI":0.7,"a_suIstiqlal":0.2,"a_crPJD":14.4,"a_crPAM":4.6,"a_crRNI":5.6,"a_crIstiqlal":1.7,"authors":2811},{"day":"2026-08-24","n":5907,"vids":186,"sov":13.3,"cor":18.7,"crRNI":4.0,"crPJD":9.7,"crPAM":2.7,"crGouv":5.0,"crClasse":13.8,"suPJD":3.4,"suPAM":0.6,"boy":1.5,"vot":1.1,"haine":12.0,"colere":29.8,"new_videos":254,"a_suPJD":3.7,"a_suPAM":0.7,"a_suRNI":0.7,"a_suIstiqlal":0.0,"a_crPJD":11.4,"a_crPAM":3.4,"a_crRNI":5.0,"a_crIstiqlal":0.6,"authors":4409},{"day":"2026-08-25","n":5236,"vids":263,"sov":20.7,"cor":21.8,"crRNI":5.7,"crPJD":3.7,"crPAM":2.3,"crGouv":4.5,"crClasse":18.6,"suPJD":1.9,"suPAM":0.4,"boy":1.9,"vot":0.7,"haine":10.1,"colere":27.3,"new_videos":210,"a_suPJD":2.2,"a_suPAM":0.5,"a_suRNI":0.3,"a_suIstiqlal":0.1,"a_crPJD":4.3,"a_crPAM":2.9,"a_crRNI":6.8,"a_crIstiqlal":0.9,"authors":4013},{"day":"2026-08-26","n":9249,"vids":335,"sov":12.5,"cor":30.0,"crRNI":9.7,"crPJD":3.6,"crPAM":4.9,"crGouv":5.0,"crClasse":23.3,"suPJD":1.6,"suPAM":3.5,"boy":2.8,"vot":1.4,"haine":9.8,"colere":29.3,"new_videos":311,"a_suPJD":1.8,"a_suPAM":4.3,"a_suRNI":0.8,"a_suIstiqlal":0.2,"a_crPJD":4.6,"a_crPAM":6.3,"a_crRNI":12.3,"a_crIstiqlal":1.1,"authors":6456},{"day":"2026-08-27","n":9935,"vids":403,"sov":18.5,"cor":27.8,"crRNI":6.9,"crPJD":2.6,"crPAM":4.5,"crGouv":4.5,"crClasse":22.6,"suPJD":1.7,"suPAM":1.4,"boy":2.4,"vot":1.2,"haine":10.4,"colere":27.5,"new_videos":314,"a_suPJD":2.0,"a_suPAM":1.8,"a_suRNI":0.5,"a_suIstiqlal":0.1,"a_crPJD":3.5,"a_crPAM":5.9,"a_crRNI":9.0,"a_crIstiqlal":0.7,"authors":6730},{"day":"2026-08-28","n":9120,"vids":441,"sov":13.3,"cor":28.4,"crRNI":9.0,"crPJD":2.9,"crPAM":5.6,"crGouv":4.5,"crClasse":21.8,"suPJD":2.0,"suPAM":3.9,"boy":2.8,"vot":2.4,"haine":10.0,"colere":28.6,"new_videos":281,"a_suPJD":2.2,"a_suPAM":4.9,"a_suRNI":0.5,"a_suIstiqlal":0.1,"a_crPJD":3.7,"a_crPAM":6.5,"a_crRNI":11.5,"a_crIstiqlal":0.7,"authors":6505},{"day":"2026-08-29","n":10020,"vids":535,"sov":4.9,"cor":33.6,"crRNI":13.2,"crPJD":5.8,"crPAM":5.3,"crGouv":5.3,"crClasse":21.6,"suPJD":3.3,"suPAM":3.1,"boy":2.6,"vot":2.1,"haine":7.9,"colere":31.8,"new_videos":417,"a_suPJD":3.7,"a_suPAM":3.5,"a_suRNI":0.9,"a_suIstiqlal":0.1,"a_crPJD":7.4,"a_crPAM":6.8,"a_crRNI":16.9,"a_crIstiqlal":1.4,"authors":7029},{"day":"2026-08-30","n":9140,"vids":629,"sov":8.0,"cor":25.7,"crRNI":9.9,"crPJD":4.5,"crPAM":4.8,"crGouv":4.3,"crClasse":17.7,"suPJD":2.8,"suPAM":1.7,"boy":2.2,"vot":1.3,"haine":7.2,"colere":26.6,"new_videos":357,"a_suPJD":3.1,"a_suPAM":2.3,"a_suRNI":0.6,"a_suIstiqlal":0.4,"a_crPJD":5.5,"a_crPAM":5.9,"a_crRNI":12.4,"a_crIstiqlal":1.5,"authors":6550},{"day":"2026-08-31","n":8720,"vids":583,"sov":7.6,"cor":22.4,"crRNI":6.8,"crPJD":10.0,"crPAM":4.1,"crGouv":3.1,"crClasse":14.8,"suPJD":3.5,"suPAM":1.7,"boy":1.8,"vot":1.3,"haine":6.9,"colere":27.9,"new_videos":344,"a_suPJD":3.6,"a_suPAM":2.0,"a_suRNI":0.5,"a_suIstiqlal":0.1,"a_crPJD":12.1,"a_crPAM":5.0,"a_crRNI":8.5,"a_crIstiqlal":1.1,"authors":6354},{"day":"2026-09-01","n":7377,"vids":573,"sov":4.5,"cor":26.5,"crRNI":6.4,"crPJD":11.1,"crPAM":5.1,"crGouv":4.9,"crClasse":18.9,"suPJD":3.7,"suPAM":2.0,"boy":2.3,"vot":1.7,"haine":6.9,"colere":27.4,"new_videos":383,"a_suPJD":4.0,"a_suPAM":2.6,"a_suRNI":0.9,"a_suIstiqlal":0.1,"a_crPJD":12.6,"a_crPAM":6.2,"a_crRNI":8.0,"a_crIstiqlal":1.1,"authors":5253},{"day":"2026-09-02","n":6784,"vids":656,"sov":3.7,"cor":27.7,"crRNI":8.0,"crPJD":8.6,"crPAM":8.8,"crGouv":4.5,"crClasse":19.0,"suPJD":3.3,"suPAM":1.8,"boy":2.6,"vot":1.7,"haine":7.1,"colere":27.2,"new_videos":489,"a_suPJD":3.5,"a_suPAM":2.3,"a_suRNI":0.7,"a_suIstiqlal":0.1,"a_crPJD":10.4,"a_crPAM":11.1,"a_crRNI":10.1,"a_crIstiqlal":0.8,"authors":4780},{"day":"2026-09-03","n":8699,"vids":671,"sov":20.0,"cor":21.3,"crRNI":5.9,"crPJD":7.7,"crPAM":7.2,"crGouv":3.9,"crClasse":14.5,"suPJD":3.7,"suPAM":5.0,"boy":1.7,"vot":2.3,"haine":8.0,"colere":25.7,"new_videos":413,"a_suPJD":4.3,"a_suPAM":6.4,"a_suRNI":0.6,"a_suIstiqlal":0.1,"a_crPJD":9.6,"a_crPAM":9.0,"a_crRNI":8.0,"a_crIstiqlal":0.6,"authors":5768},{"day":"2026-09-04","n":9347,"vids":705,"sov":16.3,"cor":22.4,"crRNI":8.4,"crPJD":7.6,"crPAM":6.4,"crGouv":4.6,"crClasse":15.8,"suPJD":4.2,"suPAM":2.8,"boy":1.9,"vot":1.6,"haine":7.9,"colere":29.2,"new_videos":435,"a_suPJD":4.4,"a_suPAM":3.8,"a_suRNI":0.7,"a_suIstiqlal":0.3,"a_crPJD":9.3,"a_crPAM":7.7,"a_crRNI":10.4,"a_crIstiqlal":1.1,"authors":6068},{"day":"2026-09-05","n":11715,"vids":763,"sov":16.3,"cor":22.2,"crRNI":7.7,"crPJD":11.3,"crPAM":4.3,"crGouv":4.3,"crClasse":16.0,"suPJD":4.0,"suPAM":1.8,"boy":2.4,"vot":1.7,"haine":9.4,"colere":29.7,"new_videos":466,"a_suPJD":4.4,"a_suPAM":2.4,"a_suRNI":0.9,"a_suIstiqlal":0.3,"a_crPJD":14.1,"a_crPAM":5.6,"a_crRNI":9.7,"a_crIstiqlal":0.8,"authors":7755},{"day":"2026-09-06","n":10349,"vids":817,"sov":13.0,"cor":22.8,"crRNI":8.1,"crPJD":8.9,"crPAM":5.0,"crGouv":4.2,"crClasse":15.9,"suPJD":4.6,"suPAM":2.6,"boy":2.4,"vot":1.7,"haine":7.8,"colere":27.0,"new_videos":442,"a_suPJD":4.9,"a_suPAM":3.3,"a_suRNI":0.6,"a_suIstiqlal":0.2,"a_crPJD":10.8,"a_crPAM":6.6,"a_crRNI":10.7,"a_crIstiqlal":0.7,"authors":6816},{"day":"2026-09-07","n":8841,"vids":838,"sov":9.9,"cor":24.0,"crRNI":8.2,"crPJD":9.6,"crPAM":4.7,"crGouv":3.8,"crClasse":17.2,"suPJD":5.7,"suPAM":2.9,"boy":2.4,"vot":2.2,"haine":7.6,"colere":26.2,"new_videos":470,"a_suPJD":5.7,"a_suPAM":3.8,"a_suRNI":0.8,"a_suIstiqlal":0.1,"a_crPJD":10.9,"a_crPAM":6.3,"a_crRNI":10.5,"a_crIstiqlal":0.5,"authors":6007},{"day":"2026-09-08","n":8571,"vids":828,"sov":14.0,"cor":24.2,"crRNI":6.4,"crPJD":14.6,"crPAM":4.1,"crGouv":4.1,"crClasse":17.0,"suPJD":5.6,"suPAM":1.9,"boy":3.1,"vot":2.2,"haine":9.5,"colere":29.0,"new_videos":471,"a_suPJD":5.9,"a_suPAM":2.4,"a_suRNI":0.7,"a_suIstiqlal":0.2,"a_crPJD":17.5,"a_crPAM":5.3,"a_crRNI":8.1,"a_crIstiqlal":0.8,"authors":5768},{"day":"2026-09-09","n":10054,"vids":801,"sov":7.0,"cor":23.5,"crRNI":5.1,"crPJD":7.1,"crPAM":4.5,"crGouv":4.8,"crClasse":17.3,"suPJD":5.2,"suPAM":1.1,"boy":2.9,"vot":1.8,"haine":9.8,"colere":27.5,"new_videos":515,"a_suPJD":5.3,"a_suPAM":1.5,"a_suRNI":0.5,"a_suIstiqlal":0.2,"a_crPJD":9.0,"a_crPAM":5.7,"a_crRNI":6.5,"a_crIstiqlal":0.7,"authors":6637},{"day":"2026-09-10","n":9701,"vids":873,"sov":6.7,"cor":23.4,"crRNI":7.0,"crPJD":4.5,"crPAM":5.5,"crGouv":5.4,"crClasse":16.5,"suPJD":3.9,"suPAM":1.6,"boy":2.7,"vot":1.9,"haine":9.3,"colere":27.4,"new_videos":571,"a_suPJD":4.0,"a_suPAM":1.9,"a_suRNI":0.6,"a_suIstiqlal":0.2,"a_crPJD":5.7,"a_crPAM":6.7,"a_crRNI":8.6,"a_crIstiqlal":0.5,"authors":6715},{"day":"2026-09-11","n":10013,"vids":956,"sov":6.4,"cor":25.5,"crRNI":10.6,"crPJD":4.5,"crPAM":6.9,"crGouv":5.0,"crClasse":19.1,"suPJD":4.6,"suPAM":2.7,"boy":2.6,"vot":2.2,"haine":8.6,"colere":28.8,"new_videos":572,"a_suPJD":4.8,"a_suPAM":3.5,"a_suRNI":0.8,"a_suIstiqlal":0.2,"a_crPJD":5.6,"a_crPAM":8.7,"a_crRNI":13.5,"a_crIstiqlal":0.6,"authors":6884},{"day":"2026-09-12","n":12579,"vids":961,"sov":6.4,"cor":27.0,"crRNI":9.6,"crPJD":5.8,"crPAM":6.3,"crGouv":5.8,"crClasse":19.6,"suPJD":4.2,"suPAM":2.5,"boy":3.6,"vot":2.6,"haine":9.0,"colere":29.1,"new_videos":581,"a_suPJD":4.4,"a_suPAM":3.0,"a_suRNI":0.9,"a_suIstiqlal":0.1,"a_crPJD":7.0,"a_crPAM":7.9,"a_crRNI":12.3,"a_crIstiqlal":0.5,"authors":8702},{"day":"2026-09-13","n":12560,"vids":1114,"sov":3.7,"cor":30.1,"crRNI":8.2,"crPJD":6.3,"crPAM":8.0,"crGouv":4.4,"crClasse":21.4,"suPJD":7.1,"suPAM":2.8,"boy":3.4,"vot":2.9,"haine":8.0,"colere":27.4,"new_videos":636,"a_suPJD":6.4,"a_suPAM":3.5,"a_suRNI":0.7,"a_suIstiqlal":0.2,"a_crPJD":7.9,"a_crPAM":10.4,"a_crRNI":10.8,"a_crIstiqlal":0.7,"authors":7976},{"day":"2026-09-14","n":12386,"vids":1142,"sov":4.8,"cor":27.5,"crRNI":8.2,"crPJD":6.8,"crPAM":7.6,"crGouv":4.6,"crClasse":17.1,"suPJD":6.7,"suPAM":2.9,"boy":3.2,"vot":2.9,"haine":7.5,"colere":27.4,"new_videos":655,"a_suPJD":6.6,"a_suPAM":3.8,"a_suRNI":1.0,"a_suIstiqlal":0.3,"a_crPJD":8.4,"a_crPAM":9.5,"a_crRNI":10.6,"a_crIstiqlal":0.9,"authors":8020},{"day":"2026-09-15","n":13713,"vids":1141,"sov":3.7,"cor":27.3,"crRNI":7.4,"crPJD":6.8,"crPAM":6.0,"crGouv":5.8,"crClasse":17.6,"suPJD":6.5,"suPAM":1.7,"boy":2.7,"vot":2.3,"haine":7.2,"colere":27.1,"new_videos":605,"a_suPJD":6.5,"a_suPAM":2.1,"a_suRNI":0.8,"a_suIstiqlal":0.2,"a_crPJD":8.5,"a_crPAM":7.8,"a_crRNI":9.5,"a_crIstiqlal":0.8,"authors":9034},{"day":"2026-09-16","n":10716,"vids":1159,"sov":3.8,"cor":28.4,"crRNI":9.4,"crPJD":8.1,"crPAM":6.1,"crGouv":5.8,"crClasse":16.9,"suPJD":6.8,"suPAM":1.9,"boy":2.7,"vot":2.5,"haine":7.8,"colere":29.8,"new_videos":654,"a_suPJD":6.5,"a_suPAM":2.3,"a_suRNI":0.9,"a_suIstiqlal":0.2,"a_crPJD":9.4,"a_crPAM":7.6,"a_crRNI":11.8,"a_crIstiqlal":0.8,"authors":7235},{"day":"2026-09-17","n":13900,"vids":1137,"sov":27.2,"cor":18.6,"crRNI":6.5,"crPJD":6.4,"crPAM":3.4,"crGouv":3.5,"crClasse":13.1,"suPJD":5.4,"suPAM":0.9,"boy":2.1,"vot":1.9,"haine":11.3,"colere":27.5,"new_videos":661,"a_suPJD":5.2,"a_suPAM":1.2,"a_suRNI":0.7,"a_suIstiqlal":0.3,"a_crPJD":7.8,"a_crPAM":4.5,"a_crRNI":8.6,"a_crIstiqlal":0.7,"authors":9092},{"day":"2026-09-18","n":19106,"vids":1151,"sov":33.6,"cor":15.3,"crRNI":4.9,"crPJD":4.9,"crPAM":2.5,"crGouv":2.6,"crClasse":12.2,"suPJD":4.1,"suPAM":0.7,"boy":1.9,"vot":1.8,"haine":13.3,"colere":27.5,"new_videos":675,"a_suPJD":4.4,"a_suPAM":1.0,"a_suRNI":0.5,"a_suIstiqlal":0.1,"a_crPJD":6.3,"a_crPAM":3.3,"a_crRNI":6.2,"a_crIstiqlal":0.8,"authors":12206},{"day":"2026-09-19","n":14638,"vids":1206,"sov":17.6,"cor":19.5,"crRNI":5.6,"crPJD":5.9,"crPAM":4.0,"crGouv":2.9,"crClasse":15.1,"suPJD":7.2,"suPAM":0.9,"boy":2.7,"vot":3.5,"haine":9.5,"colere":24.6,"new_videos":703,"a_suPJD":7.1,"a_suPAM":1.2,"a_suRNI":0.7,"a_suIstiqlal":0.2,"a_crPJD":7.6,"a_crPAM":5.2,"a_crRNI":7.0,"a_crIstiqlal":0.8,"authors":9559},{"day":"2026-09-20","n":17756,"vids":1379,"sov":15.7,"cor":21.2,"crRNI":8.6,"crPJD":5.3,"crPAM":3.7,"crGouv":2.9,"crClasse":15.2,"suPJD":7.6,"suPAM":1.1,"boy":3.1,"vot":3.6,"haine":9.7,"colere":26.0,"new_videos":750,"a_suPJD":7.2,"a_suPAM":1.5,"a_suRNI":0.8,"a_suIstiqlal":0.2,"a_crPJD":6.6,"a_crPAM":4.9,"a_crRNI":10.9,"a_crIstiqlal":0.9,"authors":10960},{"day":"2026-09-21","n":17450,"vids":1396,"sov":10.8,"cor":21.2,"crRNI":8.1,"crPJD":5.7,"crPAM":4.2,"crGouv":3.0,"crClasse":13.5,"suPJD":8.0,"suPAM":1.8,"boy":2.9,"vot":3.7,"haine":7.3,"colere":23.2,"new_videos":737,"a_suPJD":7.5,"a_suPAM":2.6,"a_suRNI":0.7,"a_suIstiqlal":0.3,"a_crPJD":7.1,"a_crPAM":5.4,"a_crRNI":10.2,"a_crIstiqlal":0.7,"authors":11398},{"day":"2026-09-22","n":21357,"vids":1469,"sov":7.3,"cor":20.4,"crRNI":5.3,"crPJD":6.3,"crPAM":4.7,"crGouv":2.4,"crClasse":13.1,"suPJD":8.8,"suPAM":3.4,"boy":3.4,"vot":5.8,"haine":7.1,"colere":21.8,"new_videos":775,"a_suPJD":8.8,"a_suPAM":4.6,"a_suRNI":0.6,"a_suIstiqlal":0.3,"a_crPJD":7.6,"a_crPAM":5.8,"a_crRNI":6.7,"a_crIstiqlal":0.7,"authors":13691}],"weekly":[{"week":"23-29 août","authors":24123,"PAM":3.1,"Istiqlal":0.1,"RNI":0.7,"PJD":2.7,"MP":0.1,"USFP":0.1,"PPS":0.0,"UC":0.0,"gauche":0.3,"boy":2.3,"vot":1.4},{"week":"30 août-5 sept.","authors":30686,"PAM":4.0,"Istiqlal":0.2,"RNI":0.9,"PJD":3.9,"MP":0.0,"USFP":0.1,"PPS":0.1,"UC":0.0,"gauche":0.3,"boy":2.1,"vot":1.7},{"week":"6-12 sept.","authors":33655,"PAM":3.3,"Istiqlal":0.3,"RNI":0.9,"PJD":5.2,"MP":0.2,"USFP":0.1,"PPS":0.2,"UC":0.0,"gauche":0.3,"boy":2.6,"vot":1.9},{"week":"13-19 sept.","authors":44799,"PAM":2.8,"Istiqlal":0.3,"RNI":1.0,"PJD":5.4,"MP":0.1,"USFP":0.2,"PPS":0.2,"UC":0.0,"gauche":0.5,"boy":2.7,"vot":2.3},{"week":"20-22 sept.","authors":36021,"PAM":3.1,"Istiqlal":0.3,"RNI":0.8,"PJD":7.7,"MP":0.2,"USFP":0.2,"PPS":0.2,"UC":0.0,"gauche":2.6,"boy":3.1,"vot":4.2}],"top5_pjd_channels":["aarab news","Pjd Tv","the best- tv","EL HOUCINE_TUB","المهدوي مدير نشر بديل"],"parties":[{"party":"PAM","videos":3585,"video_share":23.9,"views":73726232,"views_norni":73707119,"sup":7010,"crit":16955,"sup_auth":4456,"crit_auth":9821,"sup_share":30.3,"vote":22.02,"sup_pct_auth":4.0,"crit_pct_auth":8.8,"vote_share9":23.9,"seats":97,"seats21":87,"ratio":0.41,"per_author":1.57,"sentiment_crit":{"colere":52.7,"moquerie":20.8,"mefiance":18.8,"approbation":5.5,"tristesse_desespoir":1.6,"neutre":0.3,"espoir":0.2},"flag_crit":38.7},{"party":"Istiqlal","videos":1022,"video_share":6.8,"views":9941339,"views_norni":9941339,"sup":479,"crit":2103,"sup_auth":391,"crit_auth":1479,"sup_share":2.7,"vote":15.58,"sup_pct_auth":0.4,"crit_pct_auth":1.3,"vote_share9":16.9,"seats":65,"seats21":81,"ratio":0.23,"per_author":1.23,"sentiment_crit":{"colere":52.1,"mefiance":21.8,"moquerie":15.3,"approbation":7.2,"tristesse_desespoir":2.6,"espoir":0.6,"neutre":0.5},"flag_crit":37.3},{"party":"RNI","videos":4424,"video_share":29.5,"views":138457760,"views_norni":82955818,"sup":1712,"crit":25537,"sup_auth":1362,"crit_auth":14360,"sup_share":9.3,"vote":13.24,"sup_pct_auth":1.2,"crit_pct_auth":12.9,"vote_share9":14.3,"seats":66,"seats21":102,"ratio":0.07,"per_author":1.26,"sentiment_crit":{"colere":58.3,"moquerie":18.5,"mefiance":14.0,"approbation":7.0,"tristesse_desespoir":1.4,"neutre":0.4,"espoir":0.4},"flag_crit":40.9},{"party":"PJD","videos":3406,"video_share":22.7,"views":65767731,"views_norni":65767731,"sup":17434,"crit":22849,"sup_auth":6494,"crit_auth":12218,"sup_share":44.2,"vote":15.09,"sup_pct_auth":5.8,"crit_pct_auth":11.0,"vote_share9":16.4,"seats":54,"seats21":13,"ratio":0.76,"per_author":2.68,"sentiment_crit":{"colere":60.1,"moquerie":22.3,"mefiance":12.5,"approbation":3.2,"tristesse_desespoir":1.4,"neutre":0.5,"espoir":0.1},"flag_crit":49.2},{"party":"MP","videos":684,"video_share":4.6,"views":13991670,"views_norni":13991670,"sup":227,"crit":1434,"sup_auth":203,"crit_auth":1194,"sup_share":1.4,"vote":7.16,"sup_pct_auth":0.2,"crit_pct_auth":1.1,"vote_share9":7.8,"seats":29,"seats21":28,"ratio":0.16,"per_author":1.12,"sentiment_crit":{"colere":58.6,"moquerie":25.2,"mefiance":9.9,"approbation":2.8,"tristesse_desespoir":1.9,"neutre":1.2,"espoir":0.5},"flag_crit":45.4},{"party":"USFP","videos":718,"video_share":4.8,"views":5134478,"views_norni":5134478,"sup":247,"crit":1121,"sup_auth":173,"crit_auth":950,"sup_share":1.2,"vote":6.83,"sup_pct_auth":0.2,"crit_pct_auth":0.9,"vote_share9":7.4,"seats":26,"seats21":34,"ratio":0.22,"per_author":1.43,"sentiment_crit":{"colere":43.9,"moquerie":26.0,"mefiance":16.3,"tristesse_desespoir":6.5,"approbation":5.8,"neutre":1.1,"espoir":0.4},"flag_crit":30.9},{"party":"PPS","videos":697,"video_share":4.7,"views":5181118,"views_norni":5181118,"sup":315,"crit":478,"sup_auth":260,"crit_auth":425,"sup_share":1.8,"vote":4.98,"sup_pct_auth":0.2,"crit_pct_auth":0.4,"vote_share9":5.4,"seats":19,"seats21":22,"ratio":0.66,"per_author":1.21,"sentiment_crit":{"colere":49.2,"moquerie":28.5,"mefiance":19.2,"tristesse_desespoir":1.9,"approbation":0.8,"neutre":0.4},"flag_crit":38.5},{"party":"UC","videos":106,"video_share":0.7,"views":473671,"views_norni":473671,"sup":18,"crit":108,"sup_auth":18,"crit_auth":92,"sup_share":0.1,"vote":4.54,"sup_pct_auth":0.0,"crit_pct_auth":0.1,"vote_share9":4.9,"seats":17,"seats21":18,"ratio":0.17,"per_author":1.0,"sentiment_crit":{"moquerie":37.0,"colere":36.1,"mefiance":22.2,"approbation":3.7,"espoir":0.9},"flag_crit":32.4},{"party":"gauche","videos":343,"video_share":2.3,"views":4895142,"views_norni":4895142,"sup":1855,"crit":1435,"sup_auth":1336,"crit_auth":1135,"sup_share":9.1,"vote":2.83,"sup_pct_auth":1.2,"crit_pct_auth":1.0,"vote_share9":3.1,"seats":8,"seats21":2,"ratio":1.29,"per_author":1.39,"sentiment_crit":{"colere":39.0,"mefiance":30.0,"moquerie":21.0,"approbation":6.6,"tristesse_desespoir":1.7,"neutre":1.5,"espoir":0.1},"flag_crit":53.4}],"ci":{"sPJD":[5.1,4.6,5.7],"sPAM":[2.1,1.7,2.6],"sRNI":[0.5,0.4,0.6],"sIstiqlal":[0.1,0.1,0.2],"cPJD":[6.7,5.8,7.7],"cPAM":[5.0,4.5,5.6],"cRNI":[7.5,6.8,8.3]},"concentration":[{"party":"PJD","comments":17434,"authors":6494,"per_author":2.68,"top50":20.8,"once":67.3,"pasters":47,"paster_share":12.8,"recent":6.7},{"party":"PAM","comments":7010,"authors":4456,"per_author":1.57,"top50":11.0,"once":76.4,"pasters":2,"paster_share":0.4,"recent":5.7},{"party":"RNI","comments":1712,"authors":1362,"per_author":1.26,"top50":17.2,"once":88.8,"pasters":0,"paster_share":0.0,"recent":6.7},{"party":"gauche","comments":1855,"authors":1336,"per_author":1.39,"top50":18.7,"once":83.2,"pasters":2,"paster_share":1.3,"recent":5.2},{"party":"MP","comments":227,"authors":203,"per_author":1.12,"top50":32.6,"once":92.6,"pasters":0,"paster_share":0.0,"recent":4.9},{"party":"Istiqlal","comments":479,"authors":391,"per_author":1.23,"top50":28.8,"once":90.5,"pasters":0,"paster_share":0.0,"recent":7.4}],"heavy":{"n":384,"share":10.1,"once":57.4,"supPJD":14.3,"supPJD_all":5.1},"personalities":[{"name":"Fouzi Lekjaa (PAM)","comments":11840,"authors":7044,"colere":23.0,"moquerie":15.0,"approbation":38.3,"harc":23.0,"target":17571,"sup":6833,"crit":10748,"sup_auth":4185,"crit_auth":7161,"sup_pct":38.9,"crit_pct":61.2,"unnamed":43.0},{"name":"Abdelilah Benkirane (PJD)","comments":14852,"authors":7991,"colere":36.5,"moquerie":19.4,"approbation":26.5,"harc":32.6,"target":28642,"sup":6245,"crit":22410,"sup_auth":3209,"crit_auth":12256,"sup_pct":21.8,"crit_pct":78.2,"unnamed":55.4},{"name":"Aziz Akhannouch (RNI)","comments":9357,"authors":5528,"colere":52.1,"moquerie":15.9,"approbation":11.1,"harc":36.4,"target":18527,"sup":1233,"crit":17301,"sup_auth":1008,"crit_auth":10787,"sup_pct":6.7,"crit_pct":93.4,"unnamed":58.0},{"name":"Rachid Talbi Alami (RNI)","comments":1602,"authors":1227,"colere":51.9,"moquerie":18.3,"approbation":5.2,"harc":39.5,"target":2701,"sup":73,"crit":2628,"sup_auth":73,"crit_auth":2093,"sup_pct":2.7,"crit_pct":97.3,"unnamed":55.9},{"name":"Abdellatif Ouahbi (PAM)","comments":1527,"authors":1167,"colere":46.7,"moquerie":15.2,"approbation":8.9,"harc":37.5,"target":2235,"sup":124,"crit":2111,"sup_auth":112,"crit_auth":1702,"sup_pct":5.5,"crit_pct":94.5,"unnamed":48.1},{"name":"Mohamed Ouzzine (MP)","comments":961,"authors":747,"colere":40.1,"moquerie":25.7,"approbation":10.7,"harc":43.8,"target":2764,"sup":281,"crit":2488,"sup_auth":241,"crit_auth":1963,"sup_pct":10.2,"crit_pct":90.0,"unnamed":72.5},{"name":"Nabila Mounib (gauche)","comments":939,"authors":739,"colere":25.9,"moquerie":11.5,"approbation":33.1,"harc":30.2,"target":1701,"sup":847,"crit":854,"sup_auth":690,"crit_auth":709,"sup_pct":49.8,"crit_pct":50.2,"unnamed":54.1},{"name":"Fatima Zahra El Mansouri (PAM)","comments":863,"authors":635,"colere":37.5,"moquerie":14.7,"approbation":14.0,"harc":31.6,"target":2202,"sup":277,"crit":1927,"sup_auth":239,"crit_auth":1522,"sup_pct":12.6,"crit_pct":87.5,"unnamed":72.0},{"name":"Nizar Baraka (Istiqlal)","comments":315,"authors":246,"colere":35.6,"moquerie":15.9,"approbation":10.8,"harc":32.1,"target":876,"sup":119,"crit":757,"sup_auth":104,"crit_auth":659,"sup_pct":13.6,"crit_pct":86.4,"unnamed":73.5},{"name":"Mohamed Chaouki (RNI)","comments":168,"authors":147,"colere":28.0,"moquerie":25.6,"approbation":17.9,"harc":29.8,"target":531,"sup":45,"crit":486,"sup_auth":43,"crit_auth":443,"sup_pct":8.5,"crit_pct":91.5,"unnamed":83.2}],"tox_target":[{"target":"gauche","n":1435,"flag":53.4,"harc":52.4,"haine":19.7,"menace":1.5},{"target":"gouvernement","n":13952,"flag":42.2,"harc":40.9,"haine":16.1,"menace":2.2},{"target":"PJD","n":22849,"flag":49.2,"harc":48.1,"haine":13.8,"menace":1.6},{"target":"classe_politique","n":56525,"flag":45.8,"harc":44.5,"haine":20.2,"menace":2.5},{"target":"MP","n":1434,"flag":45.4,"harc":43.5,"haine":8.5,"menace":2.3},{"target":"RNI","n":25537,"flag":40.9,"harc":39.1,"haine":10.6,"menace":2.3},{"target":"PAM","n":16955,"flag":38.7,"harc":37.3,"haine":9.9,"menace":1.4},{"target":"Istiqlal","n":2103,"flag":37.3,"harc":35.8,"haine":10.5,"menace":1.2},{"target":"USFP","n":1121,"flag":30.9,"harc":28.9,"haine":5.0,"menace":1.0},{"target":"aucun","n":212949,"flag":20.2,"harc":18.9,"haine":5.5,"menace":1.1}],"tox_theme":[{"theme":"diplomatie_souverainete","n":41295,"flag":48.4,"haine":22.3,"violence":11.4,"menace":4.4},{"theme":"corruption_integrite","n":80572,"flag":42.7,"haine":15.3,"violence":5.2,"menace":1.9},{"theme":"prix_cherte","n":14404,"flag":41.7,"haine":12.3,"violence":6.4,"menace":1.8},{"theme":"monarchie","n":16453,"flag":33.9,"haine":14.3,"violence":7.0,"menace":2.8},{"theme":"economie","n":18705,"flag":32.7,"haine":10.2,"violence":4.4,"menace":1.1},{"theme":"Autre","n":164981,"flag":18.2,"haine":3.5,"violence":2.3,"menace":0.6}],"likes":{"flag":1.16,"clean":1.76,"by_sent":{"neutre":1.43,"colere":1.17,"approbation":2.59,"moquerie":1.03,"mefiance":1.42,"espoir":2.96,"tristesse_desespoir":1.93},"top1_sent":{"approbation":32.8,"colere":20.4,"mefiance":11.3,"moquerie":11.2,"neutre":9.1,"espoir":8.1,"tristesse_desespoir":7.1},"top1_flag":21.1},"languages":[{"lang":"Darija (arabe)","n":172766,"sov":7.6,"supPJD":4.8,"party":29.9,"supPAM":2.4,"crRNI":9.8,"classe":18.3,"flag":32.1},{"lang":"Arabe","n":123053,"sov":14.7,"supPJD":6.9,"party":23.1,"supPAM":1.7,"crRNI":5.5,"classe":16.4,"flag":24.5},{"lang":"Français","n":18539,"sov":31.2,"supPJD":1.3,"party":12.0,"supPAM":1.9,"crRNI":2.7,"classe":11.0,"flag":27.3},{"lang":"Darija (latin)","n":13795,"sov":5.6,"supPJD":2.5,"party":25.1,"supPAM":2.3,"crRNI":8.6,"classe":15.5,"flag":31.9},{"lang":"Espagnol","n":4154,"sov":62.0,"supPJD":0.1,"party":2.1,"supPAM":0.0,"crRNI":0.4,"classe":7.4,"flag":32.8},{"lang":"Anglais","n":2276,"sov":21.2,"supPJD":2.1,"party":10.5,"supPAM":2.5,"crRNI":1.4,"classe":6.6,"flag":13.6}],"vote_boycott":{"vote":{"n":8162,"authors":4854,"sup":{"PJD":37.9,"aucun":34.2,"PAM":12.9,"autre":5.9,"gauche":5.2},"crit":{"aucun":59.3,"RNI":11.2,"classe_politique":10.6,"PAM":7.6,"gouvernement":4.7},"sent":{"approbation":61.7,"colere":11.5,"mefiance":8.1,"espoir":7.3}},"abstention_boycott":{"n":8797,"authors":6080,"sup":{"aucun":96.8,"PJD":1.6,"PAM":0.6,"gauche":0.4,"autre":0.3},"crit":{"classe_politique":45.4,"aucun":18.6,"PJD":10.5,"RNI":9.3,"PAM":6.7},"sent":{"colere":42.3,"mefiance":28.4,"tristesse_desespoir":14.4,"moquerie":7.5}}},"anas":{"videos":11,"views":572755,"com_1k":14.9,"likes_1k":70.8,"supPAM":14.9,"crPJD":25.7,"recent":6.0},"generated":"11/11/2026"};
+const $ = s => document.querySelector(s);
+let LANG = document.documentElement.lang === "ar" ? "ar" : "fr";
+const AR = () => LANG === "ar";
+const tr = (fr, ar) => LANG === "ar" ? ar : fr;
+let P = " %", K = "1 000";
+const setFmt = () => { P = AR() ? "%" : " %"; K = AR() ? "1000" : "1 000"; };
+const nf = new Intl.NumberFormat("fr-FR");
+const arInt = n => Math.abs(n) >= 1e4 ? n.toLocaleString("en-US") : String(n);
+const f0 = n => AR() ? arInt(Math.round(n)) : nf.format(Math.round(n));
+const f1 = n => n == null ? "" : n.toLocaleString(AR() ? "en-US" : "fr-FR", {minimumFractionDigits:1, maximumFractionDigits:1, useGrouping:!AR()});
+const fd = n => n.toLocaleString(AR() ? "en-US" : "fr-FR", {maximumFractionDigits:1});
+const fx = (n, d) => n.toLocaleString(AR() ? "en-US" : "fr-FR", {maximumFractionDigits:d});
+function arBig(v, one, two, few, many){ if (v === 1) return one; if (v === 2) return two; return fd(v) + " " + (Number.isInteger(v) && v >= 3 && v <= 10 ? few : many); }
+const fM = n => {
+  if (AR()) return n >= 1e6 ? arBig(n/1e6, "مليون", "مليونان", "ملايين", "مليون") : n >= 1e3 ? arBig(Math.round(n/1e3), "ألف", "ألفان", "آلاف", "ألف") : String(n);
+  return n >= 1e6 ? fd(n/1e6) + " M" : n >= 1e3 ? Math.round(n/1e3) + " k" : String(n);
+};
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const PC = {PAM:"--pam", RNI:"--rni", PJD:"--pjd", Istiqlal:"--ist"};
+const PN = {
+  fr:{gauche:"Gauche", classe_politique:"Classe politique", gouvernement:"Gouvernement", aucun:"Aucune cible"},
+  ar:{PAM:"الأصالة والمعاصرة", RNI:"الأحرار", PJD:"العدالة والتنمية", Istiqlal:"الاستقلال", MP:"الحركة الشعبية", USFP:"الاتحاد الاشتراكي", PPS:"التقدم والاشتراكية", UC:"الاتحاد الدستوري", gauche:"اليسار", classe_politique:"الطبقة السياسية", gouvernement:"الحكومة", aucun:"لا جهة"}
+};
+const pname = p => PN[LANG][p] || p;
+const THEMES = {
+  fr:{Autre:"Aucun enjeu", corruption_integrite:"Corruption", prix_cherte:"Prix, cherté", diplomatie_souverainete:"Souveraineté, diplomatie", economie:"Économie", emploi:"Emploi", jeunesse:"Jeunesse", libertes_justice:"Libertés, justice", sante:"Santé", education:"Éducation", salaires_retraites:"Salaires, retraites", aides_sociales:"Aides sociales", monarchie:"Monarchie", eau_agriculture:"Eau, agriculture", femmes:"Femmes", logement:"Logement", mondial_2030:"Mondial 2030", mre:"MRE"},
+  ar:{Autre:"دون موضوع", corruption_integrite:"الفساد", prix_cherte:"الأسعار والغلاء", diplomatie_souverainete:"السيادة والدبلوماسية", economie:"الاقتصاد", emploi:"التشغيل", jeunesse:"الشباب", libertes_justice:"الحريات والعدالة", sante:"الصحة", education:"التعليم", salaires_retraites:"الأجور والتقاعد", aides_sociales:"الدعم الاجتماعي", monarchie:"الملكية", eau_agriculture:"الماء والفلاحة", femmes:"المرأة", logement:"السكن", mondial_2030:"مونديال 2030", mre:"مغاربة العالم"}
+};
+const theme = k => THEMES[LANG][k] || k;
+const LANGS_AR = {"Darija (arabe)":"الدارجة (حروف عربية)", "Arabe":"العربية", "Français":"الفرنسية", "Darija (latin)":"الدارجة (حروف لاتينية)", "Espagnol":"الإسبانية", "Anglais":"الإنجليزية"};
+const PERS_AR = {"Fouzi Lekjaa (PAM)":"فوزي لقجع (الأصالة والمعاصرة)", "Abdelilah Benkirane (PJD)":"عبد الإله بنكيران (العدالة والتنمية)", "Aziz Akhannouch (RNI)":"عزيز أخنوش (الأحرار)", "Rachid Talbi Alami (RNI)":"رشيد الطالبي العلمي (الأحرار)", "Abdellatif Ouahbi (PAM)":"عبد اللطيف وهبي (الأصالة والمعاصرة)", "Mohamed Ouzzine (MP)":"محمد أوزين (الحركة الشعبية)", "Nabila Mounib (gauche)":"نبيلة منيب (اليسار)", "Fatima Zahra El Mansouri (PAM)":"فاطمة الزهراء المنصوري (الأصالة والمعاصرة)", "Nizar Baraka (Istiqlal)":"نزار بركة (الاستقلال)", "Mohamed Chaouki (RNI)":"محمد شوكي (الأحرار)"};
+const lab = (map, s) => AR() ? (map[s] || s) : s;
+const WK = ["23-29/8", "30/8-5/9", "6-12/9", "13-19/9", "20-22/9"];
+const wlab = i => AR() ? WK[i] : D.weekly[i].week;
+const MOIS = {fr:["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."], ar:["يناير","فبراير","مارس","أبريل","ماي","يونيو","يوليوز","غشت","شتنبر","أكتوبر","نونبر","دجنبر"]};
+const dlab = s => { const d = new Date(s + "T12:00:00"); return d.getDate() + " " + MOIS[LANG][d.getMonth()]; };
+
+/* infobulle */
+const tip = $("#tip");
+function showTip(html, e){ tip.innerHTML = html; tip.style.opacity = 1; moveTip(e); }
+function moveTip(e){ const w = tip.offsetWidth, h = tip.offsetHeight; let x = e.clientX + 14, y = e.clientY + 14;
+  if (x + w > innerWidth - 8) x = e.clientX - w - 14; if (y + h > innerHeight - 8) y = e.clientY - h - 14; tip.style.left = x + "px"; tip.style.top = y + "px"; }
+function hideTip(){ tip.style.opacity = 0; }
+
+/* SVG */
+const NS = "http://www.w3.org/2000/svg";
+const RTL_RE = /[؀-ۿ]/;
+function el(tag, a = {}, parent){ const n = document.createElementNS(NS, tag); for (const k in a) n.setAttribute(k, a[k]); if (parent) parent.appendChild(n); return n; }
+function txt(parent, x, y, s, a = {}){ const t = el("text", {x, y, ...a}, parent); t.textContent = AR() && RTL_RE.test(s) ? "‏" + s + "‏" : s; return t; }
+function svgFor(node, h){ node.innerHTML = ""; const w = node.clientWidth; const s = el("svg", {viewBox:`0 0 ${w} ${h}`, height:h, role:"img"}); node.appendChild(s); return [s, w]; }
+const lin = (d0, d1, r0, r1) => v => r0 + (v - d0) / (d1 - d0) * (r1 - r0);
+const logS = (d0, d1, r0, r1) => v => r0 + (Math.log10(v) - Math.log10(d0)) / (Math.log10(d1) - Math.log10(d0)) * (r1 - r0);
+function niceMax(v){ const p = Math.pow(10, Math.floor(Math.log10(v))); for (const m of [1,1.2,1.6,2,2.4,3,4,5,6,8,10]) if (m*p >= v) return m*p; return 10*p; }
+const mctx = document.createElement("canvas").getContext("2d");
+function tw(s, size, weight = 400){ mctx.font = `${weight} ${size}px ${getComputedStyle(document.body).fontFamily}`; return mctx.measureText(s).width; }
+/* en arabe, les graphiques à barres horizontales se lisent de droite à gauche : on retourne les abscisses */
+function mirror(s, W){
+  if (!AR()) return;
+  s.querySelectorAll("line, circle, rect, text").forEach(n => {
+    const a = k => parseFloat(n.getAttribute(k));
+    if (n.tagName === "line"){ n.setAttribute("x1", W - a("x1")); n.setAttribute("x2", W - a("x2")); }
+    else if (n.tagName === "circle") n.setAttribute("cx", W - a("cx"));
+    else if (n.tagName === "rect") n.setAttribute("x", W - a("x") - a("width"));
+    else { n.setAttribute("x", W - a("x")); const t = n.getAttribute("text-anchor") || "start"; if (t !== "middle") n.setAttribute("text-anchor", t === "end" ? "start" : "end"); }
+  });
+}
+
+/* 01 vues RNI par jour de mise en ligne */
+function chRni(){
+  const node = $("#chRni"), H = 300, [s, W] = svgFor(node, H);
+  const days = []; for (let d = new Date("2026-08-23T12:00:00"); d <= new Date("2026-09-22T12:00:00"); d.setDate(d.getDate()+1)) days.push(d.toISOString().slice(0,10));
+  const by = Object.fromEntries(D.rni_daily.map(r => [r.day, r]));
+  const ymax = niceMax(Math.max(...D.rni_daily.map(r => r.views)));
+  const ticks = [0, 1, 2, 3, 4].map(i => ymax * i / 4);
+  const m = {l: AR() ? Math.ceil(Math.max(...ticks.map(v => tw(fM(v), 11)))) + 12 : 44, r:10, t:28, b:28};
+  const x = lin(0, days.length, m.l, W - m.r), y = lin(0, ymax, H - m.b, m.t), bw = Math.max(2, (W - m.l - m.r) / days.length - 2);
+  const g = el("g", {class:"grid"}, s);
+  ticks.forEach(v => { el("line", {x1:m.l, x2:W-m.r, y1:y(v), y2:y(v)}, g); txt(s, m.l - 6, y(v) + 4, fM(v), {"text-anchor":"end", class:"axis", fill:css("--muted"), "font-size":11}); });
+  const iCut = days.indexOf("2026-09-10");
+  el("rect", {x:x(iCut) - 1, y:m.t, width:W - m.r - x(iCut) + 1, height:H - m.b - m.t, fill:css("--accent-soft"), opacity:.55}, s);
+  el("line", {x1:x(iCut) - 1, x2:x(iCut) - 1, y1:m.t - 14, y2:H - m.b, stroke:css("--accent"), "stroke-width":1.5}, s);
+  const L = AR() ? ["ابتداء من 10 شتنبر:", "الحملة الرسمية", "وتوقف الإشهار"] : ["Dès le 10 sept. :", "campagne officielle,", "plus de publicité"];
+  txt(s, x(iCut) + 8, m.t + 14, L[0], {fill:css("--accent"), "font-size":11, "font-weight":600});
+  txt(s, x(iCut) + 8, m.t + 28, L[1], {fill:css("--accent"), "font-size":11});
+  txt(s, x(iCut) + 8, m.t + 42, L[2], {fill:css("--accent"), "font-size":11});
+  days.forEach((d, i) => {
+    const r = by[d]; if (!r) return;
+    const hgt = Math.max(1, H - m.b - y(r.views));
+    el("rect", {x:x(i) + 1, y:H - m.b - hgt, width:bw, height:hgt, rx:2, fill:css("--rni")}, s);
+    const hit = el("rect", {x:x(i), y:m.t, width:bw + 2, height:H - m.b - m.t, fill:"transparent"}, s);
+    hit.addEventListener("mousemove", e => showTip(AR()
+      ? `<b>${dlab(d)}</b><br>الفيديوهات المنشورة: ${r.n}<br>مجموع المشاهدات: ${f0(r.views)}`
+      : `<b>${dlab(d)}</b><br>${r.n} vidéo(s) mises en ligne<br>${f0(r.views)} vues au total`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  days.forEach((d, i) => { if (i % 7 === 0) txt(s, x(i) + bw/2, H - 8, dlab(d), {"text-anchor":"middle", fill:css("--muted"), "font-size":11}); });
+}
+function tRniPhase(){
+  const a = D.rni_phase.avant, p = D.rni_phase.apres;
+  const R = AR()
+    ? ["<bdi>@partirni</bdi>", "حتى 9 شتنبر", "ابتداء من 10 شتنبر", "الفيديوهات المنشورة", "مجموع المشاهدات", "متوسط المشاهدات", "وسيط المشاهدات", "فيديوهات تجاوزت مليون مشاهدة"]
+    : ["@partirni", "Jusqu'au 9 sept.", "Dès le 10 sept.", "Vidéos mises en ligne", "Vues totales", "Vues moyennes", "Vues médianes", "Vidéos à plus d'1 M de vues"];
+  $("#tRniPhase").innerHTML = `<thead><tr><th>${R[0]}</th><th>${R[1]}</th><th>${R[2]}</th></tr></thead><tbody>
+  <tr><td class="l">${R[3]}</td><td>${f0(a.n)}</td><td>${f0(p.n)}</td></tr>
+  <tr><td class="l">${R[4]}</td><td><b>${fM(a.views)}</b></td><td><b>${fM(p.views)}</b></td></tr>
+  <tr><td class="l">${R[5]}</td><td>${f0(a.mean)}</td><td>${f0(p.mean)}</td></tr>
+  <tr><td class="l">${R[6]}</td><td>${f0(a.median)}</td><td>${f0(p.median)}</td></tr>
+  <tr><td class="l">${R[7]}</td><td>${a.over1m}</td><td>${p.over1m}</td></tr></tbody>`;
+}
+
+/* 01 b : nuage des chaînes */
+function chChannels(){
+  const node = $("#chChannels"), H = 380, [s, W] = svgFor(node, H), m = {l:44, r:16, t:12, b:34};
+  const rows = D.channels.filter(r => r.views > 0);
+  const x = logS(1e6, 1e8, m.l, W - m.r), y = logS(0.1, 100, H - m.b, m.t);
+  const g = el("g", {class:"grid"}, s);
+  [0.1, 1, 10, 100].forEach(v => { el("line", {x1:m.l, x2:W-m.r, y1:y(v), y2:y(v)}, g); txt(s, m.l - 6, y(v) + 4, String(v).replace(".", ","), {"text-anchor":"end", fill:css("--muted"), "font-size":11}); });
+  [1e6, 1e7, 1e8].forEach(v => { el("line", {x1:x(v), x2:x(v), y1:m.t, y2:H-m.b}, g); txt(s, x(v), H - 12, fM(v) + tr(" vues", " مشاهدة"), {"text-anchor": AR() && v === 1e8 ? "end" : "middle", fill:css("--muted"), "font-size":11}); });
+  el("line", {x1:m.l, x2:W-m.r, y1:y(D.kpi.median_likes_1k), y2:y(D.kpi.median_likes_1k), stroke:css("--ink2"), "stroke-width":1}, s);
+  txt(s, W - m.r - 2, y(D.kpi.median_likes_1k) - 6, tr("médiane des chaînes : " + f1(D.kpi.median_likes_1k) + " j'aime / " + K + " vues", "القناة الوسيطة: " + f1(D.kpi.median_likes_1k) + " إعجاب لكل " + K + " مشاهدة"), {"text-anchor":"end", fill:css("--ink2"), "font-size":11});
+  const flag = {"@partirni":"--rni", "@electionsaumaroc":"--accent"};
+  rows.forEach(r => {
+    const cx = x(Math.min(Math.max(r.views, 1e6), 1e8)), cy = y(Math.min(Math.max(r.likes_1k, 0.1), 100));
+    el("circle", {cx, cy, r: flag[r.handle] ? 7 : 5, fill: flag[r.handle] ? css(flag[r.handle]) : css("--neutral"), stroke:css("--card"), "stroke-width":2, opacity: flag[r.handle] ? 1 : .75}, s);
+    if (flag[r.handle]) txt(s, cx + (r.handle === "@partirni" ? -10 : 10), cy + 4, r.handle, {"text-anchor": r.handle === "@partirni" ? "end" : "start", fill:css("--ink"), "font-size":12, "font-weight":600});
+    const hit = el("circle", {cx, cy, r:12, fill:"transparent"}, s);
+    hit.addEventListener("mousemove", e => showTip(AR()
+      ? `<b>${r.name}</b><br><bdi>${r.handle}</bdi> · أُنشئت في ${r.created || "?"}<br>الفيديوهات: ${r.n}، المشاهدات: ${fM(r.views)}<br>لكل ${K} مشاهدة: ${f1(r.likes_1k)} إعجاب و${f1(r.com_1k)} تعليق`
+      : `<b>${r.name}</b><br>${r.handle} · créée le ${r.created || "?"}<br>${r.n} vidéos, ${fM(r.views)} vues<br>${f1(r.likes_1k)} j'aime et ${f1(r.com_1k)} commentaires pour ${K} vues`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+}
+
+/* 02 thèmes : haltères */
+let themeKey = "views";
+function chThemes(){
+  const node = $("#chThemes"), rows = D.themes.filter(r => r.theme !== "Autre").sort((a,b) => b.comments - a.comments).slice(0, 12);
+  const bh = 10, gap = 3, rh = 2 * bh + gap + 13, H = rows.length * rh + 28, [s, W] = svgFor(node, H);
+  const lab = Math.min(AR() ? Math.ceil(Math.max(...rows.map(r => tw(theme(r.theme), 12.5)))) + 16 : 170, W * .36), m = {l:lab, r:58, t:4};
+  const xmax = 25, x = lin(0, xmax, m.l, W - m.r);
+  const g = el("g", {class:"grid"}, s);
+  [0, 5, 10, 15, 20, 25].forEach(v => { el("line", {x1:x(v), x2:x(v), y1:m.t, y2:H - 22}, g); txt(s, x(v), H - 6, v + P, {"text-anchor":"middle", fill:css("--muted"), "font-size":11}); });
+  rows.forEach((r, i) => {
+    const y0 = m.t + i * rh + 6, a = r[themeKey], b = r.comments, ratio = b / a;
+    txt(s, m.l - 10, y0 + bh + gap/2 + 4, theme(r.theme), {"text-anchor":"end", fill:css("--ink"), "font-size":12.5});
+    el("rect", {x:x(0), y:y0, width:Math.max(2, x(Math.min(a, xmax)) - x(0)), height:bh, rx:2, fill:css("--neutral")}, s);
+    txt(s, x(Math.min(a, xmax)) + 5, y0 + bh - 1, f1(a) + P, {fill:css("--ink2"), "font-size":10.5});
+    el("rect", {x:x(0), y:y0 + bh + gap, width:Math.max(2, x(Math.min(b, xmax)) - x(0)), height:bh, rx:2, fill:css("--accent")}, s);
+    txt(s, x(Math.min(b, xmax)) + 5, y0 + 2 * bh + gap - 1, f1(b) + P, {fill:css("--ink2"), "font-size":10.5});
+    txt(s, W - m.r + 52, y0 + bh + gap/2 + 4, "× " + fx(ratio, ratio < 1 ? 2 : 1), {"text-anchor":"end", fill: ratio >= 1.2 ? css("--accent") : css("--ink"), "font-size":12, "font-weight":600});
+    const hit = el("rect", {x:0, y:y0 - 5, width:W, height:rh, fill:"transparent"}, s);
+    hit.addEventListener("mousemove", e => showTip(AR()
+      ? `<b>${theme(r.theme)}</b><br>الفيديوهات: ${f1(r.videos)}${P}<br>المشاهدات: ${f1(a)}${P}${themeKey === "views_norni" ? " (دون <bdi>@partirni</bdi>)" : ""}<br>التعليقات: ${f1(b)}${P}`
+      : `<b>${theme(r.theme)}</b><br>${f1(r.videos)}${P} des vidéos<br>${f1(a)}${P} des vues${themeKey === "views_norni" ? " (sans @partirni)" : ""}<br>${f1(b)}${P} des commentaires`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  mirror(s, W);
+}
+
+/* graphique en lignes générique (jour par jour) */
+function lineChart(node, {data, series, H = 300, ymax, bars, count, countLabel, annotations = [], fmt = v => f1(v) + P}){
+  count = count || bars;
+  const [s, W] = svgFor(node, H), m = {l:40, r:12, t:42, b:28};
+  const n = data.length, x = lin(0, n - 1, m.l, W - m.r);
+  const top = ymax || niceMax(Math.max(...data.flatMap(d => series.map(se => d[se.key] || 0))));
+  const y = lin(0, top, H - m.b, m.t);
+  const g = el("g", {class:"grid"}, s);
+  for (let i = 0; i <= 4; i++){ const v = top * i / 4; el("line", {x1:m.l, x2:W-m.r, y1:y(v), y2:y(v)}, g); txt(s, m.l - 6, y(v) + 4, Math.round(v) + P, {"text-anchor":"end", fill:css("--muted"), "font-size":11}); }
+  if (bars){ const bmax = Math.max(...data.map(d => d[bars])), yb = lin(0, bmax, H - m.b, H - m.b - (H - m.t - m.b) * .35), bw = Math.max(2, (W - m.l - m.r) / n - 3);
+    data.forEach((d, i) => el("rect", {x:x(i) - bw/2, y:yb(d[bars]), width:bw, height:H - m.b - yb(d[bars]), rx:1.5, fill:css("--rule2"), opacity:.9}, s)); }
+  data.forEach((d, i) => { if (i % 7 === 0 || i === n - 1) txt(s, x(i), H - 8, dlab(d.day), {"text-anchor":"middle", fill:css("--muted"), "font-size":11}); });
+  // annotations : décalées en hauteur pour éviter les collisions
+  const lanes = [];
+  annotations.forEach(a => {
+    const i = data.findIndex(d => d.day === a.day); if (i < 0) return;
+    const ax = x(i), tw0 = AR() ? tw(a.label, 10.5) + 12 : a.label.length * 5.4 + 12, anchorEnd = ax + tw0 > W - 4, x0 = anchorEnd ? ax - tw0 : ax, x1 = anchorEnd ? ax : ax + tw0;
+    let lane = 0; while (lanes[lane] && lanes[lane].some(([p, q]) => x0 < q + 6 && x1 > p - 6)) lane++; (lanes[lane] = lanes[lane] || []).push([x0, x1]);
+    const ly = 12 + lane * 13;
+    el("line", {x1:ax, x2:ax, y1:ly + 3, y2:H - m.b, stroke:css("--ink2"), "stroke-width":1, opacity:.35}, s);
+    el("circle", {cx:ax, cy:ly + 3, r:2.5, fill:css("--ink2")}, s);
+    const anchor = anchorEnd ? "end" : "start";
+    txt(s, ax + (anchor === "end" ? -5 : 5), ly + 7, a.label, {"text-anchor":anchor, fill:css("--ink2"), "font-size":10.5});
+  });
+  series.forEach(se => {
+    const pts = data.map((d, i) => `${x(i)},${y(d[se.key] || 0)}`).join(" ");
+    el("polyline", {points:pts, fill:"none", stroke:css(se.color), "stroke-width":2, "stroke-linejoin":"round", "stroke-linecap":"round"}, s);
+  });
+  const cross = el("line", {y1:m.t, y2:H - m.b, stroke:css("--ink"), "stroke-width":1, opacity:0}, s);
+  const dots = series.map(se => el("circle", {r:4, fill:css(se.color), stroke:css("--card"), "stroke-width":2, opacity:0}, s));
+  const hit = el("rect", {x:m.l, y:m.t, width:W - m.l - m.r, height:H - m.t - m.b, fill:"transparent"}, s);
+  hit.addEventListener("mousemove", e => {
+    const r = s.getBoundingClientRect(), px = (e.clientX - r.left) * (W / r.width);
+    const i = Math.max(0, Math.min(n - 1, Math.round((px - m.l) / ((W - m.l - m.r) / (n - 1))))), d = data[i];
+    cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("opacity", .4);
+    series.forEach((se, j) => { dots[j].setAttribute("cx", x(i)); dots[j].setAttribute("cy", y(d[se.key] || 0)); dots[j].setAttribute("opacity", 1); });
+    const ann = annotations.filter(a => a.day === d.day).map(a => `<br><i>${a.full || a.label}</i>`).join("");
+    showTip(`<b>${dlab(d.day)}</b>${count ? " · " + f0(d[count]) + (countLabel || tr(" commentaires", " تعليق")) : ""}<br>` + series.map(se => `<span style="color:${css(se.color)}">●</span> ${se.label}${tr(" : ", ": ")}${fmt(d[se.key] || 0)}`).join("<br>") + ann, e);
+  });
+  hit.addEventListener("mouseleave", () => { hideTip(); cross.setAttribute("opacity", 0); dots.forEach(d => d.setAttribute("opacity", 0)); });
+}
+
+const SOV_ANN = () => AR() ? [
+  {day:"2026-08-25", label:"زيارة ميري ريغيف (19 غشت)", full:"فيديوهات عن الزيارة الخاصة للوزيرة الإسرائيلية ميري ريغيف إلى مراكش (Telquel، 20 غشت)"},
+  {day:"2026-09-03", label:"سانشيز: سبتة «إسبانية إلى الأبد»", full:"بيدرو سانشيز أمام مجلس النواب الإسباني (France 24، 3 شتنبر)"},
+  {day:"2026-09-10", label:"الحملة الرسمية", full:"انطلاق الحملة الرسمية (France 24)"},
+  {day:"2026-09-16", label:"سفارتان بين المغرب وإسرائيل", full:"بوريطة وساعر في نيويورك: مكتبا الاتصال يصبحان سفارتين (Le Desk، 16 شتنبر)"},
+  {day:"2026-09-18", label:"فون دير لاين عن سبتة", full:"خطاب حالة الاتحاد، 17 شتنبر (Maroc Mail)؛ وفيديو فرانس 24 عربي بتاريخ 18 شتنبر"},
+] : [
+  {day:"2026-08-25", label:"Visite de Miri Regev (19 août)", full:"Vidéos sur la visite privée de la ministre israélienne Miri Regev à Marrakech (Telquel, 20 août)"},
+  {day:"2026-09-03", label:"Sánchez : Sebta « espagnole pour toujours »", full:"Pedro Sánchez devant le Congrès espagnol (France 24, 3 septembre)"},
+  {day:"2026-09-10", label:"Campagne officielle", full:"Ouverture de la campagne officielle (France 24)"},
+  {day:"2026-09-16", label:"Ambassades Maroc-Israël", full:"Bourita et Sa'ar à New York : les bureaux de liaison deviennent des ambassades (Le Desk, 16 septembre)"},
+  {day:"2026-09-18", label:"Von der Leyen sur Sebta", full:"Discours sur l'état de l'Union, 17 septembre (Maroc Mail) ; vidéo France 24 Arabic du 18"},
+];
+const CRIT_ANN = () => AR() ? [
+  {day:"2026-08-26", label:"تسجيل الطالبي العلمي ضد لقجع", full:"تسجيل صوتي منسوب إلى رشيد الطالبي العلمي (الأحرار) ضد فوزي لقجع (الأصالة والمعاصرة) (Le Desk وMédias24، 26 غشت)"},
+  {day:"2026-09-07", label:"حد أدنى للأجور بـ5000 درهم", full:"محمد شوكي (الأحرار) يرفض وعد رفع الحد الأدنى للأجور إلى 5000 درهم (هسبريس، 7 شتنبر)"},
+  {day:"2026-09-12", label:"بنكيران يطلق حملة حزبه", full:"بنكيران يطلق حملة العدالة والتنمية في الرباط ضد حصيلة أخنوش (12 شتنبر)"},
+] : [
+  {day:"2026-08-26", label:"Audio Talbi Alami contre Lekjaa", full:"Audio attribué à Rachid Talbi Alami (RNI) contre Fouzi Lekjaa (PAM) (Le Desk, Médias24, 26 août)"},
+  {day:"2026-09-07", label:"SMIG à 5 000 DH", full:"Mohamed Chaouki (RNI) rejette la promesse d'un SMIG à 5 000 DH (Hespress, 7 septembre)"},
+  {day:"2026-09-12", label:"Benkirane lance le PJD", full:"Benkirane lance la campagne du PJD à Rabat, contre le bilan d'Akhannouch (12 septembre)"},
+];
+function chSov(){ lineChart($("#chSov"), {data:D.daily, series:[{key:"sov", label:tr("Souveraineté, diplomatie", "السيادة والدبلوماسية"), color:"--accent"}], count:"n", annotations:SOV_ANN(), H:320, ymax:40}); }
+let critMode = "crit";
+function chCrit(){
+  const P4 = [["RNI", "--rni"], ["PAM", "--pam"], ["PJD", "--pjd"], ["Istiqlal", "--ist"]];
+  const se = P4.map(([p, c]) => ({key:(critMode === "crit" ? "a_cr" : "a_su") + p, label:pname(p), color:c}));
+  $("#critTitle").textContent = critMode === "crit"
+    ? tr("Part des commentateurs du jour qui critiquent chaque parti", "حصة معلّقي اليوم الذين ينتقدون كل حزب")
+    : tr("Part des commentateurs du jour qui soutiennent chaque parti", "حصة معلّقي اليوم المؤيدين لكل حزب");
+  $("#critLegend").innerHTML = se.map(x => `<span><i style="background:var(${x.color})"></i>${x.label}</span>`).join("");
+  lineChart($("#chCrit"), {data:D.daily, series:se, count:"authors", countLabel:tr(" commentateurs", " معلّق"), annotations:CRIT_ANN(), H:320});
+}
+
+/* 05 urnes : barres groupées (soutiens en ligne / voix des 9 partis)  ; partis marqués « non fiable » : liste NF (vide depuis la tâche n° 8) */
+const NF = [];  // 2026-11-10 : tâche n° 8 (consigne V5), contrôle refait ; plus de parti écarté
+const nfCell = () => `<span class="nf">${tr("non fiable", "غير موثوق")}</span>`;
+function chUrnes(){
+  const rows = [...D.parties].sort((a,b) => b.vote_share9 - a.vote_share9), node = $("#chUrnes");
+  const bh = 11, gap = 3, rh = 2 * bh + gap + 14, H = rows.length * rh + 28, [s, W] = svgFor(node, H);
+  const m = {l: AR() ? Math.ceil(Math.max(...rows.map(r => tw(pname(r.party), 13, 600)))) + 18 : 80, r:58, t:4};
+  const x = lin(0, 56, m.l, W - m.r);  // marge : l'étiquette de la plus longue barre ne touche pas le « × »
+  const g = el("g", {class:"grid"}, s);
+  [0, 10, 20, 30, 40, 50].forEach(v => { el("line", {x1:x(v), x2:x(v), y1:m.t, y2:H - 22}, g); txt(s, x(v), H - 6, v + P, {"text-anchor":"middle", fill:css("--muted"), "font-size":11}); });
+  rows.forEach((r, i) => {
+    const y0 = m.t + i * rh + 7, a = r.sup_share, b = r.vote_share9, nf = NF.includes(r.party), ratio = a / b;
+    txt(s, m.l - 10, y0 + bh + gap/2 + 4, pname(r.party), {"text-anchor":"end", fill:css("--ink"), "font-size":13, "font-weight":600});
+    if (nf) txt(s, x(0) + 4, y0 + bh - 2, tr("soutiens en ligne : non fiable", "المؤيدون على الإنترنت: غير موثوق"), {fill:css("--muted"), "font-size":11, "font-style":"italic"});
+    else {
+      el("rect", {x:x(0), y:y0, width:Math.max(2, x(a) - x(0)), height:bh, rx:2, fill:css("--accent")}, s);
+      txt(s, x(a) + 5, y0 + bh - 2, f1(a) + P, {fill:css("--ink2"), "font-size":11});
+    }
+    el("rect", {x:x(0), y:y0 + bh + gap, width:Math.max(2, x(b) - x(0)), height:bh, rx:2, fill:css("--neutral")}, s);
+    txt(s, x(b) + 5, y0 + 2 * bh + gap - 2, f1(b) + P, {fill:css("--ink2"), "font-size":11});
+    if (!nf) txt(s, W - m.r + 52, y0 + bh + gap/2 + 4, "× " + fx(ratio, 2), {"text-anchor":"end", fill: ratio >= 1.2 ? css("--accent") : css("--ink"), "font-size":12, "font-weight":600});
+    const hit = el("rect", {x:0, y:y0 - 5, width:W, height:rh, fill:"transparent"}, s);
+    const sup = nf ? tr("non fiable (le modèle confond PAM et RNI)", "غير موثوق (النموذج يخلط بين الأصالة والمعاصرة والأحرار)") : `${f1(a)}${P} (${f0(r.sup_auth)} ${tr("comptes", "حساب")})`;
+    hit.addEventListener("mousemove", e => showTip(AR()
+      ? `<b>${pname(r.party)}</b><br>المؤيدون على الإنترنت: ${sup}<br>الأصوات: ${f1(b)}${P} من أصوات الأحزاب التسعة<br>المقاعد: ${r.seats21} في 2021، و${r.seats} في 2026`
+      : `<b>${pname(r.party)}</b><br>Soutiens en ligne : ${sup}<br>Voix : ${f1(b)}${P} des voix des 9 partis<br>Sièges : ${r.seats21} en 2021, ${r.seats} en 2026`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  mirror(s, W);
+}
+const pcell = r => `<span class="nw"><span class="sw" style="background:${PC[r.party] ? "var(" + PC[r.party] + ")" : "var(--neutral)"}"></span>${pname(r.party)}</span>`;
+function chSupCrit(){
+  const rows = [...D.parties].sort((a,b) => (b.sup_pct_auth + b.crit_pct_auth) - (a.sup_pct_auth + a.crit_pct_auth)), node = $("#chSupCrit");
+  const bh = 11, gap = 3, rh = 2 * bh + gap + 14, H = rows.length * rh + 28, [s, W] = svgFor(node, H);
+  const m = {l: AR() ? Math.ceil(Math.max(...rows.map(r => tw(pname(r.party), 13, 600)))) + 18 : 80, r:46, t:4};
+  const xmax = niceMax(Math.max(...rows.flatMap(r => [r.sup_pct_auth, r.crit_pct_auth]))), x = lin(0, xmax, m.l, W - m.r);
+  const g = el("g", {class:"grid"}, s);
+  [0, .25, .5, .75, 1].map(f => xmax * f).forEach(v => { el("line", {x1:x(v), x2:x(v), y1:m.t, y2:H - 22}, g); txt(s, x(v), H - 6, f1(v).replace(/[.,]0$/, "") + P, {"text-anchor":"middle", fill:css("--muted"), "font-size":11}); });
+  rows.forEach((r, i) => {
+    const y0 = m.t + i * rh + 7, a = r.sup_pct_auth, b = r.crit_pct_auth;
+    txt(s, m.l - 10, y0 + bh + gap/2 + 4, pname(r.party), {"text-anchor":"end", fill:css("--ink"), "font-size":13, "font-weight":600});
+    el("rect", {x:x(0), y:y0, width:Math.max(2, x(a) - x(0)), height:bh, rx:2, fill:css("--accent")}, s);
+    txt(s, x(a) + 5, y0 + bh - 2, f1(a) + P, {fill:css("--ink2"), "font-size":11});
+    el("rect", {x:x(0), y:y0 + bh + gap, width:Math.max(2, x(b) - x(0)), height:bh, rx:2, fill:css("--ink2")}, s);
+    txt(s, x(b) + 5, y0 + 2 * bh + gap - 2, f1(b) + P, {fill:css("--ink2"), "font-size":11});
+    const hit = el("rect", {x:0, y:y0 - 5, width:W, height:rh, fill:"transparent"}, s);
+    hit.addEventListener("mousemove", e => showTip(AR()
+      ? `<b>${pname(r.party)}</b><br>يؤيدونه: ${f1(a)}${P} من المعلّقين (${f0(r.sup_auth)} حساب)<br>ينتقدونه: ${f1(b)}${P} (${f0(r.crit_auth)} حساب)`
+      : `<b>${pname(r.party)}</b><br>Le soutiennent : ${f1(a)}${P} des commentateurs (${f0(r.sup_auth)} comptes)<br>Le critiquent : ${f1(b)}${P} (${f0(r.crit_auth)} comptes)`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  mirror(s, W);
+}
+function tParties(){
+  const rows = D.parties.map(r => NF.includes(r.party)
+    ? {...r, chg: r.seats - r.seats21, nf: true, sup_auth: null, crit_auth: null, ratio: null, sup_share: null}
+    : {...r, chg: r.seats - r.seats21});
+  const cols = [
+    {k:"party", t:tr("Parti", "الحزب"), f:pcell},
+    {k:"video_share", t:tr("Vidéos %", "الفيديوهات %"), f:r => f1(r.video_share)},
+    {k:"views_norni", t:tr("Vues sans @partirni", "المشاهدات دون <bdi>@partirni</bdi>"), f:r => fM(r.views_norni)},
+    {k:"sup_auth", t:tr("Soutiens", "المؤيدون"), f:r => r.nf ? nfCell() : f0(r.sup_auth)},
+    {k:"crit_auth", t:tr("Critiques", "المنتقدون"), f:r => r.nf ? nfCell() : f0(r.crit_auth)},
+    {k:"ratio", t:tr("Ratio", "النسبة"), f:r => r.nf ? nfCell() : fx(r.ratio, 3)},
+    {k:"sup_share", t:tr("Soutiens %", "المؤيدون %"), f:r => r.nf ? nfCell() : `<b>${f1(r.sup_share)}</b>`},
+    {k:"vote_share9", t:tr("Voix % (9 partis)", "الأصوات % (9 أحزاب)"), f:r => `<b>${f1(r.vote_share9)}</b>`},
+    {k:"seats", t:tr("Sièges", "المقاعد"), f:r => r.seats},
+    {k:"chg", t:tr("/ 2021", "مقارنة بـ2021"), f:r => `<span class="${r.chg > 0 ? "pos" : r.chg < 0 ? "neg" : ""}" dir="ltr">${r.chg > 0 ? "+" : ""}${r.chg}</span>`},
+  ];
+  sortable($("#tParties"), rows, cols, "vote_share9");
+}
+/* en arabe, « 55,4 % » doit rester dans cet ordre : isolé de gauche à droite */
+const ltrPct = v => AR() && /%$/.test(String(v)) ? `<bdi dir="ltr">${v}</bdi>` : v;
+function sortable(table, rows, cols, key){
+  let sk = key, asc = false;
+  function draw(){
+    const rs = [...rows].sort((a,b) => { const va = a[sk] ?? -Infinity, vb = b[sk] ?? -Infinity; const c = typeof va === "string" ? va.localeCompare(vb) : va === vb ? 0 : va < vb ? -1 : 1; return asc ? c : -c; });
+    table.innerHTML = `<thead><tr>${cols.map(c => `<th data-k="${c.k}" class="${c.k === sk ? "sorted" + (asc ? " asc" : "") : ""}">${c.t}</th>`).join("")}</tr></thead><tbody>${rs.map(r => `<tr>${cols.map((c,i) => `<td${i === 0 ? ' class="l"' : ""}>${ltrPct(c.f(r))}</td>`).join("")}</tr>`).join("")}</tbody>`;
+    table.querySelectorAll("th").forEach(th => th.addEventListener("click", () => { const k = th.dataset.k; if (k === sk) asc = !asc; else { sk = k; asc = false; } draw(); }));
+  }
+  draw();
+}
+
+/* 05 b : semaines, quatre partis (tâche n° 8) */
+function chWeek(){
+  const node = $("#chWeek"), H = 280, [s, W] = svgFor(node, H), data = D.weekly, n = data.length;
+  const P4 = [["PJD", "--pjd"], ["PAM", "--pam"], ["RNI", "--rni"], ["Istiqlal", "--ist"]];
+  const top = niceMax(Math.max(...data.flatMap(d => P4.map(([p]) => d[p]))));
+  const m = {l:36, r:52, t:12, b:30};
+  const x = lin(0, n - 1, m.l + 10, W - m.r), y = lin(0, top, H - m.b, m.t);
+  const g = el("g", {class:"grid"}, s);
+  [0, .25, .5, .75, 1].map(f => top * f).forEach(v => { el("line", {x1:m.l, x2:W - m.r, y1:y(v), y2:y(v)}, g); txt(s, m.l - 6, y(v) + 4, f1(v).replace(/[.,]0$/, "") + P, {"text-anchor":"end", fill:css("--muted"), "font-size":11}); });
+  data.forEach((d, i) => txt(s, x(i), H - 8, WK[i], {"text-anchor":"middle", fill:css("--muted"), "font-size":10.5}));
+  const ends = P4.map(([p]) => ({p, v:data[n-1][p], y:y(data[n-1][p])})).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i-1].y < 13) ends[i].y = ends[i-1].y + 13;
+  P4.forEach(([p, c]) => {
+    const col = css(c);
+    el("polyline", {points:data.map((d,i) => `${x(i)},${y(d[p])}`).join(" "), fill:"none", stroke:col, "stroke-width":2, "stroke-linejoin":"round"}, s);
+    data.forEach((d, i) => { el("circle", {cx:x(i), cy:y(d[p]), r:4, fill:col, stroke:css("--card"), "stroke-width":2}, s);
+      const h = el("circle", {cx:x(i), cy:y(d[p]), r:11, fill:"transparent"}, s);
+      h.addEventListener("mousemove", e => showTip(`<b>${pname(p)}${tr(", ", "، ")}${wlab(i)}</b><br>${f1(d[p])}${P} ${tr("des commentateurs de la semaine", "من معلّقي الأسبوع")}`, e)); h.addEventListener("mouseleave", hideTip); });
+    const e = ends.find(z => z.p === p);
+    txt(s, x(n-1) + 9, e.y + 4, f1(e.v) + P, {fill:css("--ink"), "font-size":11.5, "font-weight":600});
+  });
+}
+
+/* 07 vote */
+function chVote(){
+  const node = $("#chVote"), H = 240, [s, W] = svgFor(node, H), m = {l:36, r:52, t:12, b:30}, data = D.weekly, n = data.length;
+  const x = lin(0, n - 1, m.l + 10, W - m.r), y = lin(0, 5, H - m.b, m.t);
+  const g = el("g", {class:"grid"}, s);
+  [0, 1, 2, 3, 4, 5].forEach(v => { el("line", {x1:m.l, x2:W - m.r, y1:y(v), y2:y(v)}, g); txt(s, m.l - 6, y(v) + 4, v + P, {"text-anchor":"end", fill:css("--muted"), "font-size":11}); });
+  data.forEach((d, i) => txt(s, x(i), H - 8, WK[i], {"text-anchor":"middle", fill:css("--muted"), "font-size":10.5}));
+  [["vot", "--accent", tr("Vote", "التصويت")], ["boy", "--neutral", tr("Boycott", "المقاطعة")]].forEach(([k, c, lb]) => {
+    el("polyline", {points:data.map((d,i) => `${x(i)},${y(d[k])}`).join(" "), fill:"none", stroke:css(c), "stroke-width":2}, s);
+    data.forEach((d, i) => { el("circle", {cx:x(i), cy:y(d[k]), r:4, fill:css(c), stroke:css("--card"), "stroke-width":2}, s);
+      const h = el("circle", {cx:x(i), cy:y(d[k]), r:11, fill:"transparent"}, s);
+      h.addEventListener("mousemove", e => showTip(`<b>${lb}${tr(", ", "، ")}${wlab(i)}</b><br>${f1(d[k])}${P} ${tr("des commentaires", "من التعليقات")}`, e)); h.addEventListener("mouseleave", hideTip); });
+    txt(s, x(n-1) + 9, y(data[n-1][k]) + 4, f1(data[n-1][k]) + P, {fill:css("--ink"), "font-size":11.5, "font-weight":600});
+  });
+}
+
+/* 08 toxicité */
+let toxMode = "target";
+function chTox(){
+  const rows = toxMode === "target" ? D.tox_target.filter(r => r.target !== "gouvernement") : D.tox_theme;
+  const name = r => toxMode === "target" ? pname(r.target) : theme(r.theme);
+  $("#toxTitle").textContent = toxMode === "target"
+    ? tr("Part des commentaires signalés, selon la cible critiquée", "حصة التعليقات المرصودة، حسب الجهة المنتقَدة")
+    : tr("Part des commentaires signalés, selon le thème", "حصة التعليقات المرصودة، حسب الموضوع");
+  const node = $("#chTox"), rh = 30, H = rows.length * rh + 28, [s, W] = svgFor(node, H), m = {l:Math.min(160, W * .36), r:40, t:4};
+  const x = lin(0, 60, m.l, W - m.r);
+  const g = el("g", {class:"grid"}, s);
+  [0, 20, 40, 60].forEach(v => { el("line", {x1:x(v), x2:x(v), y1:m.t, y2:H - 22}, g); txt(s, x(v), H - 6, v + P, {"text-anchor":"middle", fill:css("--muted"), "font-size":11}); });
+  rows.forEach((r, i) => {
+    const yy = m.t + i * rh;
+    txt(s, m.l - 10, yy + rh/2 + 4, name(r), {"text-anchor":"end", fill:css("--ink"), "font-size":12.5});
+    el("rect", {x:x(0), y:yy + 6, width:x(r.flag) - x(0), height:rh - 12, rx:3, fill:css("--rule2")}, s);
+    el("rect", {x:x(0), y:yy + 6, width:x(r.haine) - x(0), height:rh - 12, rx:3, fill:css("--accent")}, s);
+    txt(s, x(r.flag) + 6, yy + rh/2 + 4, f1(r.flag) + P, {fill:css("--ink2"), "font-size":11});
+    const hit = el("rect", {x:0, y:yy, width:W, height:rh, fill:"transparent"}, s);
+    hit.addEventListener("mousemove", e => showTip(AR()
+      ? `<b>${name(r)}</b> · ${f0(r.n)} تعليق<br>مرصودة: ${f1(r.flag)}${P}<br>كراهية: ${f1(r.haine)}${P}<br>تهديد: ${f1(r.menace)}${P}`
+      : `<b>${name(r)}</b> · ${f0(r.n)} commentaires<br>Signalés : ${f1(r.flag)}${P}<br>Haine : ${f1(r.haine)}${P}<br>Menace : ${f1(r.menace)}${P}`, e));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  mirror(s, W);
+}
+
+/* tableaux simples */
+function tables(){
+  sortable($("#tLang"), D.languages, [
+    {k:"lang", t:tr("Langue d'origine", "لغة الأصل"), f:r => lab(LANGS_AR, r.lang)}, {k:"n", t:tr("Commentaires", "التعليقات"), f:r => f0(r.n)},
+    {k:"sov", t:tr("Souveraineté", "السيادة"), f:r => f1(r.sov) + P}, {k:"classe", t:tr("Contre tous", "ضد الجميع"), f:r => f1(r.classe) + P},
+    {k:"party", t:tr("Cite un parti", "تذكر حزبا"), f:r => f1(r.party) + P}], "n");
+  sortable($("#tPers"), D.personalities, [
+    {k:"name", t:tr("Personnalité", "الشخصية"), f:r => lab(PERS_AR, r.name)}, {k:"target", t:tr("Commentaires qui la visent", "التعليقات التي تستهدفها"), f:r => f0(r.target)},
+    {k:"sup_pct", t:tr("Soutien", "تأييد"), f:r => f1(r.sup_pct) + P}, {k:"crit_pct", t:tr("Critique", "انتقاد"), f:r => f1(r.crit_pct) + P},
+    {k:"unnamed", t:tr("Sans la nommer", "دون ذكر اسمها"), f:r => f1(r.unnamed) + P}], "target");
+  sortable($("#tConc"), D.concentration.filter(r => !NF.includes(r.party)), [
+    {k:"party", t:tr("Parti", "الحزب"), f:pcell},
+    {k:"comments", t:tr("Commentaires de soutien", "تعليقات التأييد"), f:r => f0(r.comments)}, {k:"authors", t:tr("Comptes qui le soutiennent", "الحسابات المؤيدة"), f:r => f0(r.authors)},
+    {k:"per_author", t:tr("Par compte", "لكل حساب"), f:r => fx(r.per_author, 3)},
+    {k:"top50", t:tr("50 plus actifs", "أنشط 50 حسابا"), f:r => f1(r.top50) + P},
+    {k:"paster_share", t:tr("Copier-coller", "نسخ ولصق"), f:r => f1(r.paster_share) + P},
+    {k:"recent", t:tr("Créés après juin", "أُنشئت بعد يونيو"), f:r => f1(r.recent) + P}], "authors");
+  const a = D.anas;
+  const R = AR()
+    ? ["المؤشر", "المرجع", `التعليقات لكل ${K} مشاهدة`, `الإعجابات لكل ${K} مشاهدة`, "هذه القناة", "تعليقات ضد العدالة والتنمية", "(الوسيط)", "(المجموع)"]
+    : ["Indicateur", "Référence", `Commentaires pour ${K} vues`, `J'aime pour ${K} vues`, "Cette chaîne", "Commentaires contre le PJD", "(médiane)", "(ensemble)"];
+  $("#tAnas").innerHTML = `<thead><tr><th>${R[0]}</th><th>${R[4]}</th><th>${R[1]}</th></tr></thead><tbody>
+    <tr><td class="l">${R[2]}</td><td><b>${f1(a.com_1k)}</b></td><td>${f1(D.kpi.median_com_1k)} ${R[6]}</td></tr>
+    <tr><td class="l">${R[3]}</td><td><b>${f1(a.likes_1k)}</b></td><td>${f1(D.kpi.median_likes_1k)} ${R[6]}</td></tr>
+    <tr><td class="l">${R[5]}</td><td><b>${ltrPct(f1(a.crPJD) + P)}</b></td><td>${ltrPct(f1(D.ci.cPJD[0]) + P)} ${R[7]}</td></tr></tbody>`;
+}
+
+function fill(){
+  document.querySelectorAll("[data-k]").forEach(n => { if (n.tagName !== "TH") n.textContent = f0(D.kpi[n.dataset.k]); });
+  document.querySelectorAll("[data-ci]").forEach(n => { const c = D.ci[n.dataset.ci]; n.textContent = `${f1(c[0])}${P} [${f1(c[1])} ; ${f1(c[2])}]`; });
+  document.querySelectorAll("[data-gen]").forEach(n => n.textContent = D.generated);
+}
+function seg(id, cb){ document.querySelectorAll(`#${id} button`).forEach(b => b.addEventListener("click", () => { document.querySelectorAll(`#${id} button`).forEach(x => x.classList.remove("on")); b.classList.add("on"); cb(b.dataset.v); })); }
+
+function drawAll(){ chRni(); chChannels(); chThemes(); chSov(); chCrit(); chSupCrit(); chUrnes(); chWeek(); chVote(); chTox(); }
+function render(){ setFmt(); fill(); tRniPhase(); tParties(); tables(); drawAll(); }
+render();
+seg("segThemes", v => { themeKey = v; chThemes(); });
+seg("segCrit", v => { critMode = v; chCrit(); });
+seg("segTox", v => { toxMode = v; chTox(); });
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(drawAll, 150); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawAll);
+
+/* thème et langue */
+const btn = $("#themeBtn"), lbtn = $("#langBtn");
+function curDark(){ const t = document.documentElement.dataset.theme; return t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; }
+function setBtn(){
+  btn.textContent = curDark() ? tr("Mode clair", "الوضع الفاتح") : tr("Mode sombre", "الوضع الداكن");
+  lbtn.textContent = tr("العربية", "Français"); lbtn.lang = tr("ar", "fr");
+  document.title = tr("Ce que YouTube a vu venir", "ما التقطه يوتيوب");
+}
+try { const t = localStorage.getItem("rv2-theme"); if (t) document.documentElement.dataset.theme = t; } catch(e) {}
+setBtn(); drawAll();
+btn.addEventListener("click", () => { const t = curDark() ? "light" : "dark"; document.documentElement.dataset.theme = t; try { localStorage.setItem("rv2-theme", t); } catch(e) {} setBtn(); drawAll(); });
+lbtn.addEventListener("click", () => {
+  LANG = AR() ? "fr" : "ar";
+  const h = document.documentElement; h.lang = LANG; h.dir = AR() ? "rtl" : "ltr";
+  try { localStorage.setItem("rv2-lang", LANG); } catch(e) {}
+  try { const u = new URL(location.href); u.searchParams.set("lang", LANG); history.replaceState(null, "", u); } catch(e) {}
+  setBtn(); hideTip(); render();
+});
+
+/* sommaire actif */
+const links = [...document.querySelectorAll("#toc a")];
+const obs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id)); }), {rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section.chap").forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
